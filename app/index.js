@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { router } from "expo-router";
 import { StyleSheet, View, Animated, TouchableOpacity, Text, ImageBackground, PixelRatio } from "react-native";
+
 export default function HomeScreen() {
 	const fadeAnim = useRef(new Animated.Value(0)).current; // Initial opacity value: 0
 	const scaleAnim = useRef(new Animated.Value(0.5)).current; // Initial scale value: 0.5

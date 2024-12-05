@@ -1,13 +1,18 @@
 import React from "react";
 import { StyleSheet, View, Text, TouchableOpacity, Image, Dimensions } from "react-native";
+import { router } from "expo-router";
 
 const { width: screenWidth } = Dimensions.get("window");
 
 const buttons = [
-	{ color: "#FF6347", text: "戶外設施" },
-	{ color: "#4682B4", text: "風險管理" },
-	{ color: "#32CD32", text: "設施位置" },
-	{ color: "#FFD700", text: "大學研究" },
+	{
+		color: "#F0E4C2",
+		text: "戶外設施",
+		icon: require("@/assets/icons/outdoor.png"),
+	},
+	{ color: "#E8CCB0", text: "風險管理", icon: require("@/assets/icons/risks.png") },
+	{ color: "#F2CCC0", text: "設施位置", icon: require("@/assets/icons/map.png") },
+	{ color: "#ECDD93", text: "大學研究", icon: require("@/assets/icons/school.png") },
 ];
 
 export default function HomeScreen() {
@@ -17,8 +22,13 @@ export default function HomeScreen() {
 			<View style={styles.buttonsContainer}>
 				{buttons.map((button, index) => (
 					<View key={index} style={styles.buttonWrapper}>
-						<TouchableOpacity style={[styles.button, { backgroundColor: button.color }]}>
-							{/* Icon can be placed here */}
+						<TouchableOpacity
+							onPress={() => {
+								router.navigate("/outdoor");
+							}}
+							style={[styles.button, { backgroundColor: button.color }]}
+						>
+							<Image source={button.icon} style={styles.icon} />
 						</TouchableOpacity>
 						<Text style={styles.buttonText}>{button.text}</Text>
 					</View>
@@ -35,18 +45,19 @@ const styles = StyleSheet.create({
 	},
 	photo: {
 		width: screenWidth,
-		height: 250,
+		height: 200,
 		resizeMode: "cover",
 	},
 	buttonsContainer: {
 		flexDirection: "row",
 		flexWrap: "wrap",
-		justifyContent: "space-around",
+		justifyContent: "space-between",
 		marginTop: 20,
+		paddingHorizontal: 25, // Added padding to control spacing
 	},
 	buttonWrapper: {
 		alignItems: "center",
-		margin: 10,
+		marginVertical: 10, // Reduced horizontal margin
 	},
 	button: {
 		width: 156,
@@ -54,7 +65,7 @@ const styles = StyleSheet.create({
 		borderRadius: 100,
 		justifyContent: "center",
 		alignItems: "center",
-		margin: 10,
+		marginHorizontal: 5, // Reduced horizontal margin
 		shadowColor: "#000",
 		shadowOffset: { width: 0, height: 4 },
 		shadowOpacity: 0.3,
@@ -65,6 +76,11 @@ const styles = StyleSheet.create({
 		color: "#000",
 		fontSize: 24,
 		textAlign: "center",
-		marginTop: 5,
+		marginTop: 15,
+	},
+	icon: {
+		width: 70,
+		height: 70,
+		resizeMode: "contain",
 	},
 });
