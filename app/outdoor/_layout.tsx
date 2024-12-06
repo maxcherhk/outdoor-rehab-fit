@@ -1,6 +1,10 @@
-import { Stack } from "expo-router";
+import React from "react";
+import { Ionicons } from "@expo/vector-icons";
+import { useColorScheme } from "@/hooks/useColorScheme";
+import { Stack, router } from "expo-router";
 
-export default function Layout() {
+export default function OutdoorLayout() {
+	const colorScheme = useColorScheme();
 	return (
 		<Stack
 			screenOptions={{
@@ -8,7 +12,7 @@ export default function Layout() {
 			}}
 		>
 			{/* Optionally configure static options outside the route.*/}
-			<Stack.Screen name="index" options={{}} />
+			<Stack.Screen name="index" />
 		</Stack>
 	);
 }

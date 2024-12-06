@@ -1,30 +1,31 @@
 import React from "react";
-import { StyleSheet, View, Text, TouchableOpacity, Image, Dimensions } from "react-native";
-import { router } from "expo-router";
+import { StyleSheet, View, Text, TouchableOpacity, Image, Dimensions, ScrollView } from "react-native";
+import { router, Link } from "expo-router";
 
 const { width: screenWidth } = Dimensions.get("window");
 
-const buttons = [
+const buttons: { color: string; text: string; icon: any; route: string }[] = [
 	{
 		color: "#F0E4C2",
 		text: "戶外設施",
 		icon: require("@/assets/icons/outdoor.png"),
+		route: "outdoor",
 	},
-	{ color: "#E8CCB0", text: "風險管理", icon: require("@/assets/icons/risks.png") },
-	{ color: "#F2CCC0", text: "設施位置", icon: require("@/assets/icons/map.png") },
-	{ color: "#ECDD93", text: "大學研究", icon: require("@/assets/icons/school.png") },
+	{ color: "#E8CCB0", text: "風險管理", icon: require("@/assets/icons/risks.png"), route: "outdoor" },
+	{ color: "#F2CCC0", text: "設施位置", icon: require("@/assets/icons/map.png"), route: "outdoor" },
+	{ color: "#ECDD93", text: "大學研究", icon: require("@/assets/icons/school.png"), route: "outdoor" },
 ];
 
 export default function HomeScreen() {
 	return (
-		<View style={styles.container}>
+		<ScrollView style={styles.container}>
 			<Image source={require("@/assets/images/background.png")} style={styles.photo} />
 			<View style={styles.buttonsContainer}>
 				{buttons.map((button, index) => (
 					<View key={index} style={styles.buttonWrapper}>
 						<TouchableOpacity
 							onPress={() => {
-								router.navigate("/outdoor");
+								router.push(`/outdoor`);
 							}}
 							style={[styles.button, { backgroundColor: button.color }]}
 						>
@@ -34,7 +35,7 @@ export default function HomeScreen() {
 					</View>
 				))}
 			</View>
-		</View>
+		</ScrollView>
 	);
 }
 

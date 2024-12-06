@@ -32,6 +32,10 @@ export default function RootLayout() {
 			<Stack>
 				<Stack.Screen name="index" options={{ headerShown: false }} />
 				<Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+				<Stack.Screen
+					name="outdoor"
+					options={{ headerShown: true, headerBackTitle: "Back", title: "Outdoor Equipment" }}
+				/>
 				<Stack.Screen name="+not-found" />
 			</Stack>
 			<StatusBar style="auto" />
