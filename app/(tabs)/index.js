@@ -4,7 +4,7 @@ import { router, Link } from "expo-router";
 
 const { width: screenWidth } = Dimensions.get("window");
 
-const buttons: { color: string; text: string; icon: any; route: string }[] = [
+const buttons = [
 	{
 		color: "#F0E4C2",
 		text: "戶外設施",
@@ -12,8 +12,8 @@ const buttons: { color: string; text: string; icon: any; route: string }[] = [
 		route: "outdoor",
 	},
 	{ color: "#E8CCB0", text: "風險管理", icon: require("@/assets/icons/risks.png"), route: "outdoor" },
-	{ color: "#F2CCC0", text: "設施位置", icon: require("@/assets/icons/map.png"), route: "outdoor" },
-	{ color: "#ECDD93", text: "大學研究", icon: require("@/assets/icons/school.png"), route: "outdoor" },
+	{ color: "#F2CCC0", text: "設施位置", icon: require("@/assets/icons/map.png"), route: "location" },
+	{ color: "#ECDD93", text: "大學研究", icon: require("@/assets/icons/school.png"), route: "research" },
 ];
 
 export default function HomeScreen() {
@@ -25,7 +25,7 @@ export default function HomeScreen() {
 					<View key={index} style={styles.buttonWrapper}>
 						<TouchableOpacity
 							onPress={() => {
-								router.push(`/outdoor`);
+								router.push(`/${button.route}`);
 							}}
 							style={[styles.button, { backgroundColor: button.color }]}
 						>
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
 	},
 	photo: {
 		width: screenWidth,
-		height: 200,
+		height: 280,
 		resizeMode: "cover",
 	},
 	buttonsContainer: {

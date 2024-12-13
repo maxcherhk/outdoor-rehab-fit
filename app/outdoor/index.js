@@ -1,6 +1,8 @@
 import React from "react";
 import { router } from "expo-router";
-import { StyleSheet, View, Text, TouchableOpacity, Image, Dimensions } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { StyleSheet, View, Text, TouchableOpacity, Image, Dimensions, ScrollView } from "react-native";
+import CustomBackButton from "../../components/CustomBackButton";
 
 const { width: screenWidth } = Dimensions.get("window");
 
@@ -17,21 +19,24 @@ const buttons = [
 
 export default function Outdoor() {
 	return (
-		<View style={styles.container}>
-			<View style={styles.buttonsContainer}>
-				{buttons.map((button, index) => (
-					<View key={index} style={styles.buttonWrapper}>
-						<TouchableOpacity
-							onPress={() => router.navigate({ pathname: "/outdoor/list", params: { category: button.text } })}
-							style={styles.button}
-						>
-							<Image source={button.icon} style={styles.icon} />
-						</TouchableOpacity>
-						<Text style={styles.buttonText}>{button.text}</Text>
-					</View>
-				))}
-			</View>
-		</View>
+		<SafeAreaView style={styles.container}>
+			<CustomBackButton />
+			<ScrollView contentContainerStyle={styles.scrollViewContent}>
+				<View style={styles.buttonsContainer}>
+					{buttons.map((button, index) => (
+						<View key={index} style={styles.buttonWrapper}>
+							<TouchableOpacity
+								onPress={() => router.navigate({ pathname: "/outdoor/list", params: { category: button.text } })}
+								style={styles.button}
+							>
+								<Image source={button.icon} style={styles.icon} />
+							</TouchableOpacity>
+							<Text style={styles.buttonText}>{button.text}</Text>
+						</View>
+					))}
+				</View>
+			</ScrollView>
+		</SafeAreaView>
 	);
 }
 
@@ -39,14 +44,16 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		backgroundColor: "#fff",
+	},
+	scrollViewContent: {
+		flexGrow: 1,
 		alignItems: "center",
 	},
 	buttonsContainer: {
 		flexDirection: "row",
 		flexWrap: "wrap",
 		justifyContent: "space-between",
-		width: screenWidth * 0.8, // Adjust width to fit the screen
-		padding: 10,
+		paddingHorizontal: 25,
 	},
 	buttonWrapper: {
 		width: "45%", // Adjust width to fit two buttons per row
@@ -78,5 +85,6 @@ const styles = StyleSheet.create({
 		fontSize: 20,
 		textAlign: "center",
 		marginTop: 5,
+		fontWeight: "bold",
 	},
 });

@@ -12,7 +12,8 @@ export default function OutdoorLayout() {
 			}}
 		>
 			{/* Optionally configure static options outside the route.*/}
-			<Stack.Screen name="index" />
+			<Stack.Screen name="index" options={{ title: "Categories" }} />
+			<Stack.Screen name="list" options={{ headerShown: true, title: "Equipment" }} />
 		</Stack>
 	);
 }

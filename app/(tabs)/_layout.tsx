@@ -1,6 +1,8 @@
 import { Tabs } from "expo-router";
 import React from "react";
-import { Platform, Image } from "react-native";
+import { Platform, Image, View } from "react-native";
+
+import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 
 import { HapticTab } from "@/components/HapticTab";
 import { IconSymbol } from "@/components/ui/IconSymbol";
@@ -22,23 +24,40 @@ export default function TabLayout() {
 					ios: {
 						// Use a transparent background on iOS to show the blur effect
 						position: "absolute",
+						height: 100,
 					},
-					default: {},
+					default: {
+						height: 100,
+					},
 				}),
+				tabBarLabelStyle: {
+					fontSize: 18, // Increase font size for better readability
+					marginTop: 3, // Adjust margin to position the label
+				},
+				tabBarIconStyle: {
+					marginTop: 12, // Adjust margin to position the icon
+				},
 			}}
 		>
 			<Tabs.Screen
 				name="index"
 				options={{
 					title: "Home",
-					tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+					tabBarIcon: ({ color }) => <IconSymbol size={32} name="house.fill" color={color} />,
 				}}
 			/>
 			<Tabs.Screen
-				name="explore"
+				name="favorite"
 				options={{
-					title: "Explore",
-					tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+					title: "Favorite",
+					tabBarIcon: ({ color }) => <MaterialIcons size={32} name="favorite" color={color} />,
+				}}
+			/>
+			<Tabs.Screen
+				name="setting"
+				options={{
+					title: "Setting",
+					tabBarIcon: ({ color }) => <MaterialIcons size={28} name="settings" color={color} />,
 				}}
 			/>
 		</Tabs>
