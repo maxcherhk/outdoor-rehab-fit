@@ -1,19 +1,26 @@
 import React from "react";
 import { StyleSheet, View, Text, TouchableOpacity, Image, Dimensions, ScrollView } from "react-native";
 import { router, Link } from "expo-router";
+import { I18n } from "i18n-js";
+import { menuTranslations } from "../../constants/Languages";
 
+// Initialize I18n with the translations
+const i18n = new I18n(menuTranslations);
+
+// Set the locale (you can change this based on user preference)
+// i18n.locale = "zh";
 const { width: screenWidth } = Dimensions.get("window");
 
 const buttons = [
 	{
 		color: "#F0E4C2",
-		text: "戶外設施",
+		text: i18n.t("outdoor"),
 		icon: require("@/assets/icons/outdoor.png"),
 		route: "outdoor",
 	},
-	{ color: "#E8CCB0", text: "風險管理", icon: require("@/assets/icons/risks.png"), route: "outdoor" },
-	{ color: "#F2CCC0", text: "設施位置", icon: require("@/assets/icons/map.png"), route: "location" },
-	{ color: "#ECDD93", text: "大學研究", icon: require("@/assets/icons/school.png"), route: "research" },
+	{ color: "#E8CCB0", text: i18n.t("risk"), icon: require("@/assets/icons/risks.png"), route: "outdoor" },
+	{ color: "#F2CCC0", text: i18n.t("location"), icon: require("@/assets/icons/map.png"), route: "location" },
+	{ color: "#ECDD93", text: i18n.t("research"), icon: require("@/assets/icons/school.png"), route: "research" },
 ];
 
 export default function HomeScreen() {
@@ -75,9 +82,10 @@ const styles = StyleSheet.create({
 	},
 	buttonText: {
 		color: "#000",
-		fontSize: 24,
+		fontSize: 18,
 		textAlign: "center",
 		marginTop: 15,
+		fontWeight: "bold",
 	},
 	icon: {
 		width: 70,

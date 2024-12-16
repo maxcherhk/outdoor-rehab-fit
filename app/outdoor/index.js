@@ -3,18 +3,25 @@ import { router } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { StyleSheet, View, Text, TouchableOpacity, Image, Dimensions, ScrollView } from "react-native";
 import CustomBackButton from "../../components/CustomBackButton";
+import { I18n } from "i18n-js";
+import { categoryTranslations } from "../../constants/Languages";
+
+// Initialize I18n with the translations
+const i18n = new I18n(categoryTranslations);
+
+i18n.locale = "zh";
 
 const { width: screenWidth } = Dimensions.get("window");
 
 const buttons = [
-	{ icon: require("@/assets/icons/outdoor/list.png"), text: "Show All" },
-	{ icon: require("@/assets/icons/outdoor/muscle.png"), text: "Muscle Strengthening" },
-	{ icon: require("@/assets/icons/outdoor/flexibility.png"), text: "Mobility and Flexibility" },
-	{ icon: require("@/assets/icons/outdoor/balance.png"), text: "Balance" },
-	{ icon: require("@/assets/icons/outdoor/aerobic.png"), text: "Aerobic Activities" },
-	{ icon: require("@/assets/icons/outdoor/wheelchair.png"), text: "For Wheelchair Users" },
-	{ icon: require("@/assets/icons/outdoor/multi.png"), text: "Multi-functional" },
-	{ icon: require("@/assets/icons/outdoor/relax.png"), text: "Muscle Relaxation" },
+	{ icon: require("@/assets/icons/outdoor/list.png"), text: i18n.t("all") },
+	{ icon: require("@/assets/icons/outdoor/muscle.png"), text: i18n.t("muscle") },
+	{ icon: require("@/assets/icons/outdoor/flexibility.png"), text: i18n.t("mobility") },
+	{ icon: require("@/assets/icons/outdoor/balance.png"), text: i18n.t("balance") },
+	{ icon: require("@/assets/icons/outdoor/aerobic.png"), text: i18n.t("aerobic") },
+	{ icon: require("@/assets/icons/outdoor/wheelchair.png"), text: i18n.t("wheelchair") },
+	{ icon: require("@/assets/icons/outdoor/multi.png"), text: i18n.t("multifunctional") },
+	{ icon: require("@/assets/icons/outdoor/relax.png"), text: i18n.t("relaxation") },
 ];
 
 export default function Outdoor() {
