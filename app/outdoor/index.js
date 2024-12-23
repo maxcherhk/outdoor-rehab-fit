@@ -9,8 +9,6 @@ import { categoryTranslations } from "../../constants/Languages";
 // Initialize I18n with the translations
 const i18n = new I18n(categoryTranslations);
 
-i18n.locale = "zh";
-
 const { width: screenWidth } = Dimensions.get("window");
 
 const buttons = [
@@ -32,10 +30,7 @@ export default function Outdoor() {
 				<View style={styles.buttonsContainer}>
 					{buttons.map((button, index) => (
 						<View key={index} style={styles.buttonWrapper}>
-							<TouchableOpacity
-								onPress={() => router.navigate({ pathname: "/outdoor/list", params: { category: button.text } })}
-								style={styles.button}
-							>
+							<TouchableOpacity onPress={() => router.navigate({ pathname: "/outdoor/list", params: { category: button.text } })} style={styles.button}>
 								<Image source={button.icon} style={styles.icon} />
 							</TouchableOpacity>
 							<Text style={styles.buttonText}>{button.text}</Text>

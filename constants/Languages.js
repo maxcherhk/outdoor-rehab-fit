@@ -37,3 +37,18 @@ export const categoryTranslations = {
 		relaxation: "肌肉放鬆",
 	},
 };
+
+export const equipmentPageTranslations = {
+	en: {
+		tip1: "Introduction by Exercise Specialists",
+		tip2: "Tips from Physiotherapists",
+		tip3: "Tips from Occupational Therapists",
+		tip4: "Tips for Caregivers",
+	},
+	zh: {
+		tip1: "運動學專家的專業介紹",
+		tip2: "物理治療師的小貼士",
+		tip3: "職業治療師的小貼士",
+		tip4: "給照顧者的提示",
+	},
+};
