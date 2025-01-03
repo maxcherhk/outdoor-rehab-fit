@@ -1,28 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
 import { router } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { StyleSheet, View, Text, TouchableOpacity, Image, Dimensions, ScrollView } from "react-native";
 import CustomBackButton from "../../components/CustomBackButton";
-import { I18n } from "i18n-js";
-import { categoryTranslations } from "../../constants/Languages";
-
-// Initialize I18n with the translations
-const i18n = new I18n(categoryTranslations);
+import { LocaleContext } from "../../contexts/LocaleContext";
 
 const { width: screenWidth } = Dimensions.get("window");
 
-const buttons = [
-	{ icon: require("@/assets/icons/outdoor/list.png"), text: i18n.t("all") },
-	{ icon: require("@/assets/icons/outdoor/muscle.png"), text: i18n.t("muscle") },
-	{ icon: require("@/assets/icons/outdoor/flexibility.png"), text: i18n.t("mobility") },
-	{ icon: require("@/assets/icons/outdoor/balance.png"), text: i18n.t("balance") },
-	{ icon: require("@/assets/icons/outdoor/aerobic.png"), text: i18n.t("aerobic") },
-	{ icon: require("@/assets/icons/outdoor/wheelchair.png"), text: i18n.t("wheelchair") },
-	{ icon: require("@/assets/icons/outdoor/multi.png"), text: i18n.t("multifunctional") },
-	{ icon: require("@/assets/icons/outdoor/relax.png"), text: i18n.t("relaxation") },
-];
-
 export default function Outdoor() {
+	const { i18n } = useContext(LocaleContext);
+
+	const buttons = [
+		{ icon: require("@/assets/icons/outdoor/list.png"), text: i18n.t("all") },
+		{ icon: require("@/assets/icons/outdoor/muscle.png"), text: i18n.t("muscle") },
+		{ icon: require("@/assets/icons/outdoor/flexibility.png"), text: i18n.t("mobility") },
+		{ icon: require("@/assets/icons/outdoor/balance.png"), text: i18n.t("balance") },
+		{ icon: require("@/assets/icons/outdoor/aerobic.png"), text: i18n.t("aerobic") },
+		{ icon: require("@/assets/icons/outdoor/wheelchair.png"), text: i18n.t("wheelchair") },
+		{ icon: require("@/assets/icons/outdoor/multi.png"), text: i18n.t("multifunctional") },
+		{ icon: require("@/assets/icons/outdoor/relax.png"), text: i18n.t("relaxation") },
+	];
+
 	return (
 		<SafeAreaView style={styles.container}>
 			<CustomBackButton />
@@ -30,7 +28,10 @@ export default function Outdoor() {
 				<View style={styles.buttonsContainer}>
 					{buttons.map((button, index) => (
 						<View key={index} style={styles.buttonWrapper}>
-							<TouchableOpacity onPress={() => router.navigate({ pathname: "/outdoor/list", params: { category: button.text } })} style={styles.button}>
+							<TouchableOpacity
+								onPress={() => router.navigate({ pathname: "/outdoor/list", params: { category: button.text } })}
+								style={styles.button}
+							>
 								<Image source={button.icon} style={styles.icon} />
 							</TouchableOpacity>
 							<Text style={styles.buttonText}>{button.text}</Text>

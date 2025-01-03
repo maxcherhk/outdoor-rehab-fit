@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import { FontAwesome } from "@expo/vector-icons"; // Make sure to install this package
+import { LocaleContext } from "../../contexts/LocaleContext";
 
 const Setting = () => {
+	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
 	return (
 		<View style={styles.container}>
-			<TouchableOpacity style={styles.button}>
+			<TouchableOpacity style={styles.button} onPress={changeLanguage}>
 				<FontAwesome name="language" size={42} color="white" />
-				<Text style={styles.buttonText}>Change to English</Text>
+				<Text style={styles.buttonText}>{i18n.t("changeLanguage")}</Text>
 			</TouchableOpacity>
 			<TouchableOpacity
 				style={styles.button}
@@ -17,7 +19,7 @@ const Setting = () => {
 				}}
 			>
 				<FontAwesome name="info-circle" size={42} color="white" />
-				<Text style={styles.buttonText}>About this App</Text>
+				<Text style={styles.buttonText}>{i18n.t("aboutApp")}</Text>
 			</TouchableOpacity>
 			<TouchableOpacity
 				style={styles.button}
@@ -26,11 +28,11 @@ const Setting = () => {
 				}}
 			>
 				<FontAwesome name="users" size={42} color="white" />
-				<Text style={styles.buttonText}>About Our Team</Text>
+				<Text style={styles.buttonText}>{i18n.t("aboutTeam")}</Text>
 			</TouchableOpacity>
 			<TouchableOpacity style={styles.button}>
 				<FontAwesome name="exclamation-triangle" size={42} color="white" />
-				<Text style={styles.buttonText}>Disclaimer</Text>
+				<Text style={styles.buttonText}>{i18n.t("settingDisclaimer")}</Text>
 			</TouchableOpacity>
 		</View>
 	);

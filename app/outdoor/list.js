@@ -1,45 +1,46 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { View, Text, Image, StyleSheet, FlatList, TouchableOpacity } from "react-native";
 import SearchBar from "../../components/SearchBar";
 import { useLocalSearchParams } from "expo-router";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { router } from "expo-router";
-import { I18n } from "i18n-js";
-import { equipmentTranslations } from "../../constants/Equipments";
+// import { I18n } from "i18n-js";
+// import { equipmentTranslations } from "../../constants/Equipments";
 import { useNavigation } from "expo-router";
+import { LocaleContext } from "../../contexts/LocaleContext";
 
 // Initialize I18n with the translations
-const i18n = new I18n(equipmentTranslations);
+// const i18n = new I18n(equipmentTranslations);
 
-const equipmentData = i18n.t("equipmentList", { returnObjects: true });
-
-const buttons = [
-	{ icon: require("@/assets/icons/outdoor/list.png"), text: i18n.t("all") },
-	{ icon: require("@/assets/icons/outdoor/muscle.png"), text: i18n.t("muscle") },
-	{ icon: require("@/assets/icons/outdoor/flexibility.png"), text: i18n.t("mobility") },
-	{ icon: require("@/assets/icons/outdoor/balance.png"), text: i18n.t("balance") },
-	{ icon: require("@/assets/icons/outdoor/aerobic.png"), text: i18n.t("aerobic") },
-	{ icon: require("@/assets/icons/outdoor/wheelchair.png"), text: i18n.t("wheelchair") },
-	{ icon: require("@/assets/icons/outdoor/multi.png"), text: i18n.t("multifunctional") },
-	{ icon: require("@/assets/icons/outdoor/relax.png"), text: i18n.t("relaxation") },
-];
-
-const renderCategoryIcons = (categories) => {
-	return (
-		<View style={styles.iconRow}>
-			{categories.map((category) => {
-				const button = buttons.find((btn) => btn.text === i18n.t(category));
-				return button ? <Image key={category} source={button.icon} style={styles.categoryIcon} /> : null;
-			})}
-		</View>
-	);
-};
+// const equipmentData = i18n.t("equipmentList", { returnObjects: true });
 
 const EquipmentList = () => {
+	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
+	const equipmentData = i18n.t("equipmentList", { returnObjects: true });
+	const buttons = [
+		{ icon: require("@/assets/icons/outdoor/list.png"), text: i18n.t("all") },
+		{ icon: require("@/assets/icons/outdoor/muscle.png"), text: i18n.t("muscle") },
+		{ icon: require("@/assets/icons/outdoor/flexibility.png"), text: i18n.t("mobility") },
+		{ icon: require("@/assets/icons/outdoor/balance.png"), text: i18n.t("balance") },
+		{ icon: require("@/assets/icons/outdoor/aerobic.png"), text: i18n.t("aerobic") },
+		{ icon: require("@/assets/icons/outdoor/wheelchair.png"), text: i18n.t("wheelchair") },
+		{ icon: require("@/assets/icons/outdoor/multi.png"), text: i18n.t("multifunctional") },
+		{ icon: require("@/assets/icons/outdoor/relax.png"), text: i18n.t("relaxation") },
+	];
+	const renderCategoryIcons = (categories) => {
+		return (
+			<View style={styles.iconRow}>
+				{categories.map((category) => {
+					const button = buttons.find((btn) => btn.text === i18n.t(category));
+					return button ? <Image key={category} source={button.icon} style={styles.categoryIcon} /> : null;
+				})}
+			</View>
+		);
+	};
 	const local = useLocalSearchParams();
 	const category = local.category || "Show All";
-	console.log(category);
 	const equipmentList = equipmentData;
+	console.log(equipmentList);
 	const navigation = useNavigation();
 
 	useEffect(() => {
@@ -74,14 +75,21 @@ const EquipmentList = () => {
 				data={filteredEquipmentList}
 				keyExtractor={(item, index) => index.toString()}
 				renderItem={({ item, index }) => (
-					<TouchableOpacity onPress={() => router.navigate({ pathname: "/outdoor/detail", params: item })} style={styles.card}>
+					<TouchableOpacity
+						onPress={() => router.navigate({ pathname: "/outdoor/detail", params: item })}
+						style={styles.card}
+					>
 						<Image source={item.icon} style={styles.image} />
 						<View style={styles.info}>
 							<Text style={styles.name}>{item.name}</Text>
 						</View>
 						{renderCategoryIcons(item.categories)}
 						<TouchableOpacity style={styles.bookmark} onPress={() => toggleBookmark(index)}>
-							<Ionicons name={bookmarked[index] ? "heart" : "heart-outline"} size={38} color={bookmarked[index] ? "red" : "gray"} />
+							<Ionicons
+								name={bookmarked[index] ? "heart" : "heart-outline"}
+								size={38}
+								color={bookmarked[index] ? "red" : "gray"}
+							/>
 						</TouchableOpacity>
 					</TouchableOpacity>
 				)}

@@ -1,3 +1,5 @@
+import { equipmentTranslations } from "./Equipments";
+
 export const menuTranslations = {
 	en: {
 		home: "Home",
@@ -12,6 +14,21 @@ export const menuTranslations = {
 		location: "設施位置",
 		risk: "風險管理",
 		research: "大學研究",
+	},
+};
+
+export const settingTranslations = {
+	en: {
+		changeLanguage: "Change to English",
+		aboutApp: "About this App",
+		aboutTeam: "About Our Team",
+		settingDisclaimer: "Disclaimer",
+	},
+	zh: {
+		changeLanguage: "切換至中文",
+		aboutApp: "關於此程式",
+		aboutTeam: "關於我們",
+		settingDisclaimer: "免責聲明",
 	},
 };
 
@@ -79,5 +96,22 @@ export const othersTranslations = {
 			"如果你對這份問卷的全部問題誠實地答「否」，你有理由確信你可以：\n\n開始增加運動量──開始時慢慢進行，然後逐漸增加，這是最安全和最容易的方法。\n\n參加體能評估──這是一種確定你基本體能的好方法，以便你擬定最佳的運動計劃。此外，亦主張你量度血壓；如果讀數超過144/94，請先徵詢醫生的意見，然後才逐漸增加運動量。\n\n延遲增加運動量：\n\n如果你因傷風或發燒等暫時性疾病而感到不適──請在康復後才增加運動量。\n\n如果你懷孕或可能懷孕──請先徵詢醫生的意見，然後才決定是否增加運動量。",
 		questionnaireYes:
 			"在開始增加運動量或進行體能評估前，請先致電或親身與醫生商談，告知醫生這份問卷，以及你回答「是」的問題。\n\n你可以進行任何活動，但須在開始時慢慢進行，然後逐漸增加活動量；又或你只可進行一些安全的活動。告訴醫生你希望參加的活動及聽從他的意見。你可以找出一些安全及有益健康的社區活動。",
+	},
+};
+
+export const translations = {
+	en: {
+		...menuTranslations.en,
+		...settingTranslations.en,
+		...categoryTranslations.en,
+		...equipmentTranslations.en,
+		...othersTranslations.en,
+	},
+	zh: {
+		...menuTranslations.zh,
+		...settingTranslations.zh,
+		...categoryTranslations.zh,
+		...othersTranslations.zh,
+		...equipmentTranslations.zh,
 	},
 };
