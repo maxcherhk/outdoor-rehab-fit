@@ -1,5 +1,5 @@
 import React, { useEffect, useContext } from "react";
-import { StyleSheet, View, Text, Image } from "react-native";
+import { StyleSheet, View, Text, Image, ScrollView } from "react-native";
 import { useLocalSearchParams } from "expo-router";
 import { Collapsible } from "@/components/Collapsible";
 import { ThemedText } from "@/components/ThemedText";
@@ -7,9 +7,6 @@ import { ThemedView } from "@/components/ThemedView";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { useNavigation } from "expo-router";
 import { LocaleContext } from "../../contexts/LocaleContext";
-
-// // Initialize I18n with the translations
-// const i18n = new I18n(equipmentPageTranslations);
 
 const Detail = () => {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
@@ -21,24 +18,21 @@ const Detail = () => {
 	}, [navigation, item.name]);
 
 	return (
-		<ParallaxScrollView
-			headerBackgroundColor={{ light: "#A1CEDC", dark: "#1D3D47" }}
-			headerImage={<Image source={item.pic} style={styles.reactLogo} />}
-		>
+		<ScrollView>
 			<Image source={item.pic} style={styles.image} />
-			<Collapsible title={i18n.t("tip1")}>
+			<Collapsible title={i18n.t("kinesiologyTip")}>
 				<ThemedText>{item.kinesiologyTip}</ThemedText>
 			</Collapsible>
-			<Collapsible title={i18n.t("tip2")}>
+			<Collapsible title={i18n.t("ptTip")}>
 				<ThemedText>{item.ptTip}</ThemedText>
 			</Collapsible>
-			<Collapsible title={i18n.t("tip3")}>
+			<Collapsible title={i18n.t("otTip")}>
 				<ThemedText>{item.otTip}</ThemedText>
 			</Collapsible>
-			<Collapsible title={i18n.t("tip4")}>
+			<Collapsible title={i18n.t("careTip")}>
 				<ThemedText>{item.kinesiologyTip}</ThemedText>
 			</Collapsible>
-		</ParallaxScrollView>
+		</ScrollView>
 	);
 };
 

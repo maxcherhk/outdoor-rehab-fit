@@ -31,21 +31,20 @@ const EquipmentList = () => {
 		return (
 			<View style={styles.iconRow}>
 				{categories.map((category) => {
+					console.log(category);
 					const button = buttons.find((btn) => btn.text === i18n.t(category));
 					return button ? <Image key={category} source={button.icon} style={styles.categoryIcon} /> : null;
 				})}
 			</View>
 		);
 	};
-	const local = useLocalSearchParams();
-	const category = local.category || "Show All";
+	const { categoryName, categoryId } = useLocalSearchParams();
 	const equipmentList = equipmentData;
-	console.log(equipmentList);
 	const navigation = useNavigation();
 
 	useEffect(() => {
-		navigation.setOptions({ headerTitle: category });
-	}, [navigation, category]);
+		navigation.setOptions({ headerTitle: categoryName });
+	}, [navigation, categoryName]);
 
 	const [searchQuery, setSearchQuery] = useState("");
 	const [bookmarked, setBookmarked] = useState({});
@@ -58,10 +57,10 @@ const EquipmentList = () => {
 	};
 
 	const filteredEquipmentList = equipmentList.filter((item) => {
-		if (category === "Show All") {
+		if (categoryName === "Show All" || categoryName === "顯示全部") {
 			return item.name.toLowerCase().includes(searchQuery.toLowerCase());
 		}
-		return item.categories.includes(category) && item.name.toLowerCase().includes(searchQuery.toLowerCase());
+		return item.categories.includes(categoryId) && item.name.toLowerCase().includes(searchQuery.toLowerCase());
 	});
 
 	return (

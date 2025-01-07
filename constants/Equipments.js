@@ -104,7 +104,7 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Climbing Shoulder Stretch",
-				categories: [],
+				categories: ["multifunctional", "mobility"],
 				gif: [],
 				icon: require("./../assets/images/icon/6.jpg"),
 				pic: require("./../assets/images/equipment/6.jpg"),
@@ -124,7 +124,7 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Back Stretch",
-				categories: [],
+				categories: ["multifunctional", "mobility"],
 				gif: [],
 				icon: require("./../assets/images/icon/7.jpg"),
 				pic: require("./../assets/images/equipment/7.jpg"),
@@ -142,7 +142,7 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Push-Ups",
-				categories: [],
+				categories: ["muscle", "multifunctional"],
 				gif: [],
 				icon: require("./../assets/images/icon/8.jpg"),
 				pic: require("./../assets/images/equipment/8.jpg"),
@@ -160,7 +160,7 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Twister",
-				categories: [],
+				categories: ["multifunctional"],
 				gif: [],
 				icon: require("./../assets/images/icon/9.jpg"),
 				pic: "",
@@ -177,7 +177,7 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Rider",
-				categories: [],
+				categories: ["multifunctional"],
 				gif: [],
 				icon: require("./../assets/images/icon/10.jpg"),
 				pic: "",
@@ -194,7 +194,7 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Calf Stretch",
-				categories: [],
+				categories: ["mobility"],
 				gif: [],
 				icon: require("./../assets/images/icon/11.jpg"),
 				pic: "",
@@ -211,7 +211,7 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Balance",
-				categories: [],
+				categories: ["balance"],
 				gif: [],
 				icon: require("./../assets/images/icon/12.jpg"),
 				pic: "",
@@ -228,7 +228,7 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Balance",
-				categories: [],
+				categories: ["balance"],
 				gif: [],
 				icon: require("./../assets/images/icon/13.jpg"),
 				pic: "",
@@ -245,7 +245,7 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Back Strengthening",
-				categories: [],
+				categories: ["muscle"],
 				gif: [],
 				icon: require("./../assets/images/icon/14.jpg"),
 				pic: "",
@@ -253,7 +253,6 @@ export const equipmentTranslations = {
 				youtubeKey: "NDCS4T-bbCA",
 				details:
 					"First, hold onto the handrail with the right hand and extend the left arm towards the sky. Then, bring the right foot backward with the toes pointing towards the ground. Look straight ahead, keep your head up, and extend your spine. Keep your shoulders away from your ears, roll them backward, and lift your chest. Make sure to keep the back foot off the ground during the exercise. Avoid lifting the back foot too high to avoid putting excessive pressure on the spine. Remember to breathe normally.\n\nYou may hold this position for 10 seconds, then rest for 10 seconds.\n\nNow, let's switch and hold onto the handrail with the left hand and extend the right arm towards the sky. Look straight ahead, keep your head up, and extend your spine. Keep your shoulders away from your ears, roll them back, and lift your chest. Make sure to keep the back foot off the ground during the exercise. Avoid lifting the back foot too high to avoid putting excessive pressure on the spine. Remember to breathe normally.\n\nYou may hold this position for 10 seconds, then rest for 10 seconds.\n\nFor beginners, repeat the above movements three times.\n\nFor advanced users, repeat the above movements six times.",
-
 				kinesiologyTip:
 					"The alternating movements of the arms and legs strengthen the back muscles and muscles along the spine.",
 				ptTip:
@@ -263,7 +262,7 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Standing Push-Up",
-				categories: [],
+				categories: ["muscle"],
 				gif: [],
 				icon: require("./../assets/images/icon/15.jpg"),
 				pic: "",
@@ -280,7 +279,7 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Bench Stepper",
-				categories: [],
+				categories: ["muscle"],
 				gif: [],
 				icon: require("./../assets/images/icon/16.jpg"),
 				pic: "",
@@ -297,7 +296,7 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Lower Body Stretch",
-				categories: [],
+				categories: ["mobility"],
 				gif: [],
 				icon: require("./../assets/images/icon/17.jpg"),
 				pic: "",
@@ -315,7 +314,7 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Fitness Bike / Cycling Machine",
-				categories: [],
+				categories: ["aerobic"],
 				gif: [],
 				icon: require("./../assets/images/icon/18.jpg"),
 				pic: "",
@@ -333,7 +332,7 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Airwalker / Health Walker",
-				categories: [],
+				categories: ["aerobic"],
 				gif: [],
 				icon: require("./../assets/images/icon/19.jpg"),
 				pic: "",
@@ -351,7 +350,7 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Shoulder stretch",
-				categories: [],
+				categories: ["mobility"],
 				gif: [],
 				icon: require("./../assets/images/icon/20.jpg"),
 				pic: "",
@@ -369,7 +368,7 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Pull-down Machine",
-				categories: [],
+				categories: ["mobility"],
 				gif: [],
 				icon: require("./../assets/images/icon/21.jpg"),
 				pic: "",
@@ -387,7 +386,7 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Stepper",
-				categories: [],
+				categories: ["multifunctional"],
 				gif: [],
 				icon: require("./../assets/images/icon/22.jpg"),
 				pic: "",
@@ -405,9 +404,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Back Massage",
-				categories: [],
+				categories: ["relaxation"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/23.jpg"),
 				pic: "",
 				horizontalPic: "",
 				detail:
@@ -422,9 +421,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Joint Exerciser",
-				categories: [],
+				categories: ["mobility", "aerobic"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/24.jpg"),
 				pic: "",
 				horizontalPic: "",
 				detail:
@@ -440,9 +439,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Joint Exerciser",
-				categories: [],
+				categories: ["mobility", "aerobic"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/25.jpg"),
 				pic: "",
 				horizontalPic: "",
 				detail:
@@ -458,9 +457,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Leg Stretch",
-				categories: [],
+				categories: ["mobility"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/26.jpg"),
 				pic: "",
 				horizontalPic: "",
 				detail:
@@ -476,9 +475,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Mini Health Walker",
-				categories: [],
+				categories: ["mobility", "aerobic"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/27.jpg"),
 				pic: "",
 				horizontalPic: "",
 				detail:
@@ -494,9 +493,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "Arm Pedal",
-				categories: [],
+				categories: ["mobility", "aerobic"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/28.jpg"),
 				pic: "",
 				horizontalPic: "",
 				detail:
@@ -595,7 +594,7 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "全身伸展運動器",
-				categories: ["Category C"],
+				categories: ["multifunctional", "mobility"],
 				gif: ["5a", "5b"],
 				icon: require("./../assets/images/icon/5.jpg"),
 				pic: require("./../assets/images/equipment/5.jpg"),
@@ -616,11 +615,11 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "全身伸展運動器",
-				categories: [],
+				categories: ["multifunctional", "mobility"],
 				gif: [],
-				icon: "",
-				pic: "",
-				horizontalPic: "",
+				icon: require("./../assets/images/icon/6.jpg"),
+				pic: require("./../assets/images/equipment/6.jpg"),
+				horizontalPic: require("./../assets/images/horizontal/6.jpg"),
 				details:
 					"將其中一隻手放喺最低嘅板窿，然後左右手輪流向上捉住板窿，直至雙手可以去到最高板窿嘅位置，保持姿勢，我地宜家由1數到10，記住要保持呼吸。做呢個運動嘅時候，膊頭記得要遠離耳仔，唔需要縮起個膊頭。",
 				youtubeKey: "",
@@ -635,11 +634,11 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "全身伸展運動器",
-				categories: [],
+				categories: ["multifunctional", "relaxation"],
 				gif: [],
-				icon: "",
-				pic: "",
-				horizontalPic: "",
+				icon: require("./../assets/images/icon/7.jpg"),
+				pic: require("./../assets/images/equipment/7.jpg"),
+				horizontalPic: require("./../assets/images/horizontal/7.jpg"),
 				details:
 					"雙手捉住橫杆，雙腳向後退，直至手臂同臀部成一直線，身體軀幹與下肢成一個直角，維持呢個姿勢，我地宜家可以由1數到30，保持正常呼吸。做呢個運動嘅時候，膊頭記得要遠離耳仔，唔需要縮起個膊頭。",
 				youtubeKey: "",
@@ -653,11 +652,11 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "全身伸展運動器",
-				categories: [],
+				categories: ["muscle", "multifunctional"],
 				gif: [],
-				icon: "",
-				pic: "",
-				horizontalPic: "",
+				icon: require("./../assets/images/icon/8.jpg"),
+				pic: require("./../assets/images/equipment/8.jpg"),
+				horizontalPic: require("./../assets/images/horizontal/8.jpg"),
 				details:
 					"雙腳張開膊頭嘅闊度，雙手捉著橫杆，亦都張開至膊頭嘅闊度，背部同髖關節喺同一個垂直線。手㬹指向地下，然後手臂屈曲，上身向前壓，直至胸部距離橫杆大約10吋左右為止，保持正常呼吸。然後雙臂伸直，回復翻啱啱開始嗰陣嘅姿勢，可以休息10秒，然後再重複以上呢個動作。",
 
@@ -672,9 +671,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "扭腰機",
-				categories: [],
+				categories: ["multifunctional"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/9.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:
@@ -693,9 +692,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "健騎機",
-				categories: [],
+				categories: ["multifunctional"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/10.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:
@@ -715,9 +714,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "小腿伸展",
-				categories: [],
+				categories: ["mobility"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/11.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:
@@ -738,9 +737,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "平衡鍛煉",
-				categories: [],
+				categories: ["balance"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/12.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:
@@ -761,9 +760,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "平衡鍛煉",
-				categories: [],
+				categories: ["balance"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/13.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:
@@ -784,9 +783,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "強健背部",
-				categories: [],
+				categories: ["muscle"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/14.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:
@@ -806,7 +805,7 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "站立式臂伏撐",
-				categories: [],
+				categories: ["muscle"],
 				gif: [],
 				icon: "",
 				pic: "",
@@ -827,9 +826,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "踏級練習",
-				categories: [],
+				categories: ["muscle"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/16.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:
@@ -849,9 +848,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "下身的伸展",
-				categories: [],
+				categories: ["mobility"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/17.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:
@@ -871,9 +870,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "健體單車/腳部跑步器",
-				categories: [],
+				categories: ["aerobic"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/18.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:
@@ -894,9 +893,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "離地漫步機/漫步機",
-				categories: [],
+				categories: ["aerobic"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/19.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:
@@ -915,9 +914,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "肩關節伸展",
-				categories: [],
+				categories: ["mobility"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/20.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:
@@ -937,9 +936,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "上肢伸展器",
-				categories: [],
+				categories: ["mobility"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/21.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:
@@ -959,9 +958,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "踏步機",
-				categories: [],
+				categories: ["multifunctional"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/22.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:
@@ -981,9 +980,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "腰背按摩器",
-				categories: [],
+				categories: ["relaxation"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/23.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:
@@ -1004,9 +1003,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "關節健身架/綜合肌肉鍛煉器",
-				categories: [],
+				categories: ["mobility", "aerobic"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/24.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:
@@ -1026,9 +1025,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "關節健身架/綜合肌肉鍛煉器",
-				categories: [],
+				categories: ["mobility", "aerobic"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/25.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:
@@ -1049,9 +1048,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "三位壓腿器",
-				categories: [],
+				categories: ["mobility"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/26.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:
@@ -1071,9 +1070,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "下肢伸展器",
-				categories: [],
+				categories: ["mobility", "aerobic"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/27.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:
@@ -1093,9 +1092,9 @@ export const equipmentTranslations = {
 			},
 			{
 				name: "手部鍛鍊器",
-				categories: [],
+				categories: ["mobility", "aerobic"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/28.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:

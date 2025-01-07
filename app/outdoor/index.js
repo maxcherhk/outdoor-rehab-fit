@@ -11,14 +11,14 @@ export default function Outdoor() {
 	const { i18n } = useContext(LocaleContext);
 
 	const buttons = [
-		{ icon: require("@/assets/icons/outdoor/list.png"), text: i18n.t("all") },
-		{ icon: require("@/assets/icons/outdoor/muscle.png"), text: i18n.t("muscle") },
-		{ icon: require("@/assets/icons/outdoor/flexibility.png"), text: i18n.t("mobility") },
-		{ icon: require("@/assets/icons/outdoor/balance.png"), text: i18n.t("balance") },
-		{ icon: require("@/assets/icons/outdoor/aerobic.png"), text: i18n.t("aerobic") },
-		{ icon: require("@/assets/icons/outdoor/wheelchair.png"), text: i18n.t("wheelchair") },
-		{ icon: require("@/assets/icons/outdoor/multi.png"), text: i18n.t("multifunctional") },
-		{ icon: require("@/assets/icons/outdoor/relax.png"), text: i18n.t("relaxation") },
+		{ icon: require("@/assets/icons/outdoor/list.png"), text: i18n.t("all"), category: "all" },
+		{ icon: require("@/assets/icons/outdoor/muscle.png"), text: i18n.t("muscle"), category: "muscle" },
+		{ icon: require("@/assets/icons/outdoor/flexibility.png"), text: i18n.t("mobility"), category: "mobility" },
+		{ icon: require("@/assets/icons/outdoor/balance.png"), text: i18n.t("balance"), category: "balance" },
+		{ icon: require("@/assets/icons/outdoor/aerobic.png"), text: i18n.t("aerobic"), category: "aerobic" },
+		{ icon: require("@/assets/icons/outdoor/wheelchair.png"), text: i18n.t("wheelchair"), category: "wheelchair" },
+		{ icon: require("@/assets/icons/outdoor/multi.png"), text: i18n.t("multifunctional"), category: "multifunctional" },
+		{ icon: require("@/assets/icons/outdoor/relax.png"), text: i18n.t("relaxation"), category: "relaxation" },
 	];
 
 	return (
@@ -29,7 +29,12 @@ export default function Outdoor() {
 					{buttons.map((button, index) => (
 						<View key={index} style={styles.buttonWrapper}>
 							<TouchableOpacity
-								onPress={() => router.navigate({ pathname: "/outdoor/list", params: { category: button.text } })}
+								onPress={() =>
+									router.navigate({
+										pathname: "/outdoor/list",
+										params: { categoryName: button.text, categoryId: button.category },
+									})
+								}
 								style={styles.button}
 							>
 								<Image source={button.icon} style={styles.icon} />
