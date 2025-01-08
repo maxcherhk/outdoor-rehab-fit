@@ -83,6 +83,8 @@ export const othersTranslations = {
 			"If you answered NO honestly to all PAR-Q questions, you can be reasonably sure that you can:\n\nStart becoming much more physically active – begin slowly and build up gradually. This is the safest and easiest way to go.\n\nTake part in a fitness appraisal – this is an excellent way to determine your basic fitness so that you can plan the best way for you to live actively. It is also highly recommended that you have your blood pressure evaluated. If your reading is over 144/94, talk with your doctor before you start becoming much more physically active.\n\nDELAY BECOMING MUCH MORE ACTIVE:\n\nIf you are not feeling well because of a temporary illness such as a cold or a fever – wait until you feel better; or\n\nIf you are or may be pregnant – talk to your doctor before you start becoming more active.",
 		questionnaireYes:
 			"Talk with your doctor by phone or in person BEFORE you start becoming much more physically active or BEFORE you have a fitness appraisal. Tell your doctor about this questionnaire and which questions you answered YES.\n\nYou may be able to do any activity you want — as long as you start slowly and build up gradually. Or, you may need to restrict your activities to those which are safe for you. Talk with your doctor about the kinds of activities you wish to participate in and follow his/her advice.\n\nFind out which community programs are safe and helpful for you.",
+		questionnaireInfo:
+			"Regular physical activity is fun and healthy, and increasingly more people are starting to become more active every day. Being more active is very safe for most people. However, some people should check with their doctor before they start becoming much more physically active.\n\nIf you are planning to become much more physically active than you are now, start by answering the seven questions in the box below. If you are between the ages of 15 and 69, the PAR-Q will tell you if you should check with your doctor before you start. If you are over 69 years of age, and you are not used to being very active, check with your doctor.\n\nCommon sense is your best guide when you answer these questions. Please read the questions carefully and answer each one honestly (YES or NO).\n\n1. Has your doctor ever said that you have a heart condition and that you should only do physical activity recommended by a doctor?\n\n2. Do you feel pain in your chest when you do physical activity?\n\n3. In the past month, have you had chest pain when you were not doing physical activity?\n\n4. Do you lose your balance because of dizziness or do you ever lose consciousness?\n\n5. Do you have a bone or joint problem (for example, back, knee or hip) that could be made worse by a change in your physical activity?\n\n6. Is your doctor currently prescribing drugs (for example, water pills) for your blood pressure or heart condition?\n\n7. Do you know of any other reason why you should not do physical activity?",
 	},
 	zh: {
 		intro:
@@ -96,6 +98,8 @@ export const othersTranslations = {
 			"如果你對這份問卷的全部問題誠實地答「否」，你有理由確信你可以：\n\n開始增加運動量──開始時慢慢進行，然後逐漸增加，這是最安全和最容易的方法。\n\n參加體能評估──這是一種確定你基本體能的好方法，以便你擬定最佳的運動計劃。此外，亦主張你量度血壓；如果讀數超過144/94，請先徵詢醫生的意見，然後才逐漸增加運動量。\n\n延遲增加運動量：\n\n如果你因傷風或發燒等暫時性疾病而感到不適──請在康復後才增加運動量。\n\n如果你懷孕或可能懷孕──請先徵詢醫生的意見，然後才決定是否增加運動量。",
 		questionnaireYes:
 			"在開始增加運動量或進行體能評估前，請先致電或親身與醫生商談，告知醫生這份問卷，以及你回答「是」的問題。\n\n你可以進行任何活動，但須在開始時慢慢進行，然後逐漸增加活動量；又或你只可進行一些安全的活動。告訴醫生你希望參加的活動及聽從他的意見。你可以找出一些安全及有益健康的社區活動。",
+		questionnaireInfo:
+			"經常進行體能活動不但有益身心，而且樂趣無窮，因此，愈來愈多人開始每天多做運動。對大部分人來說，多做運動是很安全的。不過，有些人則應在增加運動量前，先行徵詢醫生的意見。\n\n如果你計劃增加運動量，請先回答下列7條問題。如果你介乎15至69歲之間，這份體能活動適應能力問卷會告訴你應否在開始前諮詢醫生。如果你超過69歲及沒有經常運動，請徵詢醫生的意見。\n\n普通常識是回答這些問題的最佳指引。請仔細閱讀下列問題，然後誠實回答（請答「是」或「否」）：\n\n1. 醫生曾否說過你的心臟有問題，以及只可進行醫生建議的體能活動？\n\n2. 你進行體能活動時會否感到胸口痛？\n\n3. 過去一個月內，你曾否在沒有進行體能活動時也感到胸口痛？\n\n4. 你曾否因感到暈眩而失去平衡，或曾否失去知覺？\n\n5. 你的骨骼或關節(例如脊骨、膝蓋或髖關節)是否有毛病，且會因改變體能活動而惡化？\n\n6. 醫生現時是否有開血壓或心臟藥物（例如 water pills）給你服用？\n\n7. 是否有其他理由令你不應進行體能活動？",
 	},
 };
 
@@ -106,6 +110,7 @@ export const translations = {
 		...categoryTranslations.en,
 		...equipmentTranslations.en,
 		...othersTranslations.en,
+		...equipmentPageTranslations.en,
 	},
 	zh: {
 		...menuTranslations.zh,
@@ -113,5 +118,6 @@ export const translations = {
 		...categoryTranslations.zh,
 		...othersTranslations.zh,
 		...equipmentTranslations.zh,
+		...equipmentPageTranslations.zh,
 	},
 };

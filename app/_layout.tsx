@@ -37,6 +37,7 @@ export default function RootLayout() {
 						name="outdoor"
 						options={{ headerShown: false, headerBackTitle: "Back", title: "Outdoor Equipment" }}
 					/>
+					<Stack.Screen name="disclaimer" options={{ headerShown: false, headerBackTitle: "Back", title: "" }} />
 					<Stack.Screen name="location" options={{ title: "Location", headerBackTitle: "Back" }} />
 					<Stack.Screen name="research" options={{ title: "Research", headerBackTitle: "Back" }} />
 					<Stack.Screen name="+not-found" />

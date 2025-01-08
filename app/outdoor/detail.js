@@ -20,16 +20,16 @@ const Detail = () => {
 	return (
 		<ScrollView>
 			<Image source={item.pic} style={styles.image} />
-			<Collapsible title={i18n.t("kinesiologyTip")}>
+			<Collapsible title={i18n.t("tip1")}>
 				<ThemedText>{item.kinesiologyTip}</ThemedText>
 			</Collapsible>
-			<Collapsible title={i18n.t("ptTip")}>
+			<Collapsible title={i18n.t("tip2")}>
 				<ThemedText>{item.ptTip}</ThemedText>
 			</Collapsible>
-			<Collapsible title={i18n.t("otTip")}>
+			<Collapsible title={i18n.t("tip3")}>
 				<ThemedText>{item.otTip}</ThemedText>
 			</Collapsible>
-			<Collapsible title={i18n.t("careTip")}>
+			<Collapsible title={i18n.t("tip4")}>
 				<ThemedText>{item.kinesiologyTip}</ThemedText>
 			</Collapsible>
 		</ScrollView>
