@@ -9,7 +9,8 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/1.jpg"),
 				pic: require("./../assets/images/equipment/1.jpg"),
 				horizontalPic: require("./../assets/images/horizontal/1.jpg"),
-				youtubeKey: "j8TWvoNzy_4",
+				youtubeKey: "-vFxR4gdfPY",
+
 				details:
 					"First, stand with your feet shoulder-width apart, and lower your hips down, slightly bending the knees to form a squatted position. Pay attention to not letting the knees go beyond the toes.\n\nGrip the handles with both hands and then rotate the Tai Chi wheel in a clockwise or counterclockwise direction.\n\nWhile rotating the Tai Chi wheel, remember to maintain good posture. Look straight ahead, lift your head upwards, and extend your spine. Keep your shoulders away from your ears, roll your shoulders back, and lift up your chest. Be mindful not to overarch your lower back; you can adjust the curve of your lower back by pointing your tailbone forward.\n\nNow, let's try rotating the wheel clockwise with both hands. Remember to use moderate force and maintain a steady rotation speed, avoiding sudden changes in speed.\n\nNext, let's try rotating the wheel counterclockwise with both hands. Again, use moderate force and maintain an even rotation speed.\n\nNow, let's try pushing the wheel clockwise with the right hand and counterclockwise with the left hand. Remember to use moderate force and maintain a steady rotation speed.\n\nFinally, let's reverse the directions. Again, use moderate force and maintain an even rotation speed, avoiding sudden changes in speed.",
 				kinesiologyTip:
@@ -29,7 +30,8 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/2.jpg"),
 				pic: require("./../assets/images/equipment/2.jpg"),
 				horizontalPic: require("./../assets/images/horizontal/2.jpg"),
-				youtubeKey: "-s3fFWHcvus",
+				youtubeKey: "k0dWRuO68C8",
+
 				details:
 					"First, adjust the resistance to a level which requires slight effort to rotate the handlebars. Once the resistance is adjusted, grip the handlebars with your hands and start rotating them.\n\nFor beginners, let's try rotating the handlebars forward for 60 seconds.\n\nRemember to use moderate force and maintain a steady rotation speed, avoiding sudden changes in speed.\n\nWhile rotating the handlebars, remember to maintain good posture. Look straight ahead, lift your head upwards, and extend your spine. Keep your shoulders away from your ears, roll your shoulders back, and lift up your chest.\n\nNow, let's stop rotating and rest for 10 seconds.\n\nNext, let's try rotating in the opposite direction for 60 seconds. Again, use moderate force and maintain a steady rotation speed. During this exercise, aim for a level of intensity where you can talk while rotating the handlebars. If you have difficulty speaking due to breathlessness, it indicates that the exercise intensity is too high.\n\nNow, let's stop rotating and rest for 10 seconds.\n\nFinally, let's try rotating forward again for 60 seconds. Remember to use moderate force and maintain a steady rotation speed. Maintain normal breathing while rotating.\n\nFor advanced users, you can increase the resistance and repeat the above exercises.",
 				kinesiologyTip:
@@ -49,7 +51,8 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/3.jpg"),
 				pic: require("./../assets/images/equipment/3.jpg"),
 				horizontalPic: require("./../assets/images/horizontal/3.jpg"),
-				youtubeKey: "k1sk8OpOpTs",
+				youtubeKey: "abcf7jqTXa0",
+
 				details:
 					"First, position the wheelchair with its back facing the instruction board and lock the wheelchair. Then, grip the lifting bar with both hands and pull yourself upward.\n\nPay attention to maintaining stability during the upward movement, avoiding swinging the body as compensatory movement and preventing injuries. Maintain normal breathing throughout the exercise.\n\nFor beginners, you only need to lift yourself until your body feels lighter with the wheelchair's weight. You don't need to fully lift yourself off the wheelchair.\n\nNow, let's pull up and count from 1 to 3, and slowly lower yourself back onto the wheelchair.\n\nFor advanced users, let's try pulling yourself upward until you lift off the wheelchair, maintaining stability in that position.\n\nNow, let's pull up and count from 1 to 5. Relax your back muscles and slowly lower yourself back onto the wheelchair.\n\nEven if you can't completely lift yourself off the wheelchair, you can still achieve effective exercise during the workout.",
 				kinesiologyTip:
@@ -69,7 +72,8 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/4.jpg"),
 				pic: require("./../assets/images/equipment/4.jpg"),
 				horizontalPic: require("./../assets/images/horizontal/4.jpg"),
-				youtubeKey: "kR_2v56PhjY",
+				youtubeKey: "Rf0bq2Yy14c",
+
 				details:
 					"First, let's start with the stretching exercise. Sit up straight and cross your arms, and hug yourself.\n\nMaintain this position for 10 seconds, then slowly relax. Now, switch hands and repeat the cross-armed hugging stretch one more time.\n\nBefore performing the exercise, position the wheelchair facing the instruction board and lock it securely.\n\nNow, grip the handlebars and push them towards the center. During this movement, look straight ahead, lift your head upwards, and extend your spine. Keep your shoulders away from your ears, roll your shoulders backward, and lift your chest.\n\nNow, you may repeat this exercise 10 times.",
 				kinesiologyTip:
@@ -89,7 +93,8 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/5.jpg"),
 				pic: require("./../assets/images/equipment/5.jpg"),
 				horizontalPic: require("./../assets/images/horizontal/5.jpg"),
-				youtubeKey: "98rD3sapCZM",
+				youtubeKey: "-Ud8gHC93E0",
+
 				details:
 					"First, let's try holding the horizontal bar with both hands and standing on the inclined platform. Walk a step forward or backward and adjust the position until you feel a slight stretch in the calves. Once you find the right position, stand still. Count from 1 to 30 while maintaining normal breathing.",
 				kinesiologyTip:
@@ -109,7 +114,8 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/6.jpg"),
 				pic: require("./../assets/images/equipment/6.jpg"),
 				horizontalPic: require("./../assets/images/horizontal/6.jpg"),
-				youtubeKey: "SCEqtpNFi54",
+				youtubeKey: "y5t24rP5SsM",
+
 				details:
 					"Use both hands to climb up from the lowest hold of the board to the highest hole where both hands can reach. Maintain this posture and count from 1 to 10 while remembering to breathe normally. During this exercise, make sure to keep your shoulders away from your ears and avoid shrugging.",
 				kinesiologyTip:
@@ -129,7 +135,8 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/7.jpg"),
 				pic: require("./../assets/images/equipment/7.jpg"),
 				horizontalPic: require("./../assets/images/horizontal/7.jpg"),
-				youtubeKey: "Wp3XgNfuWzo",
+				youtubeKey: "77SqbWKuY5w",
+
 				details:
 					"Hold the horizontal bar with both hands and step back with your feet until your upper body and lower body create a right angle. Maintain this posture and count from 1 to 30 while breathing normally. During the exercise, keep your shoulders away from your ears and avoid shrugging.",
 				kinesiologyTip:
@@ -147,7 +154,8 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/8.jpg"),
 				pic: require("./../assets/images/equipment/8.jpg"),
 				horizontalPic: require("./../assets/images/horizontal/8.jpg"),
-				youtubeKey: "TDDFgztPHhE",
+				youtubeKey: "P5R9Wszuqvg",
+
 				details:
 					"Spread your feet to the width of your shoulders and hold the horizontal bar with your hands at the same width. Your back and hips should be in a vertical line, avoid hunching or arching your back. The palms should face downward, then bend your arms and press your upper body forward until your chest is about 10 inches away from the horizontal bar. Maintain normal breathing. Then, straighten your arms and return to the starting position. Rest for 10 seconds before repeating the above movements.",
 				kinesiologyTip:
@@ -165,7 +173,8 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/9.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/9.jpg"),
-				youtubeKey: "txqdaA0XgOk",
+				youtubeKey: "TOIvqkWb23k",
+
 				details:
 					"First, both hands should firmly grip the handrails, and both feet should be placed on the rotating board.\n\nMaintain good posture while exercising. Keep your eyes looking forward, head up, and extend your spine. Keep your shoulders away from your ears, roll them backward, and lift your chest. \n\nThen, slowly twist and allow your lower limbs to sway from side to side. Maintain a steady rhythm during the exercise to avoid sudden speed changes.\n\nThe twisting range should be moderate; twist comfortably.\n\nIf you experience severe lower back pain while twisting, you should consult physiotherapists for advice before using or continuing to use the equipment.",
 				kinesiologyTip:
@@ -182,7 +191,8 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/10.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/10.jpg"),
-				youtubeKey: "JC0vtfK5i5s",
+				youtubeKey: "J-__1ClLJqY",
+
 				details:
 					"First, sit comfortably on the seat and grip the handrails firmly in front of you. Place both feet on the pedals. Prepare yourself with a good posture. Look straight ahead, keep your head up, and extend your spine. Keep your shoulders away from your ears, rotate them backward, and lift your chest.\n\nNext, you can try bending your arms, pulling and pushing the handrails continuously. Maintain a steady and controlled rhythm while doing this exercise.\n\nAvoid jerky movements, and don't go too fast or too slow. Also, don't make excessive movements to prevent injuries.\n\nIf you have low back pain while exercising, you should consult physiotherapists for advice before using or continuing to use the equipment.",
 				kinesiologyTip:
@@ -215,8 +225,8 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/12.jpg"),
 				pic: "",
-				horizontalPic: "",
-				youtubeKey: "JCf112TtyHk",
+				horizontalPic: require("./../assets/images/horizontal/12.jpg"),
+				youtubeKey: "qsboNbQoOPw",
 				details:
 					"First, we start by placing our feet at a distance behind the armrests. Then, step one foot forward with the knee slightly bent. It's essential to ensure that the knee of the forward foot does not extend beyond the position of the toes, while the back foot remains straight. Maintain a good posture, look straight ahead, keep your head up, and extend your spine. Keep your shoulders away from your ears, roll them back, and lift your chest. Avoid leaning forward or backward. Maintain your body's center of gravity above your trunk and back foot.\n\nWe can hold this position for 10 seconds. Then, step the front foot back to return to the original position.\n\nNow, let's try the same movement with the other foot. Step one foot forward with the knee slightly bent, making sure not to extend the knee beyond the position of the toes, while keeping the back foot straight. Look straight ahead, maintain an upright posture, and avoid leaning forward or backward. Keep your body's center of gravity above your trunk and back foot.\n\nWe can hold this position for 10 seconds. Then, step the front foot back to return to the original position.\n\nFor beginners, you can hold onto the armrests with both hands for balance.\n\nFor advanced users, you can follow the same steps as beginners but without holding onto the armrests. Instead, place your hands on your hips.",
 				kinesiologyTip:
@@ -232,8 +242,8 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/13.jpg"),
 				pic: "",
-				horizontalPic: "",
-				youtubeKey: "b9oG6eRfgJI",
+				horizontalPic: require("./../assets/images/horizontal/13.jpg"),
+				youtubeKey: "QAXrJJhFSDo",
 				details:
 					"First, stand with your feet shoulder-width apart, holding onto the handrails. Shift your weight to one foot and lift the other foot off the ground to stand on one leg. If you can maintain balance, slowly release your hands from the handrails, place them on your hips, and stand on one leg for 10 seconds.\n\nFor beginners, hold onto the handrails with both hands.\n\nFor advanced users, you can place your hands on your hips.",
 				kinesiologyTip:
@@ -249,8 +259,9 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/14.jpg"),
 				pic: "",
-				horizontalPic: "",
-				youtubeKey: "NDCS4T-bbCA",
+				horizontalPic: require("./../assets/images/horizontal/14.jpg"),
+				youtubeKey: "jOlNmoX7zdY",
+
 				details:
 					"First, hold onto the handrail with the right hand and extend the left arm towards the sky. Then, bring the right foot backward with the toes pointing towards the ground. Look straight ahead, keep your head up, and extend your spine. Keep your shoulders away from your ears, roll them backward, and lift your chest. Make sure to keep the back foot off the ground during the exercise. Avoid lifting the back foot too high to avoid putting excessive pressure on the spine. Remember to breathe normally.\n\nYou may hold this position for 10 seconds, then rest for 10 seconds.\n\nNow, let's switch and hold onto the handrail with the left hand and extend the right arm towards the sky. Look straight ahead, keep your head up, and extend your spine. Keep your shoulders away from your ears, roll them back, and lift your chest. Make sure to keep the back foot off the ground during the exercise. Avoid lifting the back foot too high to avoid putting excessive pressure on the spine. Remember to breathe normally.\n\nYou may hold this position for 10 seconds, then rest for 10 seconds.\n\nFor beginners, repeat the above movements three times.\n\nFor advanced users, repeat the above movements six times.",
 				kinesiologyTip:
@@ -266,8 +277,9 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/15.jpg"),
 				pic: "",
-				horizontalPic: "",
-				youtubeKey: "TgXPjEX1nnc",
+				horizontalPic: require("./../assets/images/horizontal/15.jpg"),
+				youtubeKey: "OvPAz-bcFYw",
+
 				details:
 					"First, hold onto the handrails and stand with the feet shoulder-width apart.\n\nWhen performing the push-up, start by bending both arms and leaning the upper body forward. Maintain this position for 3 seconds, then push back to the original position until the arms are fully extended. When performing push-ups, keep the shoulders lowered, maintain normal breathing, and ensure a straight alignment, avoiding hunching or arching the back.\n\nFor beginners, stand a bit closer to the signboard to beg.",
 
@@ -283,8 +295,9 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/16.jpg"),
 				pic: "",
-				horizontalPic: "",
-				youtubeKey: "-3G0jAm6Tho",
+				horizontalPic: require("./../assets/images/horizontal/16.jpg"),
+				youtubeKey: "-8_mF1hvVAY",
+
 				details:
 					"First, hold onto the handrails and stand with the feet shoulder-width apart.\n\nWhen performing the push-up, start by bending both arms and leaning the upper body forward. Maintain this position for 3 seconds, then push back to the original position until the arms are fully extended. When performing push-ups, keep the shoulders lowered, maintain normal breathing, and ensure a straight alignment, avoiding hunching or arching the back.\n\nFor beginners, stand a bit closer to the signboard to beg.",
 
@@ -300,8 +313,9 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/17.jpg"),
 				pic: "",
-				horizontalPic: "",
-				youtubeKey: "7F3qzQZqz5k",
+				horizontalPic: require("./../assets/images/horizontal/17.jpg"),
+				youtubeKey: "ysB6wMZKtrs",
+
 				details:
 					"First, sit on the seat with one hand holding onto the armrest and the other hand on your hip. Place one foot on the stool, keeping your lower back straight.\n\nIf you want to increase the stretch at the back of your leg, try to extend your body upwards and exhale slowly while bringing your abdomen closer to your thigh, remember to maintain normal breathing.\n\nYou should feel a gentle stretch in the muscles at the back of your leg, but it should not be painful.\n\nFor advanced users, sit on the seat and place your right foot on the stool. Keep your lower back straight and extend your body upwards. Then, exhale and cross your hands over your thighs, extending them towards your knee, stop when you feel a gentle stretch in the back of your leg. Remember to maintain normal breathing during the stretch.\n\nYou will feel a gentle stretch in the muscles at the back of your thigh, but it should not be painful.",
 
@@ -318,8 +332,9 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/18.jpg"),
 				pic: "",
-				horizontalPic: "",
-				youtubeKey: "15cShHBques",
+				horizontalPic: require("./../assets/images/horizontal/18.jpg"),
+				youtubeKey: "JShuB-GlTzk",
+
 				details:
 					"Start by sitting on a seat, then tightly grip the handlebars with both hands and place both feet on the pedals. Maintain a good posture while exercising. Look straight ahead, and extend your spine. Keep your shoulders away from your ears, rotate them back, and lift your chest. \n\nNow, you can start pedaling like riding a bicycle. Be careful when getting on and off the bicycle. If you feel any pain in the hip, knee, or ankle joints during flexion, consult physiotherapists for advice before continuing to use the equipment.\n\nFor beginners, repeat the above exercise 20 times.\n\nFor advanced users, repeat the above exercise 20 times.",
 
@@ -336,11 +351,12 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/19.jpg"),
 				pic: "",
-				horizontalPic: "",
+				horizontalPic: require("./../assets/images/horizontal/19.jpg"),
 				detail:
 					"Hold onto the handrails tightly, with both feet placed on the pedals.\n\nThen, swing both legs alternately, simulating the motion of walking. Be careful not to swing both legs in the same direction to avoid losing balance. The pace of the simulated walking motion should be steady and moderate, not too fast or too slow. Also, avoid swinging the legs with an excessively large range of movements.\n\nMaintain a good posture while exercising. Look straight ahead, lift your head up, and extend your spine. Keep your shoulders away from your ears and back.",
 
-				youtubeKey: "4_IDUrYSDdY",
+				youtubeKey: "-GBtlnY3t-M",
+
 				kinesiologyTip:
 					"By simulating the motion of walking with alternate swings of the legs, users can exercise lower limbs and improve cardiorespiratory function.",
 				ptTip:
@@ -354,11 +370,12 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/20.jpg"),
 				pic: "",
-				horizontalPic: "",
+				horizontalPic: require("./../assets/images/horizontal/20.jpg"),
 				detail:
 					"First, grasp the handle of the wheel with both hands. Then, slowly and steadily rotate the wheel clockwise with both hands. Pay attention to keeping your body stable.\n\nWhen rotating, maintain a steady speed, neither too fast nor too slow., and then take a rest.\n\nMaintain good posture while exercising. Look straight ahead, lift your head up, and extend your spine. Keep your shoulders away from your ears, rotate them backward, and lift your chest.\n\nFor individuals with shoulder joint arthritis, you should consult physiotherapists for advice before using or continuing to use the wheel.",
 
-				youtubeKey: "oWBISdEwFyo",
+				youtubeKey: "GqokO6fXIEE",
+
 				kinesiologyTip:
 					"By rotating the wheels with both hands, you can enhance the flexibility and mobility of the upper limb joints and muscles.",
 				ptTip:
@@ -372,11 +389,12 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/21.jpg"),
 				pic: "",
-				horizontalPic: "",
+				horizontalPic: require("./../assets/images/horizontal/21.jpg"),
 				detail:
 					"Hold the handles, and stand with feet shoulder-width apart. One hand pull the handle downwards while the other hand extends. Alternate the movement between both hands, emphasizing the range of motion rather than speed. Use a moderate pace for this exercise. When performing the handle-pulling movement, remember to maintain stability in the torso.\n\nWhen performing the exercise, keep the rope or the handle straight down to avoid pulling it diagonally and also avoid using one hand only to prevent arm injuries. ",
 
-				youtubeKey: "TlTf9M84C94",
+				youtubeKey: "tXMIqW8kUo4",
+
 				kinesiologyTip:
 					"By performing rope pulling exercises, users can enhance the flexibility of the upper limb joints.",
 				ptTip:
@@ -390,11 +408,12 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/22.jpg"),
 				pic: "",
-				horizontalPic: "",
+				horizontalPic: require("./../assets/images/horizontal/22.jpg"),
 				detail:
 					"Hold onto the handrails tightly with both hands and place both feet on the pedals. Then, coordinate the movement of both feet with the motion of both hands. During the exercise, avoid fully extending the knees. Maintain a steady and consistent pace while pedaling and avoid jerky movement.",
 
-				youtubeKey: "ktO92CXy1WA",
+				youtubeKey: "tjJg0NwP7KI",
+
 				kinesiologyTip:
 					"This equipment can help strengthen the lower limbs and improve body balance. Continuous training can also improve the functionality of the respiratory system.",
 				ptTip:
@@ -408,10 +427,11 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/23.jpg"),
 				pic: "",
-				horizontalPic: "",
+				horizontalPic: require("./../assets/images/horizontal/23.jpg"),
 				detail:
 					"First, grip the handrails and place your back against the horizontal massager. Then, move up and down slowly, lean onto the protrusions of the massager to massage the areas that feel tense and need relaxation.\n\nWhen moving, you can slow down the speed a bit, in order to locate the desired spot. Also, be mindful of applying moderate pressure during the massage, as excessive force is unnecessary.\n\nNext, hold your arm in a 90 degree position and place your back against the vertical massager. Again, move side to side and slowly, using the protrusions on the massager to massage the areas that feel tense and need relaxation.\n\nWhen moving, you can slow down the speed a bit, in order to locate the desired spot. Also, be mindful of applying moderate pressure during the massage, as excessive force is unnecessary.",
-				youtubeKey: "LWwOrOy300k",
+				youtubeKey: "WT2PghR66sw",
+
 				kinesiologyTip:
 					"Using a roller with protruding points to massage the lower back helps to relax the muscles and improve the blood circulation in the lower back area.",
 				ptTip:
@@ -425,11 +445,11 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/24.jpg"),
 				pic: "",
-				horizontalPic: "",
+				horizontalPic: require("./../assets/images/horizontal/24.jpg"),
 				detail:
 					"First, sit down and grip the handlebars with both hands, and slowly rotate the handlebars forward.\n\nWhile rotating the handlebars, remember to maintain a good posture. Look straight ahead, lift your head upwards, and extend your spine. Keep your shoulders away from your ears, roll your shoulders back, and lift your chest.\n\nRemember to use moderate force and maintain a steady rotation speed, avoiding sudden changes in speed.",
 
-				youtubeKey: "qxQ6vmsCfLU",
+				youtubeKey: "pQJYZYk-Zbc",
 				kinesiologyTip:
 					"Upper Limb Exercise: Rotating the handlebar can improve the mobility of the upper limb joints.",
 				ptTip:
@@ -443,11 +463,12 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/25.jpg"),
 				pic: "",
-				horizontalPic: "",
+				horizontalPic: require("./../assets/images/horizontal/25.jpg"),
 				detail:
 					"Sit and place both feet on the foot pedals. Pay attention to good posture. Look straight ahead, lift your head up, and extend your spine. Keep your shoulders away from your ears, roll your shoulders back, and lift your chest. \n\nStart alternating pedaling, allowing the foot pedals to slowly rotate forward. Be mindful of your body balance.\n\nIf you experience pain in the hip, knee, or ankle joints during the exercise, consult physiotherapists for advice before using or continuing to use the equipment.",
 
-				youtubeKey: "Hb98QPvOXKc",
+				youtubeKey: "PWHqGwbYCrk",
+
 				kinesiologyTip:
 					"Lower Limb Exercise: Legs lifting movements from the pedaling exercise can improve the strength of your leg muscles and the mobility of your knee and ankle joints.",
 				ptTip:
@@ -461,11 +482,12 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/26.jpg"),
 				pic: "",
-				horizontalPic: "",
+				horizontalPic: require("./../assets/images/horizontal/26.jpg"),
 				detail:
 					"First, hold onto the handrails and place one foot on the horizontal bar while keeping your lower back straight. If you want to increase the stretch, try extending the body up, and bringing your abdomen closer to your thigh while exhaling. Maintain normal breathing throughout the stretch. \n\nThe stretch should create a stretched sensation but not pain.\n\nNext, hold onto the handrails and place your other foot on the horizontal bar. Keep your lower back straight. Lift your body upward, exhale, and slowly bring your abdomen closer to your thigh. Perform the movement slowly, avoiding fast motions. If the muscles are too tight, you can maintain the current position without bringing your abdomen closer to your thigh. Remember to breathe normally.\n\nYou should feel a tight sensation in the muscles of your thigh without experiencing pain.",
 
-				youtubeKey: "NJWSiegBkVo",
+				youtubeKey: "OlnhHezd6No",
+
 				kinesiologyTip:
 					"Placing one foot on the horizontal bar allows the user to stretch the muscles in the lower back and the back of the thigh, thereby increasing flexibility in these areas.",
 				ptTip:
@@ -479,11 +501,12 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/27.jpg"),
 				pic: "",
-				horizontalPic: "",
+				horizontalPic: require("./../assets/images/horizontal/27.jpg"),
 				detail:
 					"Position yourself on the chair with both feet on the footrest. \n\nMaintain a good posture while exercising, look straight ahead, keep your head up, and extend your spine. Keep your shoulders away from your ears, roll them backward, and lift your chest.\n\nNext, swing both feet alternately. Be cautious not to swing both feet at the same time to avoid losing balance. Maintain a steady and moderate speed; avoid swinging with an excessive range of motion.",
 
-				youtubeKey: "hT7V9PLA85w",
+				youtubeKey: "KAs-SoKxbxI",
+
 				kinesiologyTip:
 					"The alternating swinging motion of both feet improves the mobility and flexibility of the knee and ankle joints and the associated muscles.",
 				ptTip:
@@ -497,10 +520,11 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/28.jpg"),
 				pic: "",
-				horizontalPic: "",
+				horizontalPic: require("./../assets/images/horizontal/28.jpg"),
 				detail:
 					"First, position yourself in front of the handlebars, and ensure that your stance is shoulder-width apart. Grip the handles with both hands and slowly begin to rotate the handlebars forward.\n\nWhile rotating the handlebars, remember to maintain a good posture. Look straight ahead, lift your head up, and extend your spine. Keep your shoulders away from your ears, roll your shoulders back, and lift your chest.\n\nRemember to use moderate force and maintain a steady and even rotation speed.",
-				youtubeKey: "5c3H6xrTxxI",
+				youtubeKey: "KGI65x92uig",
+
 				kinesiologyTip:
 					"By rotating the handlebars, this equipment can improve the mobility and flexibility of the upper limb joints.",
 				ptTip:
@@ -675,7 +699,7 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/9.jpg"),
 				pic: "",
-				horizontalPic: "",
+				horizontalPic: require("./../assets/images/horizontal/9.jpg"),
 				details:
 					"首先，我哋兩隻手要緊握扶手，雙腳踩喺轉板上面。做呢個運動嘅時候，我地要眼望前方，頭向上頂，延伸脊柱。唔好縮膊，膊頭遠離耳仔，膊頭轉向後，挺起胸膛。然後慢慢扭動，令下肢左右搖擺，運動嘅時候保持節奏平穩，避免時快時慢。\n\n扭動嘅時候，幅度唔需要太大，扭起嚟舒服就可以架啦。\n\n如下背有嚴重嘅疼痛，就應該要先諮詢物理治療師建議，先可以決定點樣使用，或者係咪需要停止使用。",
 
@@ -807,7 +831,7 @@ export const equipmentTranslations = {
 				name: "站立式臂伏撐",
 				categories: ["muscle"],
 				gif: [],
-				icon: "",
+				icon: require("./../assets/images/icon/15.jpg"),
 				pic: "",
 				horizontalPic: "",
 				details:
@@ -1074,7 +1098,7 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/27.jpg"),
 				pic: "",
-				horizontalPic: "",
+				horizontalPic: require("./../assets/images/horizontal/27.jpg"),
 				details:
 					"坐喺櫈上面，兩腳踩喺腳踏上面。眼望前方，頭向上頂，延伸脊柱。唔好縮膊，膊頭遠離耳仔，膊頭轉向後，挺起胸膛，保持良好姿勢。\n\n然後兩隻腳交替擺動。注意唔好雙腳同時擺動，以免身體失去重心。速度要平均以及適中，唔適宜太快或太慢。擺動幅度亦唔好過大。",
 
@@ -1096,7 +1120,7 @@ export const equipmentTranslations = {
 				gif: [],
 				icon: require("./../assets/images/icon/28.jpg"),
 				pic: "",
-				horizontalPic: "",
+				horizontalPic: require("./../assets/images/horizontal/28.jpg"),
 				details:
 					"首先，雙腳分開站立，企係轉動扶手前方，站立嘅時候雙腳距離同膊頭一樣咁闊。兩隻手可以緊握住個手柄，然後慢慢向前轉動個扶手。\n\n轉動扶手嘅同時記得保持良好的姿勢。眼望前方，頭向上頂，延伸脊柱。唔好縮膊，膊頭遠離耳仔，膊頭轉向後，挺起胸膛。\n\n我地宜家試下雙手向前轉動個扶手。記得力度要適中，轉速亦都要平均，唔好時快時慢。",
 				youtubeKey: "",
