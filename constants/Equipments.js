@@ -5,12 +5,12 @@ export const equipmentTranslations = {
 			{
 				name: "Tai Chi Wheel / Taiji Pushing / Push Hands",
 				categories: ["multifunctional"],
-				gif: ["1a", "1b"],
+				gif: require("./../assets/images/gif/1a.gif"),
+				gif2: require("./../assets/images/gif/1b.gif"),
 				icon: require("./../assets/images/icon/1.jpg"),
 				pic: require("./../assets/images/equipment/1.jpg"),
 				horizontalPic: require("./../assets/images/horizontal/1.jpg"),
 				youtubeKey: "-vFxR4gdfPY",
-
 				details:
 					"First, stand with your feet shoulder-width apart, and lower your hips down, slightly bending the knees to form a squatted position. Pay attention to not letting the knees go beyond the toes.\n\nGrip the handles with both hands and then rotate the Tai Chi wheel in a clockwise or counterclockwise direction.\n\nWhile rotating the Tai Chi wheel, remember to maintain good posture. Look straight ahead, lift your head upwards, and extend your spine. Keep your shoulders away from your ears, roll your shoulders back, and lift up your chest. Be mindful not to overarch your lower back; you can adjust the curve of your lower back by pointing your tailbone forward.\n\nNow, let's try rotating the wheel clockwise with both hands. Remember to use moderate force and maintain a steady rotation speed, avoiding sudden changes in speed.\n\nNext, let's try rotating the wheel counterclockwise with both hands. Again, use moderate force and maintain an even rotation speed.\n\nNow, let's try pushing the wheel clockwise with the right hand and counterclockwise with the left hand. Remember to use moderate force and maintain a steady rotation speed.\n\nFinally, let's reverse the directions. Again, use moderate force and maintain an even rotation speed, avoiding sudden changes in speed.",
 				kinesiologyTip:

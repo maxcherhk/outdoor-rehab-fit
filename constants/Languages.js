@@ -7,6 +7,8 @@ export const menuTranslations = {
 		location: "Facility Location",
 		risk: "Risk Management",
 		research: "University Research",
+		parq: "Physical Activity Readiness Questionnaire",
+		sprm: "Safety Precautions and Risk Management",
 	},
 	zh: {
 		home: "主頁",
@@ -14,6 +16,8 @@ export const menuTranslations = {
 		location: "設施位置",
 		risk: "風險管理",
 		research: "大學研究",
+		parq: "體能活動適應力問卷",
+		sprm: "安全注意事項和風險管理",
 	},
 };
 
@@ -108,6 +112,7 @@ export const othersTranslations = {
 		outdoorPractice: "Outdoor Practice",
 		reminderAndTips: "Reminder and Tips",
 		useTips: "User Manual (Text)",
+		audioTitle: "Audio Guide",
 	},
 	zh: {
 		intro:
@@ -127,6 +132,7 @@ export const othersTranslations = {
 		outdoorPractice: "戶外實習",
 		reminderAndTips: "姿勢重點",
 		useTips: "使用方法（文字說明）",
+		audioTitle: "語音指導",
 	},
 };
 

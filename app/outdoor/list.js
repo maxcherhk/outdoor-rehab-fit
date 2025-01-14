@@ -31,7 +31,6 @@ const EquipmentList = () => {
 		return (
 			<View style={styles.iconRow}>
 				{categories.map((category) => {
-					console.log(category);
 					const button = buttons.find((btn) => btn.text === i18n.t(category));
 					return button ? <Image key={category} source={button.icon} style={styles.categoryIcon} /> : null;
 				})}
