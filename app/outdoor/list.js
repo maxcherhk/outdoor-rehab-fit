@@ -1,18 +1,12 @@
 import React, { useState, useEffect, useContext } from "react";
-import { View, Text, Image, StyleSheet, FlatList, TouchableOpacity } from "react-native";
+import { View, Text, Image, StyleSheet, FlatList, TouchableOpacity, Alert } from "react-native";
 import SearchBar from "../../components/SearchBar";
 import { useLocalSearchParams } from "expo-router";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { router } from "expo-router";
-// import { I18n } from "i18n-js";
-// import { equipmentTranslations } from "../../constants/Equipments";
 import { useNavigation } from "expo-router";
 import { LocaleContext } from "../../contexts/LocaleContext";
-
-// Initialize I18n with the translations
-// const i18n = new I18n(equipmentTranslations);
-
-// const equipmentData = i18n.t("equipmentList", { returnObjects: true });
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const EquipmentList = () => {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
@@ -43,16 +37,36 @@ const EquipmentList = () => {
 
 	useEffect(() => {
 		navigation.setOptions({ headerTitle: categoryName });
+		getBookmarks();
 	}, [navigation, categoryName]);
 
 	const [searchQuery, setSearchQuery] = useState("");
 	const [bookmarked, setBookmarked] = useState({});
 
 	const toggleBookmark = (index) => {
-		setBookmarked((prev) => ({
-			...prev,
-			[index]: !prev[index],
-		}));
+		setBookmarked((prev) => {
+			const updatedBookmarks = {
+				...prev,
+				[index]: !prev[index],
+			};
+			savedBookmarks(updatedBookmarks);
+			return updatedBookmarks;
+		});
+	};
+
+	const savedBookmarks = async (bookmark) => {
+		try {
+			await AsyncStorage.setItem("bookmarkedItems", JSON.stringify(bookmark));
+		} catch (e) {
+			console.error(e);
+			Alert.alert("Failed to save the bookmark");
+		}
+	};
+
+	const getBookmarks = async () => {
+		const savedBookmarks = await AsyncStorage.getItem("bookmarkedItems");
+		const bookmarked = savedBookmarks ? JSON.parse(savedBookmarks) : {};
+		setBookmarked(bookmarked);
 	};
 
 	const filteredEquipmentList = equipmentList.filter((item) => {

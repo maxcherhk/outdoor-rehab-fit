@@ -9,14 +9,14 @@ const Index = () => {
 	const navigation = useNavigation();
 	return (
 		<View style={styles.container}>
-			<TouchableOpacity style={styles.button} onPress={() => router.navigate(`/disclaimer`)}>
+			<TouchableOpacity style={styles.button} onPress={() => router.navigate(`/risk/disclaimer`)}>
 				<AntDesign name="form" size={80} color="white" />
 				<Text style={styles.buttonText}>{i18n.t("parq")}</Text>
 			</TouchableOpacity>
 			<TouchableOpacity
 				style={styles.button}
 				onPress={() => {
-					router.navigate(`/info`);
+					router.navigate(`/risk/safety`);
 				}}
 			>
 				<AntDesign name="Safety" size={80} color="white" />
