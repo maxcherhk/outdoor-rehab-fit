@@ -1,5 +1,5 @@
 import { Tabs } from "expo-router";
-import React from "react";
+import React, { useContext } from "react";
 import { Platform, Image, View } from "react-native";
 
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
@@ -10,8 +10,11 @@ import TabBarBackground from "@/components/ui/TabBarBackground";
 import { Colors } from "@/constants/Colors";
 import { useColorScheme } from "@/hooks/useColorScheme";
 
+import { LocaleContext } from "../../contexts/LocaleContext";
+
 export default function TabLayout() {
 	const colorScheme = useColorScheme();
+	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
 
 	return (
 		<Tabs
@@ -42,21 +45,22 @@ export default function TabLayout() {
 			<Tabs.Screen
 				name="index"
 				options={{
-					title: "Home",
+					title: i18n.t("home"),
 					tabBarIcon: ({ color }) => <IconSymbol size={32} name="house.fill" color={color} />,
 				}}
 			/>
 			<Tabs.Screen
 				name="favorite"
 				options={{
-					title: "Favorite",
+					title: i18n.t("favorite"),
+					headerShown: true,
 					tabBarIcon: ({ color }) => <MaterialIcons size={32} name="favorite" color={color} />,
 				}}
 			/>
 			<Tabs.Screen
 				name="setting"
 				options={{
-					title: "Setting",
+					title: i18n.t("setting"),
 					tabBarIcon: ({ color }) => <MaterialIcons size={28} name="settings" color={color} />,
 				}}
 			/>

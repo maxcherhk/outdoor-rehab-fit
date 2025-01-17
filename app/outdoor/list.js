@@ -34,39 +34,42 @@ const EquipmentList = () => {
 	const { categoryName, categoryId } = useLocalSearchParams();
 	const equipmentList = equipmentData;
 	const navigation = useNavigation();
-
-	useEffect(() => {
-		navigation.setOptions({ headerTitle: categoryName });
-		getBookmarks();
-	}, [navigation, categoryName]);
-
 	const [searchQuery, setSearchQuery] = useState("");
 	const [bookmarked, setBookmarked] = useState({});
 
-	const toggleBookmark = (index) => {
-		setBookmarked((prev) => {
-			const updatedBookmarks = {
-				...prev,
-				[index]: !prev[index],
-			};
-			savedBookmarks(updatedBookmarks);
-			return updatedBookmarks;
-		});
-	};
+	useEffect(() => {
+		navigation.setOptions({ headerTitle: categoryName });
+	}, [navigation, categoryName]);
 
-	const savedBookmarks = async (bookmark) => {
+	useEffect(() => {
+		const loadBookmarks = async () => {
+			try {
+				const storedBookmarks = await AsyncStorage.getItem("bookmarkedItems");
+				if (storedBookmarks) {
+					setBookmarked(JSON.parse(storedBookmarks));
+				}
+			} catch (error) {
+				console.error("Error loading bookmarks", error);
+			}
+		};
+
+		loadBookmarks();
+	}, []);
+
+	const toggleBookmark = async (itemId) => {
 		try {
-			await AsyncStorage.setItem("bookmarkedItems", JSON.stringify(bookmark));
-		} catch (e) {
-			console.error(e);
-			Alert.alert("Failed to save the bookmark");
+			let updatedBookmarks = { ...bookmarked };
+			if (updatedBookmarks[itemId]) {
+				delete updatedBookmarks[itemId];
+			} else {
+				updatedBookmarks[itemId] = true;
+			}
+			console.log(updatedBookmarks);
+			setBookmarked(updatedBookmarks);
+			await AsyncStorage.setItem("bookmarkedItems", JSON.stringify(updatedBookmarks));
+		} catch (error) {
+			console.error("Error updating bookmarks", error);
 		}
-	};
-
-	const getBookmarks = async () => {
-		const savedBookmarks = await AsyncStorage.getItem("bookmarkedItems");
-		const bookmarked = savedBookmarks ? JSON.parse(savedBookmarks) : {};
-		setBookmarked(bookmarked);
 	};
 
 	const filteredEquipmentList = equipmentList.filter((item) => {
@@ -85,8 +88,8 @@ const EquipmentList = () => {
 			<SearchBar value={searchQuery} onChangeText={setSearchQuery} placeholder="Search equipment" />
 			<FlatList
 				data={filteredEquipmentList}
-				keyExtractor={(item, index) => index.toString()}
-				renderItem={({ item, index }) => (
+				keyExtractor={(item) => item.id.toString()}
+				renderItem={({ item }) => (
 					<TouchableOpacity
 						onPress={() => router.navigate({ pathname: "/outdoor/detail", params: item })}
 						style={styles.card}
@@ -96,11 +99,11 @@ const EquipmentList = () => {
 							<Text style={styles.name}>{item.name}</Text>
 						</View>
 						{renderCategoryIcons(item.categories)}
-						<TouchableOpacity style={styles.bookmark} onPress={() => toggleBookmark(index)}>
+						<TouchableOpacity style={styles.bookmark} onPress={() => toggleBookmark(item.id)}>
 							<Ionicons
-								name={bookmarked[index] ? "heart" : "heart-outline"}
+								name={bookmarked[item.id] ? "heart" : "heart-outline"}
 								size={38}
-								color={bookmarked[index] ? "red" : "gray"}
+								color={bookmarked[item.id] ? "red" : "gray"}
 							/>
 						</TouchableOpacity>
 					</TouchableOpacity>

@@ -1,10 +1,36 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { StyleSheet, View, ScrollView, Text, TouchableOpacity, SafeAreaView, Alert } from "react-native";
 import { LocaleContext } from "../contexts/LocaleContext";
 import { router } from "expo-router";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const Safety = () => {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
+
+	useEffect(() => {
+		const checkSafetyResponse = async () => {
+			try {
+				const safetyResponse = await AsyncStorage.getItem("safetyResponse");
+				if (safetyResponse === "no") {
+					router.navigate("/(tabs)");
+				}
+			} catch (error) {
+				console.error("Error checking safety response status", error);
+			}
+		};
+
+		checkSafetyResponse();
+	}, []);
+
+	const handleNo = async () => {
+		try {
+			await AsyncStorage.setItem("safetyResponse", "no");
+			router.navigate("/(tabs)");
+		} catch (error) {
+			console.error("Error saving safety response status", error);
+		}
+	};
+
 	return (
 		<SafeAreaView style={styles.container}>
 			<Text style={styles.title}>Disclaimer</Text>
@@ -12,12 +38,7 @@ const Safety = () => {
 				<Text style={styles.text}>{i18n.t("safety")}</Text>
 			</ScrollView>
 			<View style={styles.buttonContainer}>
-				<TouchableOpacity
-					style={styles.button}
-					onPress={() => {
-						router.navigate("/(tabs)");
-					}}
-				>
+				<TouchableOpacity style={styles.button} onPress={handleNo}>
 					<Text style={styles.buttonText}>{i18n.t("yes")}</Text>
 				</TouchableOpacity>
 				<TouchableOpacity

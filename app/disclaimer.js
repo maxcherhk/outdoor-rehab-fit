@@ -1,10 +1,47 @@
-import React, { useContext } from "react";
-import { StyleSheet, View, ScrollView, Text, TouchableOpacity, SafeAreaView } from "react-native";
+import React, { useContext, useEffect, useState } from "react";
+import { StyleSheet, View, ScrollView, Text, TouchableOpacity, SafeAreaView, ActivityIndicator } from "react-native";
 import { LocaleContext } from "../contexts/LocaleContext";
 import { router } from "expo-router";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const Disclaimer = () => {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
+	const [loading, setLoading] = useState(true);
+	useEffect(() => {
+		const checkAgreement = async () => {
+			try {
+				const agreed = await AsyncStorage.getItem("userAgreed");
+				if (agreed) {
+					router.navigate("/safety");
+				} else {
+					setLoading(false);
+				}
+			} catch (error) {
+				console.error("Error checking agreement status", error);
+				setLoading(false);
+			}
+		};
+
+		checkAgreement();
+	}, []);
+
+	const handleAgree = async () => {
+		try {
+			await AsyncStorage.setItem("userAgreed", "true");
+			router.navigate("/safety");
+		} catch (error) {
+			console.error("Error saving agreement status", error);
+		}
+	};
+
+	if (loading) {
+		return (
+			<SafeAreaView style={styles.container}>
+				<ActivityIndicator size="large" color="#0000ff" />
+			</SafeAreaView>
+		);
+	}
+
 	return (
 		<SafeAreaView style={styles.container}>
 			<Text style={styles.title}>{i18n.t("settingDisclaimer")}</Text>
@@ -12,12 +49,7 @@ const Disclaimer = () => {
 				<Text style={styles.text}>{i18n.t("disclaimer")}</Text>
 			</ScrollView>
 			<View style={styles.buttonContainer}>
-				<TouchableOpacity
-					style={styles.button}
-					onPress={() => {
-						router.navigate("/safety");
-					}}
-				>
+				<TouchableOpacity style={styles.button} onPress={handleAgree}>
 					<Text style={styles.buttonText}>{i18n.t("agree")}</Text>
 				</TouchableOpacity>
 				<TouchableOpacity

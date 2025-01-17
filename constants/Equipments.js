@@ -3,6 +3,7 @@ export const equipmentTranslations = {
 	en: {
 		equipmentList: [
 			{
+				id: 0,
 				name: "Tai Chi Wheel / Taiji Pushing / Push Hands",
 				categories: ["multifunctional"],
 				gif: require("./../assets/images/gif/1a.gif"),
@@ -24,9 +25,11 @@ export const equipmentTranslations = {
 				sound: require("./../assets/sounds/en/1.mp3"),
 			},
 			{
+				id: 1,
 				name: "Upper Body Warm-Up",
 				categories: ["wheelchair"],
-				gif: [],
+				gif: require("./../assets/images/gif/2a.gif"),
+				gif2: require("./../assets/images/gif/2b.gif"),
 				icon: require("./../assets/images/icon/2.jpg"),
 				pic: require("./../assets/images/equipment/2.jpg"),
 				horizontalPic: require("./../assets/images/horizontal/2.jpg"),
@@ -45,9 +48,11 @@ export const equipmentTranslations = {
 				sound: require("./../assets/sounds/en/2.mp3"),
 			},
 			{
+				id: 2,
 				name: "Pull Up",
 				categories: ["wheelchair"],
-				gif: [],
+				gif: require("./../assets/images/gif/3a.gif"),
+				gif2: require("./../assets/images/gif/3b.gif"),
 				icon: require("./../assets/images/icon/3.jpg"),
 				pic: require("./../assets/images/equipment/3.jpg"),
 				horizontalPic: require("./../assets/images/horizontal/3.jpg"),
@@ -66,9 +71,11 @@ export const equipmentTranslations = {
 				sound: require("./../assets/sounds/en/3.mp3"),
 			},
 			{
+				id: 3,
 				name: "Upper Body Stretch & Strengthen",
 				categories: ["wheelchair"],
-				gif: ["4a", "4b"],
+				gif: require("./../assets/images/gif/4a.gif"),
+				gif2: require("./../assets/images/gif/4b.gif"),
 				icon: require("./../assets/images/icon/4.jpg"),
 				pic: require("./../assets/images/equipment/4.jpg"),
 				horizontalPic: require("./../assets/images/horizontal/4.jpg"),
@@ -87,9 +94,11 @@ export const equipmentTranslations = {
 				sound: require("./../assets/sounds/en/4.mp3"),
 			},
 			{
+				id: 4,
 				name: "Calf Stretch",
 				categories: ["multifunctional", "mobility"],
-				gif: ["5a", "5b"],
+				gif: require("./../assets/images/gif/5a.gif"),
+				gif2: require("./../assets/images/gif/5b.gif"),
 				icon: require("./../assets/images/icon/5.jpg"),
 				pic: require("./../assets/images/equipment/5.jpg"),
 				horizontalPic: require("./../assets/images/horizontal/5.jpg"),
@@ -108,9 +117,11 @@ export const equipmentTranslations = {
 				sound: require("./../assets/sounds/en/5a.mp3"),
 			},
 			{
+				id: 5,
 				name: "Climbing Shoulder Stretch",
 				categories: ["multifunctional", "mobility"],
-				gif: [],
+				gif: require("./../assets/images/gif/6a.gif"),
+				gif2: require("./../assets/images/gif/6b.gif"),
 				icon: require("./../assets/images/icon/6.jpg"),
 				pic: require("./../assets/images/equipment/6.jpg"),
 				horizontalPic: require("./../assets/images/horizontal/6.jpg"),
@@ -129,9 +140,11 @@ export const equipmentTranslations = {
 				sound: "",
 			},
 			{
+				id: 6,
 				name: "Back Stretch",
 				categories: ["multifunctional", "mobility"],
-				gif: [],
+				gif: require("./../assets/images/gif/7a.gif"),
+				gif2: require("./../assets/images/gif/7b.gif"),
 				icon: require("./../assets/images/icon/7.jpg"),
 				pic: require("./../assets/images/equipment/7.jpg"),
 				horizontalPic: require("./../assets/images/horizontal/7.jpg"),
@@ -148,9 +161,11 @@ export const equipmentTranslations = {
 				sound: require("./../assets/sounds/en/7.mp3"),
 			},
 			{
+				id: 7,
 				name: "Push-Ups",
 				categories: ["muscle", "multifunctional"],
-				gif: [],
+				gif: require("./../assets/images/gif/8a.gif"),
+				gif2: require("./../assets/images/gif/8b.gif"),
 				icon: require("./../assets/images/icon/8.jpg"),
 				pic: require("./../assets/images/equipment/8.jpg"),
 				horizontalPic: require("./../assets/images/horizontal/8.jpg"),
@@ -167,9 +182,11 @@ export const equipmentTranslations = {
 				sound: require("./../assets/sounds/en/8.mp3"),
 			},
 			{
+				id: 8,
 				name: "Twister",
 				categories: ["multifunctional"],
-				gif: [],
+				gif: require("./../assets/images/gif/9a.gif"),
+				gif2: require("./../assets/images/gif/9b.gif"),
 				icon: require("./../assets/images/icon/9.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/9.jpg"),
@@ -185,6 +202,7 @@ export const equipmentTranslations = {
 				sound: require("./../assets/sounds/en/9.mp3"),
 			},
 			{
+				id: 9,
 				name: "Rider",
 				categories: ["multifunctional"],
 				gif: [],
@@ -203,6 +221,7 @@ export const equipmentTranslations = {
 				sound: "",
 			},
 			{
+				id: 10,
 				name: "Calf Stretch",
 				categories: ["mobility"],
 				gif: [],
@@ -220,6 +239,7 @@ export const equipmentTranslations = {
 				sound: "",
 			},
 			{
+				id: 11,
 				name: "Balance",
 				categories: ["balance"],
 				gif: [],
@@ -237,6 +257,7 @@ export const equipmentTranslations = {
 				sound: "",
 			},
 			{
+				id: 12,
 				name: "Balance",
 				categories: ["balance"],
 				gif: [],
@@ -254,6 +275,7 @@ export const equipmentTranslations = {
 				sound: "",
 			},
 			{
+				id: 13,
 				name: "Back Strengthening",
 				categories: ["muscle"],
 				gif: [],
@@ -272,6 +294,7 @@ export const equipmentTranslations = {
 				sound: "",
 			},
 			{
+				id: 14,
 				name: "Standing Push-Up",
 				categories: ["muscle"],
 				gif: [],
@@ -290,6 +313,7 @@ export const equipmentTranslations = {
 				sound: "",
 			},
 			{
+				id: 15,
 				name: "Bench Stepper",
 				categories: ["muscle"],
 				gif: [],
@@ -308,6 +332,7 @@ export const equipmentTranslations = {
 				sound: "",
 			},
 			{
+				id: 16,
 				name: "Lower Body Stretch",
 				categories: ["mobility"],
 				gif: [],
@@ -327,6 +352,7 @@ export const equipmentTranslations = {
 				sound: "",
 			},
 			{
+				id: 17,
 				name: "Fitness Bike / Cycling Machine",
 				categories: ["aerobic"],
 				gif: [],
@@ -346,6 +372,7 @@ export const equipmentTranslations = {
 				sound: "",
 			},
 			{
+				id: 18,
 				name: "Airwalker / Health Walker",
 				categories: ["aerobic"],
 				gif: [],
@@ -365,6 +392,7 @@ export const equipmentTranslations = {
 				sound: "",
 			},
 			{
+				id: 19,
 				name: "Shoulder stretch",
 				categories: ["mobility"],
 				gif: [],
@@ -384,6 +412,7 @@ export const equipmentTranslations = {
 				sound: "",
 			},
 			{
+				id: 20,
 				name: "Pull-down Machine",
 				categories: ["mobility"],
 				gif: [],
@@ -403,6 +432,7 @@ export const equipmentTranslations = {
 				sound: "",
 			},
 			{
+				id: 21,
 				name: "Stepper",
 				categories: ["multifunctional"],
 				gif: [],
@@ -422,6 +452,7 @@ export const equipmentTranslations = {
 				sound: "",
 			},
 			{
+				id: 22,
 				name: "Back Massage",
 				categories: ["relaxation"],
 				gif: [],
@@ -440,6 +471,7 @@ export const equipmentTranslations = {
 				sound: "",
 			},
 			{
+				id: 23,
 				name: "Joint Exerciser",
 				categories: ["mobility", "aerobic"],
 				gif: [],
@@ -458,6 +490,7 @@ export const equipmentTranslations = {
 				sound: "",
 			},
 			{
+				id: 24,
 				name: "Joint Exerciser",
 				categories: ["mobility", "aerobic"],
 				gif: [],
@@ -477,6 +510,7 @@ export const equipmentTranslations = {
 				sound: "",
 			},
 			{
+				id: 25,
 				name: "Leg Stretch",
 				categories: ["mobility"],
 				gif: [],
@@ -496,6 +530,7 @@ export const equipmentTranslations = {
 				sound: "",
 			},
 			{
+				id: 26,
 				name: "Mini Health Walker",
 				categories: ["mobility", "aerobic"],
 				gif: [],
@@ -515,6 +550,7 @@ export const equipmentTranslations = {
 				sound: "",
 			},
 			{
+				id: 27,
 				name: "Arm Pedal",
 				categories: ["mobility", "aerobic"],
 				gif: [],
