@@ -11,6 +11,7 @@ export const menuTranslations = {
 		favorite: "Favorite",
 		parq: "Physical Activity Readiness Questionnaire",
 		sprm: "Safety Precautions and Risk Management",
+		back: "Back",
 	},
 	zh: {
 		home: "主頁",
@@ -22,6 +23,7 @@ export const menuTranslations = {
 		favorite: "收藏",
 		parq: "體能活動適應力問卷",
 		sprm: "安全注意事項和風險管理",
+		back: "返回主頁",
 	},
 };
 

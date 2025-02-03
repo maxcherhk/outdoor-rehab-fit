@@ -12,7 +12,7 @@ const Safety = () => {
 			try {
 				const safetyResponse = await AsyncStorage.getItem("safetyResponse");
 				if (safetyResponse === "no") {
-					router.navigate("/(tabs)");
+					router.replace("/(tabs)");
 				}
 			} catch (error) {
 				console.error("Error checking safety response status", error);
@@ -25,7 +25,7 @@ const Safety = () => {
 	const handleNo = async () => {
 		try {
 			await AsyncStorage.setItem("safetyResponse", "no");
-			router.navigate("/(tabs)");
+			router.replace("/(tabs)");
 		} catch (error) {
 			console.error("Error saving safety response status", error);
 		}

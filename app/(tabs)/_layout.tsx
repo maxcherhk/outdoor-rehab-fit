@@ -61,6 +61,7 @@ export default function TabLayout() {
 				name="setting"
 				options={{
 					title: i18n.t("setting"),
+					headerTitle: i18n.t("setting"),
 					tabBarIcon: ({ color }) => <MaterialIcons size={28} name="settings" color={color} />,
 				}}
 			/>

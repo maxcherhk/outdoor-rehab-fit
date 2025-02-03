@@ -12,7 +12,7 @@ const Disclaimer = () => {
 			try {
 				const agreed = await AsyncStorage.getItem("userAgreed");
 				if (agreed) {
-					router.navigate("/safety");
+					router.replace("/safety");
 				} else {
 					setLoading(false);
 				}
@@ -28,7 +28,7 @@ const Disclaimer = () => {
 	const handleAgree = async () => {
 		try {
 			await AsyncStorage.setItem("userAgreed", "true");
-			router.navigate("/safety");
+			router.replace("/safety");
 		} catch (error) {
 			console.error("Error saving agreement status", error);
 		}

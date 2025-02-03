@@ -7,9 +7,9 @@ const Disclaimer = () => {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
 	return (
 		<SafeAreaView style={styles.container}>
-			<Text style={styles.title}>{i18n.t("settingDisclaimer")}</Text>
+			{/* <Text style={styles.title}>{i18n.t("settingDisclaimer")}</Text> */}
 			<ScrollView style={styles.scrollView}>
-				<Text style={styles.text}>{i18n.t("disclaimer")}</Text>
+				<Text style={styles.text}>{i18n.t("questionnaireInfo")}</Text>
 			</ScrollView>
 			<View style={styles.buttonContainer}></View>
 		</SafeAreaView>

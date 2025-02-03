@@ -3,14 +3,18 @@ import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import "react-native-reanimated";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { LocaleProvider } from "@/contexts/LocaleContext";
+import { I18n } from "i18n-js";
+import { translations } from "../constants/Languages";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
+// Initialize I18n with the translations
+const i18n = new I18n(translations);
 export default function RootLayout() {
 	const colorScheme = useColorScheme();
 	const [loaded] = useFonts({
@@ -31,20 +35,17 @@ export default function RootLayout() {
 		<LocaleProvider>
 			<ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
 				<Stack>
-					<Stack.Screen name="index" options={{ headerShown: false }} />
-					<Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+					<Stack.Screen name="index" options={{ headerShown: false, headerTitle: "Home" }} />
+					<Stack.Screen name="(tabs)" options={{ headerShown: false, headerTitle: "Home" }} />
 					<Stack.Screen
 						name="outdoor"
 						options={{ headerShown: false, headerBackTitle: "Back", title: "Outdoor Equipment" }}
 					/>
-					<Stack.Screen
-						name="risk"
-						options={{ headerShown: true, headerBackTitle: "Back", title: "Risk Management" }}
-					/>
-					<Stack.Screen name="disclaimer" options={{ headerShown: false, headerBackTitle: "Back", title: "" }} />
-					<Stack.Screen name="safety" options={{ headerShown: false, headerBackTitle: "Back", title: "" }} />
-					<Stack.Screen name="location" options={{ title: "Location", headerBackTitle: "Back" }} />
-					<Stack.Screen name="research" options={{ title: "Research", headerBackTitle: "Back" }} />
+					<Stack.Screen name="risk" options={{ headerShown: false }} />
+					<Stack.Screen name="disclaimer" options={{ headerShown: false }} />
+					<Stack.Screen name="safety" options={{ headerShown: false }} />
+					<Stack.Screen name="location" options={{ title: "Location" }} />
+					<Stack.Screen name="research" options={{ title: "Research" }} />
 					<Stack.Screen name="+not-found" />
 				</Stack>
 				<StatusBar style="auto" />

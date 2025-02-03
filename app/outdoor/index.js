@@ -23,7 +23,7 @@ export default function Outdoor() {
 
 	return (
 		<SafeAreaView style={styles.container}>
-			<CustomBackButton />
+			<CustomBackButton text={i18n.t("back")} />
 			<ScrollView contentContainerStyle={styles.scrollViewContent}>
 				<View style={styles.buttonsContainer}>
 					{buttons.map((button, index) => (
