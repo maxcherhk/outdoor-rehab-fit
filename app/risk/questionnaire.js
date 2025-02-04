@@ -1,17 +1,34 @@
 import React, { useContext } from "react";
-import { StyleSheet, View, ScrollView, Text, TouchableOpacity, SafeAreaView } from "react-native";
+import { StyleSheet, View, ScrollView, Text, TouchableOpacity, SafeAreaView, Alert } from "react-native";
 import { LocaleContext } from "../../contexts/LocaleContext";
 import { router } from "expo-router";
 
-const Disclaimer = () => {
+const Questionnaire = () => {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
 	return (
 		<SafeAreaView style={styles.container}>
-			{/* <Text style={styles.title}>{i18n.t("settingDisclaimer")}</Text> */}
+			<Text style={styles.title}>{i18n.t("parq")}</Text>
 			<ScrollView style={styles.scrollView}>
 				<Text style={styles.text}>{i18n.t("questionnaireInfo")}</Text>
 			</ScrollView>
-			<View style={styles.buttonContainer}></View>
+			<View style={styles.buttonContainer}>
+				<TouchableOpacity
+					style={styles.button}
+					onPress={() => {
+						Alert.alert("", i18n.t("questionnaireNo"));
+					}}
+				>
+					<Text style={styles.buttonText}>{i18n.t("yes")}</Text>
+				</TouchableOpacity>
+				<TouchableOpacity
+					style={[styles.button, { backgroundColor: "#AAA" }]} //gray button
+					onPress={() => {
+						Alert.alert(i18n.t("warning"), i18n.t("questionnaireYes"));
+					}}
+				>
+					<Text style={styles.buttonText}>{i18n.t("no")}</Text>
+				</TouchableOpacity>
+			</View>
 		</SafeAreaView>
 	);
 };
@@ -60,4 +77,4 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default Disclaimer;
+export default Questionnaire;

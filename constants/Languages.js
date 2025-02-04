@@ -12,6 +12,7 @@ export const menuTranslations = {
 		parq: "Physical Activity Readiness Questionnaire",
 		sprm: "Safety Precautions and Risk Management",
 		back: "Back",
+		close: "Close",
 	},
 	zh: {
 		home: "主頁",
@@ -24,6 +25,7 @@ export const menuTranslations = {
 		parq: "體能活動適應力問卷",
 		sprm: "安全注意事項和風險管理",
 		back: "返回主頁",
+		close: "關閉",
 	},
 };
 
@@ -67,10 +69,12 @@ export const categoryTranslations = {
 		muscle: "Muscle Strengthening",
 		mobility: "Mobility and Flexibility",
 		balance: "Balance",
-		aerobic: "Aerobic Activities",
+		aerobic: "Aerobic Activity",
 		wheelchair: "For Wheelchair Users",
-		multifunctional: "Multi-functional",
+		multifunctional: "Multi-functional & Integrative",
 		relaxation: "Muscle Relaxation",
+		upper: "Upper Limbs Exercise",
+		lower: "Lower Limbs Exercise",
 	},
 	zh: {
 		all: "顯示全部",
@@ -81,6 +85,8 @@ export const categoryTranslations = {
 		wheelchair: "坐輪椅人士使用",
 		multifunctional: "多功能型",
 		relaxation: "肌肉放鬆",
+		upper: "上肢運動",
+		lower: "下肢運動",
 	},
 };
 
@@ -119,6 +125,11 @@ export const othersTranslations = {
 		reminderAndTips: "Reminder and Tips",
 		useTips: "User Manual (Text)",
 		audioTitle: "Audio Guide",
+		agreeSafety: "I understand",
+		disagreeSafety: "I don't understand",
+		disagreeDisclaimer: "You can use this app only if you read the disclaimer.",
+		agreeQuestionnaire:
+			"You have completed the disclaimer, physical activity readiness questionnaire, and safety precautions and risk management. Welcome and enjoy this app!",
 	},
 	zh: {
 		intro:
@@ -139,6 +150,10 @@ export const othersTranslations = {
 		reminderAndTips: "姿勢重點",
 		useTips: "使用方法（文字說明）",
 		audioTitle: "語音指導",
+		agreeSafety: "我已閱讀並了解",
+		disagreeSafety: "我不同意以上信息",
+		disagreeDisclaimer: "未閱讀此免責聲明不可使用本應用。",
+		agreeQuestionnaire: "您已完成免責聲明、體能活動適應力問卷、安全注意事項及風險管理，歡迎使用此應用程式！",
 	},
 };
 

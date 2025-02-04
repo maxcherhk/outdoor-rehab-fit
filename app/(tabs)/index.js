@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
 	},
 	photo: {
 		width: screenWidth,
-		height: 280,
+		height: "60%",
 		resizeMode: "cover",
 	},
 	buttonsContainer: {
@@ -58,6 +58,7 @@ const styles = StyleSheet.create({
 		paddingHorizontal: 25, // Added padding to control spacing
 	},
 	buttonWrapper: {
+		width: "45%",
 		alignItems: "center",
 		marginVertical: 10, // Reduced horizontal margin
 	},

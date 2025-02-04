@@ -34,7 +34,7 @@ export default function HomeScreen() {
 						},
 					]}
 				/>
-				<TouchableOpacity style={styles.button} onPress={() => router.replace("/disclaimer")}>
+				<TouchableOpacity style={styles.button} onPress={() => router.push("/firstdisclaimer")}>
 					<Text style={styles.buttonText}>Start</Text>
 				</TouchableOpacity>
 				<Text style={styles.appVersionText}>App version 1.0.0</Text>

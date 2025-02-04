@@ -4,28 +4,27 @@ import { LocaleContext } from "../contexts/LocaleContext";
 import { router } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-const Safety = () => {
+const FirstSafety = () => {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
 
-	useEffect(() => {
-		const checkSafetyResponse = async () => {
-			try {
-				const safetyResponse = await AsyncStorage.getItem("safetyResponse");
-				if (safetyResponse === "no") {
-					router.replace("/(tabs)");
-				}
-			} catch (error) {
-				console.error("Error checking safety response status", error);
-			}
-		};
-
-		checkSafetyResponse();
-	}, []);
+	// useEffect(() => {
+	// 	const checkSafetyResponse = async () => {
+	// 		try {
+	// 			const safetyResponse = await AsyncStorage.getItem("safetyResponse");
+	// 			if (safetyResponse === "no") {
+	// 				router.replace("/(tabs)");
+	// 			}
+	// 		} catch (error) {
+	// 			console.error("Error checking safety response status", error);
+	// 		}
+	// 	};
+	// 	checkSafetyResponse();
+	// }, []);
 
 	const handleNo = async () => {
 		try {
 			await AsyncStorage.setItem("safetyResponse", "no");
-			router.replace("/(tabs)");
+			Alert.alert("", i18n.t("agreeQuestionnaire"), [{ text: "OK", onPress: () => router.replace("/(tabs)") }]);
 		} catch (error) {
 			console.error("Error saving safety response status", error);
 		}
@@ -33,21 +32,21 @@ const Safety = () => {
 
 	return (
 		<SafeAreaView style={styles.container}>
-			<Text style={styles.title}>Disclaimer</Text>
+			<Text style={styles.title}>{i18n.t("sprm")}</Text>
 			<ScrollView style={styles.scrollView}>
 				<Text style={styles.text}>{i18n.t("safety")}</Text>
 			</ScrollView>
 			<View style={styles.buttonContainer}>
 				<TouchableOpacity style={styles.button} onPress={handleNo}>
-					<Text style={styles.buttonText}>{i18n.t("yes")}</Text>
+					<Text style={styles.buttonText}>{i18n.t("agreeSafety")}</Text>
 				</TouchableOpacity>
 				<TouchableOpacity
-					style={styles.button}
+					style={[styles.button, { backgroundColor: "#dc3545" }]}
 					onPress={() => {
 						Alert.alert(i18n.t("warning"), i18n.t("questionnaireYes"));
 					}}
 				>
-					<Text style={styles.buttonText}>{i18n.t("no")}</Text>
+					<Text style={styles.buttonText}>{i18n.t("disagreeSafety")}</Text>
 				</TouchableOpacity>
 			</View>
 		</SafeAreaView>
@@ -97,4 +96,4 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default Safety;
+export default FirstSafety;

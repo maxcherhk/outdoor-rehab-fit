@@ -1,34 +1,42 @@
 import React, { useContext, useEffect, useState } from "react";
-import { StyleSheet, View, ScrollView, Text, TouchableOpacity, SafeAreaView, ActivityIndicator } from "react-native";
+import {
+	StyleSheet,
+	View,
+	ScrollView,
+	Text,
+	TouchableOpacity,
+	SafeAreaView,
+	ActivityIndicator,
+	Alert,
+} from "react-native";
 import { LocaleContext } from "../contexts/LocaleContext";
 import { router } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-const Disclaimer = () => {
+const FirstDisclaimer = () => {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
-	const [loading, setLoading] = useState(true);
-	useEffect(() => {
-		const checkAgreement = async () => {
-			try {
-				const agreed = await AsyncStorage.getItem("userAgreed");
-				if (agreed) {
-					router.replace("/safety");
-				} else {
-					setLoading(false);
-				}
-			} catch (error) {
-				console.error("Error checking agreement status", error);
-				setLoading(false);
-			}
-		};
-
-		checkAgreement();
-	}, []);
+	const [loading, setLoading] = useState(false);
+	// useEffect(() => {
+	// 	const checkAgreement = async () => {
+	// 		try {
+	// 			const agreed = await AsyncStorage.getItem("userAgreed");
+	// 			if (agreed) {
+	// 				router.replace("/firstsafety");
+	// 			} else {
+	// 				setLoading(false);
+	// 			}
+	// 		} catch (error) {
+	// 			console.error("Error checking agreement status", error);
+	// 			setLoading(false);
+	// 		}
+	// 	};
+	// 	checkAgreement();
+	// }, []);
 
 	const handleAgree = async () => {
 		try {
 			await AsyncStorage.setItem("userAgreed", "true");
-			router.replace("/safety");
+			router.replace("/firstsafety");
 		} catch (error) {
 			console.error("Error saving agreement status", error);
 		}
@@ -55,7 +63,7 @@ const Disclaimer = () => {
 				<TouchableOpacity
 					style={styles.button}
 					onPress={() => {
-						router.back();
+						Alert.alert(i18n.t("warning"), i18n.t("disagreeDisclaimer"));
 					}}
 				>
 					<Text style={styles.buttonText}>{i18n.t("disagree")}</Text>
@@ -109,4 +117,4 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default Disclaimer;
+export default FirstDisclaimer;

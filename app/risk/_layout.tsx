@@ -30,7 +30,7 @@ export default function RiskLayout() {
 				}}
 			/>
 			<Stack.Screen
-				name="disclaimer"
+				name="questionnaire"
 				options={{
 					title: i18n.t("parq"),
 					headerShown: true,

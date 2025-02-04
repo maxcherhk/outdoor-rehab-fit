@@ -6,10 +6,9 @@ import { LocaleContext } from "../../contexts/LocaleContext";
 
 const Index = () => {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
-	const navigation = useNavigation();
 	return (
 		<View style={styles.container}>
-			<TouchableOpacity style={styles.button} onPress={() => router.navigate(`/risk/disclaimer`)}>
+			<TouchableOpacity style={styles.button} onPress={() => router.navigate(`/risk/questionnaire`)}>
 				<AntDesign name="form" size={80} color="white" />
 				<Text style={styles.buttonText}>{i18n.t("parq")}</Text>
 			</TouchableOpacity>

@@ -1,28 +1,30 @@
-import React, { useContext } from "react";
-import { StyleSheet, View, ScrollView, Text, TouchableOpacity, SafeAreaView, Alert } from "react-native";
+import React, { useContext, useEffect, useState } from "react";
+import { StyleSheet, View, ScrollView, Text, TouchableOpacity, SafeAreaView, ActivityIndicator } from "react-native";
 import { LocaleContext } from "../../contexts/LocaleContext";
 import { router } from "expo-router";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
-const Safety = () => {
+const Disclaimer = () => {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
+
 	return (
 		<SafeAreaView style={styles.container}>
-			<Text style={styles.title}>{i18n.t("sprm")}</Text>
+			<Text style={styles.title}>{i18n.t("settingDisclaimer")}</Text>
 			<ScrollView style={styles.scrollView}>
-				<Text style={styles.text}>{i18n.t("safety")}</Text>
+				<Text style={styles.text}>{i18n.t("disclaimer")}</Text>
 			</ScrollView>
 			<View style={styles.buttonContainer}>
-				<TouchableOpacity style={styles.button} onPress={() => Alert.alert("", i18n.t("agreeQuestionnaire"))}>
-					<Text style={styles.buttonText}>{i18n.t("agreeSafety")}</Text>
+				{/* <TouchableOpacity style={styles.button} onPress={handleAgree}>
+					<Text style={styles.buttonText}>{i18n.t("agree")}</Text>
 				</TouchableOpacity>
 				<TouchableOpacity
-					style={[styles.button, { backgroundColor: "#dc3545" }]}
+					style={styles.button}
 					onPress={() => {
-						Alert.alert(i18n.t("warning"), i18n.t("questionnaireYes"));
+						router.back();
 					}}
 				>
-					<Text style={styles.buttonText}>{i18n.t("disagreeSafety")}</Text>
-				</TouchableOpacity>
+					<Text style={styles.buttonText}>{i18n.t("disagree")}</Text>
+				</TouchableOpacity> */}
 			</View>
 		</SafeAreaView>
 	);
@@ -50,6 +52,7 @@ const styles = StyleSheet.create({
 		fontSize: 24,
 		lineHeight: 32,
 		color: "#333",
+		textAlign: "center",
 	},
 	buttonContainer: {
 		flexDirection: "column",
@@ -71,4 +74,4 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default Safety;
+export default Disclaimer;

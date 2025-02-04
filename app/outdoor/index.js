@@ -19,6 +19,8 @@ export default function Outdoor() {
 		{ icon: require("@/assets/icons/outdoor/wheelchair.png"), text: i18n.t("wheelchair"), category: "wheelchair" },
 		{ icon: require("@/assets/icons/outdoor/multi.png"), text: i18n.t("multifunctional"), category: "multifunctional" },
 		{ icon: require("@/assets/icons/outdoor/relax.png"), text: i18n.t("relaxation"), category: "relaxation" },
+		{ icon: require("@/assets/icons/outdoor/upper.png"), text: i18n.t("upper") },
+		{ icon: require("@/assets/icons/outdoor/lower.png"), text: i18n.t("lower") },
 	];
 
 	return (

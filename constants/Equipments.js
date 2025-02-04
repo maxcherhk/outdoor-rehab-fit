@@ -5,7 +5,7 @@ export const equipmentTranslations = {
 			{
 				id: 0,
 				name: "Tai Chi Wheel / Taiji Pushing / Push Hands",
-				categories: ["multifunctional"],
+				categories: ["multifunctional", "mobility", "muscle", "upper"],
 				gif: require("./../assets/images/gif/1a.gif"),
 				gif2: require("./../assets/images/gif/1b.gif"),
 				icon: require("./../assets/images/icon/1.jpg"),
@@ -26,8 +26,8 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 1,
-				name: "Upper Body Warm-Up",
-				categories: ["wheelchair"],
+				name: "Upper Body Warm-Up (For Wheelchair Users)",
+				categories: ["wheelchair", "aerobic", "mobility", "upper"],
 				gif: require("./../assets/images/gif/2a.gif"),
 				gif2: require("./../assets/images/gif/2b.gif"),
 				icon: require("./../assets/images/icon/2.jpg"),
@@ -49,8 +49,8 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 2,
-				name: "Pull Up",
-				categories: ["wheelchair"],
+				name: "Pull Up (For Wheelchair Users)",
+				categories: ["wheelchair", "muscle", "upper"],
 				gif: require("./../assets/images/gif/3a.gif"),
 				gif2: require("./../assets/images/gif/3b.gif"),
 				icon: require("./../assets/images/icon/3.jpg"),
@@ -71,8 +71,8 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 3,
-				name: "Upper Body Stretch & Strengthen",
-				categories: ["wheelchair"],
+				name: "Upper Body Stretch & Strengthen (For Wheelchair Users)",
+				categories: ["wheelchair", "muscle", "mobility", "upper"],
 				gif: require("./../assets/images/gif/4a.gif"),
 				gif2: require("./../assets/images/gif/4b.gif"),
 				icon: require("./../assets/images/icon/4.jpg"),
@@ -95,7 +95,7 @@ export const equipmentTranslations = {
 			{
 				id: 4,
 				name: "Calf Stretch",
-				categories: ["multifunctional", "mobility"],
+				categories: ["multifunctional", "mobility", "lower"],
 				gif: require("./../assets/images/gif/5a.gif"),
 				gif2: require("./../assets/images/gif/5b.gif"),
 				icon: require("./../assets/images/icon/5.jpg"),
@@ -117,7 +117,7 @@ export const equipmentTranslations = {
 			{
 				id: 5,
 				name: "Climbing Shoulder Stretch",
-				categories: ["multifunctional", "mobility"],
+				categories: ["multifunctional", "mobility", "upper"],
 				gif: require("./../assets/images/gif/6a.gif"),
 				gif2: require("./../assets/images/gif/6b.gif"),
 				icon: require("./../assets/images/icon/6.jpg"),
@@ -161,7 +161,7 @@ export const equipmentTranslations = {
 			{
 				id: 7,
 				name: "Push-Ups",
-				categories: ["muscle", "multifunctional"],
+				categories: ["multifunctional", "muscle"],
 				gif: require("./../assets/images/gif/8a.gif"),
 				gif2: require("./../assets/images/gif/8b.gif"),
 				icon: require("./../assets/images/icon/8.jpg"),
@@ -183,7 +183,7 @@ export const equipmentTranslations = {
 			{
 				id: 8,
 				name: "Twister",
-				categories: ["multifunctional"],
+				categories: ["multifunctional", "balance", "mobility"],
 				gif: require("./../assets/images/gif/9a.gif"),
 				gif2: require("./../assets/images/gif/9b.gif"),
 				icon: require("./../assets/images/icon/9.jpg"),
@@ -204,7 +204,7 @@ export const equipmentTranslations = {
 			{
 				id: 9,
 				name: "Rider",
-				categories: ["multifunctional"],
+				categories: ["multifunctional", "muscle", "mobility", "aerobic"],
 				gif: require("./../assets/images/gif/10a.gif"),
 				gif2: require("./../assets/images/gif/10b.gif"),
 				icon: require("./../assets/images/icon/10.jpg"),
@@ -226,7 +226,7 @@ export const equipmentTranslations = {
 			{
 				id: 10,
 				name: "Calf Stretch",
-				categories: ["mobility"],
+				categories: ["mobility", "lower"],
 				gif: require("./../assets/images/gif/11a.gif"),
 				gif2: require("./../assets/images/gif/11b.gif"),
 				icon: require("./../assets/images/icon/11.jpg"),
@@ -328,8 +328,8 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 15,
-				name: "Bench Stepper",
-				categories: ["muscle"],
+				name: "Bench Stepper (Standard User)",
+				categories: ["muscle", "lower"],
 				gif: require("./../assets/images/gif/16a.gif"),
 				gif2: require("./../assets/images/gif/16b.gif"),
 				icon: require("./../assets/images/icon/16.jpg"),
@@ -349,8 +349,8 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 16,
-				name: "Lower Body Stretch",
-				categories: ["mobility"],
+				name: "Lower Body Stretch (Hamstring Stretch)",
+				categories: ["mobility", "lower"],
 				gif: require("./../assets/images/gif/17a.gif"),
 				gif2: require("./../assets/images/gif/17b.gif"),
 				icon: require("./../assets/images/icon/17.jpg"),
@@ -372,7 +372,7 @@ export const equipmentTranslations = {
 			{
 				id: 17,
 				name: "Fitness Bike / Cycling Machine",
-				categories: ["aerobic"],
+				categories: ["aerobic", "lower"],
 				gif: require("./../assets/images/gif/18a.gif"),
 				gif2: require("./../assets/images/gif/18b.gif"),
 				icon: require("./../assets/images/icon/18.jpg"),
@@ -394,7 +394,7 @@ export const equipmentTranslations = {
 			{
 				id: 18,
 				name: "Airwalker / Health Walker",
-				categories: ["aerobic"],
+				categories: ["aerobic", "lower"],
 				gif: require("./../assets/images/gif/19a.gif"),
 				gif2: require("./../assets/images/gif/19b.gif"),
 				icon: require("./../assets/images/icon/19.jpg"),
@@ -416,7 +416,7 @@ export const equipmentTranslations = {
 			{
 				id: 19,
 				name: "Shoulder stretch",
-				categories: ["mobility"],
+				categories: ["mobility", "upper"],
 				gif: require("./../assets/images/gif/20a.gif"),
 				gif2: require("./../assets/images/gif/20b.gif"),
 				icon: require("./../assets/images/icon/20.jpg"),
@@ -439,7 +439,7 @@ export const equipmentTranslations = {
 			{
 				id: 20,
 				name: "Pull-down Machine",
-				categories: ["mobility"],
+				categories: ["mobility", "upper"],
 				gif: require("./../assets/images/gif/21a.gif"),
 				gif2: require("./../assets/images/gif/21b.gif"),
 				icon: require("./../assets/images/icon/21.jpg"),
@@ -461,7 +461,7 @@ export const equipmentTranslations = {
 			{
 				id: 21,
 				name: "Stepper",
-				categories: ["multifunctional"],
+				categories: ["multifunctional", "muscle", "balance"],
 				gif: require("./../assets/images/gif/22a.gif"),
 				gif2: require("./../assets/images/gif/22b.gif"),
 				icon: require("./../assets/images/icon/22.jpg"),
@@ -504,8 +504,8 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 23,
-				name: "Joint Exerciser",
-				categories: ["mobility", "aerobic"],
+				name: "Joint Exerciser (Upper Limbs)",
+				categories: ["mobility", "aerobic", "upper"],
 				gif: require("./../assets/images/gif/24a.gif"),
 				gif2: require("./../assets/images/gif/24b.gif"),
 				icon: require("./../assets/images/icon/24.jpg"),
@@ -525,8 +525,8 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 24,
-				name: "Joint Exerciser",
-				categories: ["mobility", "aerobic"],
+				name: "Joint Exerciser (Lower Limbs)",
+				categories: ["mobility", "aerobic", "lower"],
 				gif: require("./../assets/images/gif/25a.gif"),
 				gif2: require("./../assets/images/gif/25b.gif"),
 				icon: require("./../assets/images/icon/25.jpg"),
@@ -570,7 +570,7 @@ export const equipmentTranslations = {
 			{
 				id: 26,
 				name: "Mini Health Walker",
-				categories: ["mobility", "aerobic"],
+				categories: ["mobility", "aerobic", "lower"],
 				gif: require("./../assets/images/gif/27a.gif"),
 				gif2: require("./../assets/images/gif/27b.gif"),
 				icon: require("./../assets/images/icon/27.jpg"),
@@ -591,7 +591,7 @@ export const equipmentTranslations = {
 			{
 				id: 27,
 				name: "Arm Pedal",
-				categories: ["mobility", "aerobic"],
+				categories: ["mobility", "aerobic", "upper"],
 				gif: require("./../assets/images/gif/28a.gif"),
 				gif2: require("./../assets/images/gif/28b.gif"),
 				icon: require("./../assets/images/icon/28.jpg"),
@@ -616,7 +616,7 @@ export const equipmentTranslations = {
 			{
 				id: 0,
 				name: "太極揉腿器/太極推手器",
-				categories: ["multifunctional"],
+				categories: ["multifunctional", "mobility", "muscle", "upper"],
 				gif: require("./../assets/images/gif/1a.gif"),
 				gif2: require("./../assets/images/gif/1b.gif"),
 				icon: require("./../assets/images/icon/1.jpg"),
@@ -639,8 +639,8 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 1,
-				name: "上身的熱身運動",
-				categories: ["wheelchair"],
+				name: "上身的熱身運動 (坐輪椅人士使用)",
+				categories: ["wheelchair", "aerobic", "mobility", "upper"],
 				gif: require("./../assets/images/gif/2a.gif"),
 				gif2: require("./../assets/images/gif/2b.gif"),
 				icon: require("./../assets/images/icon/2.jpg"),
@@ -662,8 +662,8 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 2,
-				name: "引體上升",
-				categories: ["wheelchair"],
+				name: "引體上升 (坐輪椅人士使用)",
+				categories: ["wheelchair", "muscle", "upper"],
 				gif: require("./../assets/images/gif/3a.gif"),
 				gif2: require("./../assets/images/gif/3b.gif"),
 				icon: require("./../assets/images/icon/3.jpg"),
@@ -683,8 +683,8 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 3,
-				name: "上身的伸展及強健鍛煉",
-				categories: ["wheelchair"],
+				name: "上身的伸展及強健鍛煉 (坐輪椅人士使用)",
+				categories: ["wheelchair", "muscle", "mobility", "upper"],
 				gif: require("./../assets/images/gif/4a.gif"),
 				gif2: require("./../assets/images/gif/4b.gif"),
 				icon: require("./../assets/images/icon/4.jpg"),
@@ -703,8 +703,8 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 4,
-				name: "全身伸展運動器",
-				categories: ["multifunctional", "mobility"],
+				name: "全身伸展運動器 (下肢伸展)",
+				categories: ["multifunctional", "mobility", "lower"],
 				gif: require("./../assets/images/gif/5a.gif"),
 				gif2: require("./../assets/images/gif/5b.gif"),
 				icon: require("./../assets/images/icon/5.jpg"),
@@ -726,8 +726,8 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 5,
-				name: "全身伸展運動器",
-				categories: ["multifunctional", "mobility"],
+				name: "全身伸展運動器 （肩關節伸展）",
+				categories: ["multifunctional", "mobility", "upper"],
 				gif: require("./../assets/images/gif/6a.gif"),
 				gif2: require("./../assets/images/gif/6b.gif"),
 				icon: require("./../assets/images/icon/6.jpg"),
@@ -747,8 +747,8 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 6,
-				name: "全身伸展運動器",
-				categories: ["multifunctional", "relaxation"],
+				name: "全身伸展運動器 (背部肌肉伸展)",
+				categories: ["multifunctional", "mobility"],
 				gif: require("./../assets/images/gif/7a.gif"),
 				gif2: require("./../assets/images/gif/7b.gif"),
 				icon: require("./../assets/images/icon/7.jpg"),
@@ -767,8 +767,8 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 7,
-				name: "全身伸展運動器",
-				categories: ["muscle", "multifunctional"],
+				name: "全身伸展運動器(站式掌上壓)",
+				categories: ["multifunctional", "muscle"],
 				gif: require("./../assets/images/gif/8a.gif"),
 				gif2: require("./../assets/images/gif/8b.gif"),
 				icon: require("./../assets/images/icon/8.jpg"),
@@ -789,7 +789,7 @@ export const equipmentTranslations = {
 			{
 				id: 8,
 				name: "扭腰機",
-				categories: ["multifunctional"],
+				categories: ["multifunctional", "balance", "mobility"],
 				gif: require("./../assets/images/gif/9a.gif"),
 				gif2: require("./../assets/images/gif/9b.gif"),
 				icon: require("./../assets/images/icon/9.jpg"),
@@ -812,7 +812,7 @@ export const equipmentTranslations = {
 			{
 				id: 9,
 				name: "健騎機",
-				categories: ["multifunctional"],
+				categories: ["multifunctional", "muscle", "mobility", "aerobic"],
 				gif: require("./../assets/images/gif/10a.gif"),
 				gif2: require("./../assets/images/gif/10b.gif"),
 				icon: require("./../assets/images/icon/10.jpg"),
@@ -836,7 +836,7 @@ export const equipmentTranslations = {
 			{
 				id: 10,
 				name: "小腿伸展",
-				categories: ["mobility"],
+				categories: ["mobility", "lower"],
 				gif: require("./../assets/images/gif/11a.gif"),
 				gif2: require("./../assets/images/gif/11b.gif"),
 				icon: require("./../assets/images/icon/11.jpg"),
@@ -860,7 +860,7 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 11,
-				name: "平衡鍛煉",
+				name: "平衡鍛煉 (半前蹲)",
 				categories: ["balance"],
 				gif: require("./../assets/images/gif/12a.gif"),
 				gif2: require("./../assets/images/gif/12b.gif"),
@@ -885,7 +885,7 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 12,
-				name: "平衡鍛煉",
+				name: "平衡鍛煉 (單腳平衡)",
 				categories: ["balance"],
 				gif: require("./../assets/images/gif/13a.gif"),
 				gif2: require("./../assets/images/gif/13b.gif"),
@@ -957,8 +957,8 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 15,
-				name: "踏級練習",
-				categories: ["muscle"],
+				name: "踏級練習（初階）",
+				categories: ["muscle", "lower"],
 				gif: require("./../assets/images/gif/16a.gif"),
 				gif2: require("./../assets/images/gif/16b.gif"),
 				icon: require("./../assets/images/icon/16.jpg"),
@@ -981,8 +981,8 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 16,
-				name: "下身的伸展",
-				categories: ["mobility"],
+				name: "下身的伸展（腿腱伸展）",
+				categories: ["mobility", "lower"],
 				gif: require("./../assets/images/gif/17a.gif"),
 				gif2: require("./../assets/images/gif/17b.gif"),
 				icon: require("./../assets/images/icon/17.jpg"),
@@ -1006,7 +1006,7 @@ export const equipmentTranslations = {
 			{
 				id: 17,
 				name: "健體單車/腳部跑步器",
-				categories: ["aerobic"],
+				categories: ["aerobic", "lower"],
 				gif: require("./../assets/images/gif/18a.gif"),
 				gif2: require("./../assets/images/gif/18b.gif"),
 				icon: require("./../assets/images/icon/18.jpg"),
@@ -1031,7 +1031,7 @@ export const equipmentTranslations = {
 			{
 				id: 18,
 				name: "離地漫步機/漫步機",
-				categories: ["aerobic"],
+				categories: ["aerobic", "lower"],
 				gif: require("./../assets/images/gif/19a.gif"),
 				gif2: require("./../assets/images/gif/19b.gif"),
 				icon: require("./../assets/images/icon/19.jpg"),
@@ -1054,7 +1054,7 @@ export const equipmentTranslations = {
 			{
 				id: 19,
 				name: "肩關節伸展",
-				categories: ["mobility"],
+				categories: ["mobility", "upper"],
 				gif: require("./../assets/images/gif/20a.gif"),
 				gif2: require("./../assets/images/gif/20b.gif"),
 				icon: require("./../assets/images/icon/20.jpg"),
@@ -1078,7 +1078,7 @@ export const equipmentTranslations = {
 			{
 				id: 20,
 				name: "上肢伸展器",
-				categories: ["mobility"],
+				categories: ["mobility", "upper"],
 				gif: require("./../assets/images/gif/21a.gif"),
 				gif2: require("./../assets/images/gif/21b.gif"),
 				icon: require("./../assets/images/icon/21.jpg"),
@@ -1102,7 +1102,7 @@ export const equipmentTranslations = {
 			{
 				id: 21,
 				name: "踏步機",
-				categories: ["multifunctional"],
+				categories: ["multifunctional", "muscle", "balance"],
 				gif: require("./../assets/images/gif/22a.gif"),
 				gif2: require("./../assets/images/gif/22b.gif"),
 				icon: require("./../assets/images/icon/22.jpg"),
@@ -1150,8 +1150,8 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 23,
-				name: "關節健身架/綜合肌肉鍛煉器",
-				categories: ["mobility", "aerobic"],
+				name: "關節健身架/綜合肌肉鍛煉器（上肢）",
+				categories: ["mobility", "aerobic", "upper"],
 				gif: require("./../assets/images/gif/24a.gif"),
 				gif2: require("./../assets/images/gif/24b.gif"),
 				icon: require("./../assets/images/icon/24.jpg"),
@@ -1174,8 +1174,8 @@ export const equipmentTranslations = {
 			},
 			{
 				id: 24,
-				name: "關節健身架/綜合肌肉鍛煉器",
-				categories: ["mobility", "aerobic"],
+				name: "關節健身架/綜合肌肉鍛煉器（下肢）",
+				categories: ["mobility", "aerobic", "lower"],
 				gif: require("./../assets/images/gif/25a.gif"),
 				gif2: require("./../assets/images/gif/25b.gif"),
 				icon: require("./../assets/images/icon/25.jpg"),
@@ -1224,7 +1224,7 @@ export const equipmentTranslations = {
 			{
 				id: 26,
 				name: "下肢伸展器",
-				categories: ["mobility", "aerobic"],
+				categories: ["mobility", "aerobic", "lower"],
 				gif: require("./../assets/images/gif/27a.gif"),
 				gif2: require("./../assets/images/gif/27b.gif"),
 				icon: require("./../assets/images/icon/27.jpg"),
@@ -1248,7 +1248,7 @@ export const equipmentTranslations = {
 			{
 				id: 27,
 				name: "手部鍛鍊器",
-				categories: ["mobility", "aerobic"],
+				categories: ["mobility", "aerobic", "upper"],
 				gif: require("./../assets/images/gif/28a.gif"),
 				gif2: require("./../assets/images/gif/28b.gif"),
 				icon: require("./../assets/images/icon/28.jpg"),

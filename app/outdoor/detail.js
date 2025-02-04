@@ -1,24 +1,47 @@
-import React, { useEffect, useContext } from "react";
-import { StyleSheet, View, Text, Image, ScrollView } from "react-native";
+import React, { useEffect, useContext, useState } from "react";
+import { StyleSheet, View, Text, Image, ScrollView, Modal, TouchableOpacity } from "react-native";
 import { useLocalSearchParams } from "expo-router";
 import { Collapsible } from "@/components/Collapsible";
 import { ThemedText } from "@/components/ThemedText";
-import { ThemedView } from "@/components/ThemedView";
-import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { useNavigation } from "expo-router";
 import { LocaleContext } from "../../contexts/LocaleContext";
 import YoutubePlayer from "react-native-youtube-iframe";
 import AudioPlayer from "@/components/AudioPlayer";
+import { Ionicons } from "@expo/vector-icons";
 
 const Detail = () => {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
 	const item = useLocalSearchParams();
 	const navigation = useNavigation();
+
+	const [modalVisible, setModalVisible] = useState(false);
+	const [selectedImage, setSelectedImage] = useState(null);
+
+	const openModal = (image) => {
+		setSelectedImage(image);
+		setModalVisible(true);
+	};
+
+	const closeModal = () => {
+		console.log("close modal");
+		setModalVisible(false);
+		setSelectedImage(null);
+	};
+
 	useEffect(() => {
 		navigation.setOptions({ headerTitle: item.name });
 	}, [navigation, item.name]);
 	return (
 		<ScrollView>
+			<Modal visible={modalVisible} transparent={true} onRequestClose={closeModal}>
+				<View style={styles.modalContainer}>
+					<Image source={selectedImage} style={styles.modalImage} />
+					<TouchableOpacity style={styles.modalCloseButton} onPress={closeModal}>
+						<Text style={styles.modalCloseText}>{i18n.t("close")}</Text>
+						<Ionicons name="close" size={24} color="black" />
+					</TouchableOpacity>
+				</View>
+			</Modal>
 			<Image source={item.horizontalPic} style={styles.image} />
 			<View style={styles.section}>
 				<ThemedText style={styles.text}>{i18n.t("introduction")}</ThemedText>
@@ -38,8 +61,12 @@ const Detail = () => {
 			<View style={styles.section}>
 				<ThemedText style={styles.text}>{i18n.t("outdoorPractice")}</ThemedText>
 				<View style={styles.gifContainer}>
-					<Image source={item.gif} style={styles.gif} />
-					<Image source={item.gif2} style={styles.gif} />
+					<TouchableOpacity style={styles.gifButton} onPress={() => openModal(item.gif)}>
+						<Image source={item.gif} style={styles.gif} />
+					</TouchableOpacity>
+					<TouchableOpacity style={styles.gifButton} onPress={() => openModal(item.gif2)}>
+						<Image source={item.gif2} style={styles.gif} />
+					</TouchableOpacity>
 				</View>
 				<Collapsible title={i18n.t("useTips")}>
 					<ThemedText style={styles.text}>{item.details}</ThemedText>
@@ -89,11 +116,40 @@ const styles = StyleSheet.create({
 		flexDirection: "row",
 		justifyContent: "space-between",
 	},
+	gifButton: {
+		width: "40%",
+		backgroundColor: "yellow",
+	},
 	gif: {
-		width: "40%", // Adjust the width as needed
+		width: "100%", // Adjust the width as needed
 		height: 300, // Adjust the height as needed
-		margin: 5, // Optional: Add margin to space out the GIFs
 		resizeMode: "cover",
+	},
+	modalContainer: {
+		flex: 1,
+		backgroundColor: "rgba(0, 0, 0, 0.8)",
+		justifyContent: "center",
+		alignItems: "center",
+	},
+	modalImage: {
+		width: "90%",
+		height: "90%",
+		resizeMode: "contain",
+	},
+	modalCloseButton: {
+		position: "absolute",
+		top: 60,
+		right: 20,
+		padding: 10,
+		backgroundColor: "white",
+		borderRadius: 5,
+		flexDirection: "row",
+		alignItems: "center",
+	},
+	modalCloseText: {
+		color: "black",
+		fontSize: 16,
+		fontWeight: "bold",
 	},
 });
 

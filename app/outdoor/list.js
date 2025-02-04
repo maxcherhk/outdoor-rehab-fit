@@ -20,6 +20,8 @@ const EquipmentList = () => {
 		{ icon: require("@/assets/icons/outdoor/wheelchair.png"), text: i18n.t("wheelchair") },
 		{ icon: require("@/assets/icons/outdoor/multi.png"), text: i18n.t("multifunctional") },
 		{ icon: require("@/assets/icons/outdoor/relax.png"), text: i18n.t("relaxation") },
+		{ icon: require("@/assets/icons/outdoor/upper.png"), text: i18n.t("upper") },
+		{ icon: require("@/assets/icons/outdoor/lower.png"), text: i18n.t("lower") },
 	];
 	const renderCategoryIcons = (categories) => {
 		return (
@@ -186,8 +188,8 @@ const styles = StyleSheet.create({
 		flexDirection: "row",
 	},
 	categoryIcon: {
-		width: 32,
-		height: 32,
+		width: 28,
+		height: 28,
 		marginRight: 8,
 	},
 });

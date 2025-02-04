@@ -13,8 +13,6 @@ import { translations } from "../constants/Languages";
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
-// Initialize I18n with the translations
-const i18n = new I18n(translations);
 export default function RootLayout() {
 	const colorScheme = useColorScheme();
 	const [loaded] = useFonts({
@@ -41,9 +39,10 @@ export default function RootLayout() {
 						name="outdoor"
 						options={{ headerShown: false, headerBackTitle: "Back", title: "Outdoor Equipment" }}
 					/>
+					<Stack.Screen name="setting" options={{ headerShown: false }} />
 					<Stack.Screen name="risk" options={{ headerShown: false }} />
-					<Stack.Screen name="disclaimer" options={{ headerShown: false }} />
-					<Stack.Screen name="safety" options={{ headerShown: false }} />
+					<Stack.Screen name="firstdisclaimer" options={{ headerShown: false }} />
+					<Stack.Screen name="firstsafety" options={{ headerShown: false }} />
 					<Stack.Screen name="location" options={{ title: "Location" }} />
 					<Stack.Screen name="research" options={{ title: "Research" }} />
 					<Stack.Screen name="+not-found" />

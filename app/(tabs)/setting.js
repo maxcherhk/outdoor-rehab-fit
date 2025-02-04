@@ -15,7 +15,7 @@ const Setting = () => {
 			<TouchableOpacity
 				style={styles.button}
 				onPress={() => {
-					router.navigate(`/info`);
+					router.navigate(`/setting/about`);
 				}}
 			>
 				<FontAwesome name="info-circle" size={42} color="white" />
@@ -24,13 +24,18 @@ const Setting = () => {
 			<TouchableOpacity
 				style={styles.button}
 				onPress={() => {
-					router.navigate(`/about`);
+					router.navigate(`/setting/info`);
 				}}
 			>
 				<FontAwesome name="users" size={42} color="white" />
 				<Text style={styles.buttonText}>{i18n.t("aboutTeam")}</Text>
 			</TouchableOpacity>
-			<TouchableOpacity style={styles.button}>
+			<TouchableOpacity
+				style={styles.button}
+				onPress={() => {
+					router.navigate(`/setting/disclaimer`);
+				}}
+			>
 				<FontAwesome name="exclamation-triangle" size={42} color="white" />
 				<Text style={styles.buttonText}>{i18n.t("settingDisclaimer")}</Text>
 			</TouchableOpacity>
@@ -41,7 +46,6 @@ const Setting = () => {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		justifyContent: "center",
 		alignItems: "center",
 	},
 	button: {
@@ -53,7 +57,7 @@ const styles = StyleSheet.create({
 		padding: 20,
 		margin: 10,
 		width: "80%",
-		height: "15%",
+		height: "19%",
 	},
 	buttonText: {
 		color: "white",
