@@ -36,7 +36,7 @@ const FirstDisclaimer = () => {
 	const handleAgree = async () => {
 		try {
 			await AsyncStorage.setItem("userAgreed", "true");
-			router.replace("/firstsafety");
+			router.replace("/firstquestionnaire");
 		} catch (error) {
 			console.error("Error saving agreement status", error);
 		}
@@ -53,7 +53,7 @@ const FirstDisclaimer = () => {
 	return (
 		<SafeAreaView style={styles.container}>
 			<Text style={styles.title}>{i18n.t("settingDisclaimer")}</Text>
-			<ScrollView style={styles.scrollView}>
+			<ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollViewContent}>
 				<Text style={styles.text}>{i18n.t("disclaimer")}</Text>
 			</ScrollView>
 			<View style={styles.buttonContainer}>
@@ -88,8 +88,11 @@ const styles = StyleSheet.create({
 	},
 	scrollView: {
 		flex: 1,
-		marginBottom: 16,
 		padding: 12,
+	},
+	scrollViewContent: {
+		flexGrow: 1,
+		paddingBottom: 20,
 	},
 	text: {
 		fontSize: 24,

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { View, Text, Button, StyleSheet, TouchableOpacity } from "react-native";
 import Slider from "@react-native-community/slider";
 import { Audio } from "expo-av";
+import { useFocusEffect } from "expo-router";
 import { MaterialIcons } from "@expo/vector-icons";
 
 const AudioPlayer = ({ audioFile }) => {
@@ -35,7 +36,17 @@ const AudioPlayer = ({ audioFile }) => {
 				sound.unloadAsync();
 			}
 		};
-	}, []);
+	}, [audioFile]);
+
+	useFocusEffect(
+		React.useCallback(() => {
+			return () => {
+				if (sound) {
+					sound.stopAsync();
+				}
+			};
+		}, [sound])
+	);
 
 	const playPauseHandler = async () => {
 		if (isPlaying) {

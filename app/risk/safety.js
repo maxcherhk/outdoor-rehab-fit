@@ -8,7 +8,7 @@ const Safety = () => {
 	return (
 		<SafeAreaView style={styles.container}>
 			<Text style={styles.title}>{i18n.t("sprm")}</Text>
-			<ScrollView style={styles.scrollView}>
+			<ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollViewContent}>
 				<Text style={styles.text}>{i18n.t("safety")}</Text>
 			</ScrollView>
 			<View style={styles.buttonContainer}>
@@ -36,15 +36,16 @@ const styles = StyleSheet.create({
 		fontSize: 24,
 		fontWeight: "bold",
 		color: "#007BFF",
-		marginBottom: 16,
 		padding: 20,
 		textAlign: "center",
 		backgroundColor: "#f8f9fa",
 	},
 	scrollView: {
 		flex: 1,
-		marginBottom: 16,
 		padding: 12,
+	},
+	scrollViewContent: {
+		paddingBottom: 20,
 	},
 	text: {
 		fontSize: 24,

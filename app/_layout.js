@@ -45,6 +45,7 @@ export default function RootLayout() {
 					<Stack.Screen name="firstsafety" options={{ headerShown: false }} />
 					<Stack.Screen name="location" options={{ title: "Location" }} />
 					<Stack.Screen name="research" options={{ title: "Research" }} />
+					<Stack.Screen name="firstquestionnaire" options={{ title: "PAR-Q" }} />
 					<Stack.Screen name="+not-found" />
 				</Stack>
 				<StatusBar style="auto" />

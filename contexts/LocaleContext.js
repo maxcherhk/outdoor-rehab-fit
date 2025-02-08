@@ -2,9 +2,14 @@
 import React, { createContext, useState } from "react";
 import { I18n } from "i18n-js";
 import { translations } from "../constants/Languages";
+import { getLocales } from "expo-localization";
 
+const deviceLanguage = getLocales()[0].languageCode;
 // Initialize I18n with the translations
 const i18n = new I18n(translations);
+// if not en/zh, then zh
+i18n.locale = deviceLanguage === "en" ? "en" : "zh";
+console.log(deviceLanguage);
 
 export const LocaleContext = createContext();
 

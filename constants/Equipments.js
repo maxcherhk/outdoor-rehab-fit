@@ -22,7 +22,7 @@ export const equipmentTranslations = {
 					"By engaging in the practice of rotating the dial with both hands, users can enhance the flexibility of their upper limb joints, making various everyday actions such as table wiping, object lifting, showering, and dressing significantly easier and more effortless.\n\nMoreover, practicing squat can strengthen the lower limb muscles and provides assistance for specific activities that involve transitioning from a seated position. For instance, standing up from a toilet seat becomes notably more manageable.",
 				careTip:
 					"Observe and remind the user to keep the back straight while rotating the Tai Chi wheel. Keep the eyes looking forward, shoulders roll back, and chest lifted.\n\nPay attention to whether the user's knees are beyond their toes. If the user experiences pain in the knee joints, they should avoid the semi-squat position.",
-				sound: require("./../assets/sounds/en/1.mp3"),
+				sound: require("@/assets/sounds/en/1.mp3"),
 			},
 			{
 				id: 1,
