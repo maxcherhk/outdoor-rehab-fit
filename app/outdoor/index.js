@@ -19,8 +19,8 @@ export default function Outdoor() {
 		{ icon: require("@/assets/icons/outdoor/wheelchair.png"), text: i18n.t("wheelchair"), category: "wheelchair" },
 		{ icon: require("@/assets/icons/outdoor/multi.png"), text: i18n.t("multifunctional"), category: "multifunctional" },
 		{ icon: require("@/assets/icons/outdoor/relax.png"), text: i18n.t("relaxation"), category: "relaxation" },
-		{ icon: require("@/assets/icons/outdoor/upper.png"), text: i18n.t("upper") },
-		{ icon: require("@/assets/icons/outdoor/lower.png"), text: i18n.t("lower") },
+		{ icon: require("@/assets/icons/outdoor/upper.png"), text: i18n.t("upper"), category: "upper" },
+		{ icon: require("@/assets/icons/outdoor/lower.png"), text: i18n.t("lower"), category: "lower" },
 	];
 
 	return (
@@ -32,7 +32,7 @@ export default function Outdoor() {
 						<View key={index} style={styles.buttonWrapper}>
 							<TouchableOpacity
 								onPress={() =>
-									router.navigate({
+									router.push({
 										pathname: "/outdoor/list",
 										params: { categoryName: button.text, categoryId: button.category },
 									})

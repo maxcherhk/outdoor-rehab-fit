@@ -10,9 +10,27 @@ const AudioPlayer = ({ audioFile }) => {
 	const [isPlaying, setIsPlaying] = useState(false);
 	const [duration, setDuration] = useState(0);
 	const [currentPosition, setCurrentPosition] = useState(0);
+	useEffect(() => {
+		const setupAudioMode = async () => {
+			await Audio.setAudioModeAsync({
+				allowsRecordingIOS: false,
+				staysActiveInBackground: true, // Keep audio alive in background
+				playsInSilentModeIOS: true,
+				shouldDuckAndroid: false, // Prevent audio interruptions
+				playThroughEarpieceAndroid: false, // Force external speaker
+				interruptionModeAndroid: Audio.INTERRUPTION_MODE_ANDROID_DO_NOT_MIX,
+				interruptionModeIOS: Audio.INTERRUPTION_MODE_IOS_DO_NOT_MIX,
+			});
+		};
+
+		setupAudioMode();
+	}, []);
 
 	useEffect(() => {
 		const loadAudio = async () => {
+			if (sound) {
+				sound.unloadAsync();
+			}
 			const { sound } = await Audio.Sound.createAsync(audioFile);
 			setSound(sound);
 
@@ -49,6 +67,10 @@ const AudioPlayer = ({ audioFile }) => {
 	);
 
 	const playPauseHandler = async () => {
+		if (!sound) {
+			return;
+		}
+
 		if (isPlaying) {
 			await sound.pauseAsync();
 			setIsPlaying(false);

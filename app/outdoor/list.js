@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { View, Text, Image, StyleSheet, FlatList, TouchableOpacity, Alert } from "react-native";
+import { View, Text, Image, StyleSheet, FlatList, TouchableOpacity, Dimensions } from "react-native";
 import SearchBar from "../../components/SearchBar";
 import { useLocalSearchParams } from "expo-router";
 import Ionicons from "@expo/vector-icons/Ionicons";
@@ -7,7 +7,9 @@ import { router } from "expo-router";
 import { useNavigation } from "expo-router";
 import { LocaleContext } from "../../contexts/LocaleContext";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { RFValue } from "react-native-responsive-fontsize";
 
+const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 const EquipmentList = () => {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
 	const equipmentData = i18n.t("equipmentList", { returnObjects: true });
@@ -66,7 +68,6 @@ const EquipmentList = () => {
 			} else {
 				updatedBookmarks[itemId] = true;
 			}
-			console.log(updatedBookmarks);
 			setBookmarked(updatedBookmarks);
 			await AsyncStorage.setItem("bookmarkedItems", JSON.stringify(updatedBookmarks));
 		} catch (error) {
@@ -93,7 +94,7 @@ const EquipmentList = () => {
 				keyExtractor={(item) => item.id.toString()}
 				renderItem={({ item }) => (
 					<TouchableOpacity
-						onPress={() => router.navigate({ pathname: "/outdoor/detail", params: item })}
+						onPress={() => router.push({ pathname: "/outdoor/detail", params: item })}
 						style={styles.card}
 					>
 						<Image source={item.icon} style={styles.image} />
@@ -143,7 +144,7 @@ const styles = StyleSheet.create({
 		shadowRadius: 10,
 		elevation: 5,
 		marginBottom: 16,
-		height: 180,
+		height: screenHeight * 0.2,
 		// Shadow for iOS
 		shadowColor: "#000",
 		shadowOffset: {
@@ -168,7 +169,7 @@ const styles = StyleSheet.create({
 		paddingLeft: 16,
 	},
 	name: {
-		fontSize: 24,
+		fontSize: RFValue(18),
 		fontWeight: "bold",
 		flexShrink: 1,
 	},
@@ -188,8 +189,8 @@ const styles = StyleSheet.create({
 		flexDirection: "row",
 	},
 	categoryIcon: {
-		width: 28,
-		height: 28,
+		width: screenWidth * 0.06,
+		height: screenWidth * 0.06,
 		marginRight: 8,
 	},
 });

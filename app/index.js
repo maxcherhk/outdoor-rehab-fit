@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { router } from "expo-router";
-import { StyleSheet, View, Animated, TouchableOpacity, Text, ImageBackground, PixelRatio } from "react-native";
+import { StyleSheet, View, Animated, TouchableOpacity, Text, ImageBackground, PixelRatio, Image } from "react-native";
 import * as Updates from "expo-updates";
 
 export default function HomeScreen() {

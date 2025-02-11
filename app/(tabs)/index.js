@@ -2,9 +2,11 @@ import React, { useContext } from "react";
 import { StyleSheet, View, Text, TouchableOpacity, Image, Dimensions, ScrollView } from "react-native";
 import { router, Link } from "expo-router";
 import { LocaleContext } from "../../contexts/LocaleContext";
+import { RFValue } from "react-native-responsive-fontsize";
 
-const { width: screenWidth } = Dimensions.get("window");
-
+const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
+const buttonSize = screenWidth * 0.4;
+const photoHeight = screenHeight > 800 ? screenHeight * 0.3 : screenHeight * 0.25;
 export default function HomeScreen() {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
 	const buttons = [
@@ -47,7 +49,7 @@ const styles = StyleSheet.create({
 	},
 	photo: {
 		width: screenWidth,
-		height: "60%",
+		height: photoHeight,
 		resizeMode: "cover",
 	},
 	buttonsContainer: {
@@ -56,6 +58,7 @@ const styles = StyleSheet.create({
 		justifyContent: "space-between",
 		marginTop: 20,
 		paddingHorizontal: 25, // Added padding to control spacing
+		paddingBottom: 20, // Added padding to control spacing
 	},
 	buttonWrapper: {
 		width: "45%",
@@ -63,9 +66,9 @@ const styles = StyleSheet.create({
 		marginVertical: 10, // Reduced horizontal margin
 	},
 	button: {
-		width: 156,
-		height: 156,
-		borderRadius: 100,
+		width: buttonSize,
+		height: buttonSize,
+		borderRadius: buttonSize / 2,
 		justifyContent: "center",
 		alignItems: "center",
 		marginHorizontal: 5, // Reduced horizontal margin
@@ -77,14 +80,14 @@ const styles = StyleSheet.create({
 	},
 	buttonText: {
 		color: "#000",
-		fontSize: 18,
+		fontSize: RFValue(14),
 		textAlign: "center",
 		marginTop: 15,
 		fontWeight: "bold",
 	},
 	icon: {
-		width: 70,
-		height: 70,
+		width: buttonSize * 0.4,
+		height: buttonSize * 0.4,
 		resizeMode: "contain",
 	},
 });

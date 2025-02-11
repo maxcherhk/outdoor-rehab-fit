@@ -7,19 +7,19 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 const FirstSafety = () => {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
 
-	// useEffect(() => {
-	// 	const checkSafetyResponse = async () => {
-	// 		try {
-	// 			const safetyResponse = await AsyncStorage.getItem("safetyResponse");
-	// 			if (safetyResponse === "no") {
-	// 				router.replace("/(tabs)");
-	// 			}
-	// 		} catch (error) {
-	// 			console.error("Error checking safety response status", error);
-	// 		}
-	// 	};
-	// 	checkSafetyResponse();
-	// }, []);
+	useEffect(() => {
+		const checkSafetyResponse = async () => {
+			try {
+				const safetyResponse = await AsyncStorage.getItem("safetyResponse");
+				if (safetyResponse === "no") {
+					router.replace("/(tabs)");
+				}
+			} catch (error) {
+				console.error("Error checking safety response status", error);
+			}
+		};
+		checkSafetyResponse();
+	}, []);
 
 	const handleNo = async () => {
 		try {

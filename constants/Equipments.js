@@ -22,7 +22,6 @@ export const equipmentTranslations = {
 					"By engaging in the practice of rotating the dial with both hands, users can enhance the flexibility of their upper limb joints, making various everyday actions such as table wiping, object lifting, showering, and dressing significantly easier and more effortless.\n\nMoreover, practicing squat can strengthen the lower limb muscles and provides assistance for specific activities that involve transitioning from a seated position. For instance, standing up from a toilet seat becomes notably more manageable.",
 				careTip:
 					"Observe and remind the user to keep the back straight while rotating the Tai Chi wheel. Keep the eyes looking forward, shoulders roll back, and chest lifted.\n\nPay attention to whether the user's knees are beyond their toes. If the user experiences pain in the knee joints, they should avoid the semi-squat position.",
-				sound: require("@/assets/sounds/en/1.mp3"),
 			},
 			{
 				id: 1,
@@ -45,7 +44,6 @@ export const equipmentTranslations = {
 					"Persistent training can improve the mobility of the upper body joints and enhance cardiovascular function. It can also be beneficial for activities like getting out of bed, showering, and other daily tasks that require upper body mobility and flexibility.",
 				careTip:
 					'Before starting the exercise, observe and remind the user to ensure that the wheelchair is locked in place.\n\nFor patients with "frozen shoulder," remind them to adjust the resistance to the lowest level.\n\nWhile rotating the handlebars, remind the user to maintain good posture. Lift the head up, extend the spine, look straight ahead, roll the shoulders back, and lift the chest.\n\nObserve and remind the user to maintain a level of exertion where they can talk while exercising, avoiding pushing themselves to the point of breathlessness, especially for patients with hypertension.',
-				sound: require("./../assets/sounds/en/2.mp3"),
 			},
 			{
 				id: 2,
@@ -67,7 +65,6 @@ export const equipmentTranslations = {
 					"Persistent training can strengthen the upper body, making activities like getting out of bed and pushing the wheelchair easier, thereby enhancing independence.",
 				careTip:
 					"Observe and remind the user to lock the wheelchair before starting the exercise.\n\nObserve and remind the user to maintain stability and avoid swinging the body while performing pull-ups to prevent injuries.\n\nObserve and remind the user to maintain normal breathing during the exercise.",
-				sound: require("./../assets/sounds/en/3.mp3"),
 			},
 			{
 				id: 3,
@@ -90,7 +87,6 @@ export const equipmentTranslations = {
 					"Persistent training can increase muscle strength in the shoulders and arms, allowing activities like getting out of bed, pushing the wheelchair, and opening doors easier, thus enhancing independence of living.",
 				careTip:
 					"Observe and remind the user to lock the wheelchair before starting the exercise.\n\nWhile pushing the handlebars towards the center, remind the user to maintain good posture. Lift their heads up, extend their spine, look straight ahead, roll their shoulders back, and lift their chest.\n\nDuring this movement, users may tend to shrug their shoulders. Observe and remind them to keep their shoulders away from their ears.\n\nLastly, remind the user to maintain normal breathing throughout the exercise.",
-				sound: require("./../assets/sounds/en/4.mp3"),
 			},
 			{
 				id: 4,
@@ -112,7 +108,6 @@ export const equipmentTranslations = {
 					"Using the inclined ramp to stretch can enhance the flexibility of the lower limb muscles, making daily activities such as putting on pants or socks easier.",
 				careTip:
 					"Observe and remind the user to perform the stretching movements slowly and gradually to avoid the risk of injury from excessive or fast movements.\n\nObserve and remind the user to stretch until they feel a gentle stretched sensation, and not to push into intense pain.\n\nObserve and remind the user to maintain normal breathing during the exercises.\n\nObserve and remind the user to maintain normal breathing during the exercises.",
-				sound: require("./../assets/sounds/en/5a.mp3"),
 			},
 			{
 				id: 5,
@@ -135,7 +130,6 @@ export const equipmentTranslations = {
 					"Climbing on the side panels and placing hands on the holes on top can improve shoulder mobility, benefiting the elderlies in daily activities like dressing and showering.",
 				careTip:
 					"Observe and remind the user to perform the stretching movements slowly and gradually to avoid the risk of injury from excessive or fast movements.\n\nObserve and remind the user to stretch until they feel a gentle stretched sensation, and not to push into intense pain.\n\nObserve and remind the user to maintain normal breathing during the exercises.",
-				sound: require("./../assets/sounds/en/5b.mp3"),
 			},
 			{
 				id: 6,
@@ -156,7 +150,6 @@ export const equipmentTranslations = {
 				otTip: "Back stretching can provide benefits for general daily activities like housework and outings.",
 				careTip:
 					"Observe and remind the user to perform the stretching movements slowly and gradually to avoid the risk of injury from excessive or fast movements.\n\nObserve and remind the user to stretch until they feel a gentle pulling sensation, and not to push into intense pain.\n\nObserve and remind the user to maintain normal breathing during the exercises.",
-				sound: require("./../assets/sounds/en/5c.mp3"),
 			},
 			{
 				id: 7,
@@ -178,7 +171,6 @@ export const equipmentTranslations = {
 					"The standing push-up can strengthen the upper limb muscles, helping with daily activities like carrying groceries or lifting heavy objects.",
 				careTip:
 					"During the standing push-up, observe and remind the user to keep their back and hips in one alignment, avoiding arching the back.\n\nThis exercise can lead to shoulder shrugging (tensing the head and neck muscles), so observe and remind the user to keep their shoulders away from their ears.",
-				sound: require("./../assets/sounds/en/5d.mp3"),
 			},
 			{
 				id: 8,
@@ -199,7 +191,6 @@ export const equipmentTranslations = {
 					"Gently twisting the torso helps patients with lower back pain to gain mobility and flexibility in their lower back. When using a waist-twisting machine, patients with low back pain should not perform the movements too quickly or with excessive range; it should be kept within a range that does not exacerbate pain. If there are symptoms of numbness or weakness in the lower limbs, consult physiotherapists before using the machine.",
 				otTip:
 					"Improvement in core stability and lower limb functionality will allow outdoor activities such as walking and climbing stairs easier.",
-				sound: require("./../assets/sounds/en/7.mp3"),
 			},
 			{
 				id: 9,
@@ -220,8 +211,6 @@ export const equipmentTranslations = {
 					"Continuous upper limb activity helps improve the flexibility of the upper limb joints and enhances cardiorespiratory function. Moderate aerobic exercise can help individuals with weaker cardiorespiratory functions, such as COVID-19 survivors, improve their heart and lung function. Aerobic exercise can also help control body weight and reduce the risk of developing hypertension, hyperlipidemia, and hyperglycemia, thereby lowering the risk of cardiovascular diseases. During exercise, it's important to maintain a level of exertion that feels comfortable but slightly challenging, allowing continuous conversation with others while exercising.",
 				otTip:
 					"This equipment can train the muscles of the entire body and is relevant to various daily activities, such as dressing, grooming, eating, cooking, etc. It helps improve overall functional strength, making daily tasks easier to perform.",
-
-				sound: require("./../assets/sounds/en/8.mp3"),
 			},
 			{
 				id: 10,
@@ -241,12 +230,10 @@ export const equipmentTranslations = {
 					'Stepping on the inclined platform can help patients with "plantar fasciitis" and "knee arthritis" increase the flexibility of their calf muscles, thereby reducing pain in the foot and knee joints. When using the inclined platform, the toes should point straight ahead, and it\'s essential to avoid standing with the feet in an "out-toeing" position.',
 				otTip:
 					"By improving ankle flexibility, daily tasks like putting on pants, wearing socks, and walking outdoors become easier.",
-
-				sound: require("./../assets/sounds/en/9.mp3"),
 			},
 			{
 				id: 11,
-				name: "Balance",
+				name: "Balance (Partial Lunge)",
 				categories: ["balance"],
 				gif: require("./../assets/images/gif/12a.gif"),
 				gif2: require("./../assets/images/gif/12b.gif"),
@@ -261,12 +248,10 @@ export const equipmentTranslations = {
 				ptTip:
 					'Partial-lunge can help patients with "plantar fasciitis" and "knee arthritis" increase the flexibility of the calf muscles, thereby reducing pain in the foot and knee joints. It can also strengthen the quadriceps in the front of the leg and help seniors with poor balance to prevent falls.\n\nWhen performing the partial-lunge, the front leg should be slightly bent, and the back leg should be straight. Pay attention to keep both the front and back foot pointing straight ahead, avoiding any out-toeing. Also, ensure that the front knee points straight ahead to avoid inward rotation.',
 				otTip: "Strengthening lower limbs muscle allow seniors’ ability to climb stairs and get on and off buses.",
-
-				sound: require("./../assets/sounds/en/10a.mp3"),
 			},
 			{
 				id: 12,
-				name: "Balance",
+				name: "Balance (Single leg balance)",
 				categories: ["balance"],
 				gif: require("./../assets/images/gif/13a.gif"),
 				gif2: require("./../assets/images/gif/13b.gif"),
@@ -282,7 +267,6 @@ export const equipmentTranslations = {
 					'Single-leg stance training can strengthen lower limb muscles and improve balance, which helps seniors prevent falls. When training balance, it is essential to prioritize safety and only attempt what is manageable. If balance ability is low, users do not need to release both hands during practice. Instead, they can start by using one hand for support or practice a "loose handgrip touching" technique. When balance improves, gradually release both hands to increase the difficulty level.',
 				otTip:
 					"This equipment can enhance lower limb functioning, making it easier for seniors to climb stairs and get on and off buses.",
-				sound: require("./../assets/sounds/en/10b.mp3"),
 			},
 			{
 				id: 13,
@@ -303,7 +287,6 @@ export const equipmentTranslations = {
 					"The alternating movements of the arms and legs can help patients with lower back pain and sciatica to increase the stability of the spine and alleviate pain in the back and lower limbs. When performing this exercise, it is essential to avoid excessive range of motion while lifting the arms and legs and to slow down the movements. Focus on maintaining stability in the trunk and avoid arching back.\n\nDuring the practice, there should be no increase in pain in the lower back and lower limbs. If there is an increase in pain or symptoms such as numbness or weakness in the lower limbs, the exercise should be stopped immediately, and a physiotherapist should be consulted for further evaluation and guidance.",
 				otTip:
 					"Persistent training can strengthen the back muscles and muscles along the spine, improving the overall daily functional abilities and improving walking posture.",
-				sound: require("./../assets/sounds/en/11.mp3"),
 			},
 			{
 				id: 14,
@@ -324,7 +307,6 @@ export const equipmentTranslations = {
 				ptTip: "/",
 				otTip:
 					"By strengthening the upper limb muscles, everyday activities such as carrying groceries or lifting heavy objects can become much easier.",
-				sound: require("./../assets/sounds/en/12.mp3"),
 			},
 			{
 				id: 15,
@@ -345,7 +327,6 @@ export const equipmentTranslations = {
 					'Stepping exercises can help patients with hip and knee arthritis to strengthen their gluteus maximus and quadriceps muscles, as well as assist seniors with poor balance in preventing falls. During step exercises, ensure that the knees align with the toes in a straight line, pointing forward, avoiding knee internal rotation, and "out-toeing" stance.\n\nPersistent step exercises also improve cardiovascular function. Moderate aerobic exercise benefits individuals with weak cardiorespiratory function, such as COVID-19 survivors, by enhancing their heart and lung capacity. Aerobic exercises also aid in weight management and reduce the risk of hypertension, hyperlipidemia, and hyperglycemia, lowering the risk of cardiovascular diseases. During exercise, maintain a level of exertion that feels comfortable but slightly challenging, allowing for continuous conversation with others while exercising.',
 				otTip:
 					"By strengthening the leg muscles, everyday activities such as walking and climbing stairs can become easier.",
-				sound: require("./../assets/sounds/en/13.mp3"),
 			},
 			{
 				id: 16,
@@ -367,7 +348,6 @@ export const equipmentTranslations = {
 					"This exercise helps to increase the flexibility of the muscles at the back of the thigh, providing relief for individuals with lower back pain and knee arthritis. When performing this exercise, ensure that the knee of the foot placed on the stool is fully extended and the toes are pointed upwards. Keep your back straight and slowly hinge from the hips, pressing the abdomen towards the thigh. You should feel a stretch sensation at the back of the thigh, but it should not be painful.",
 				otTip:
 					"By increasing the flexibility of the legs, activities such as putting on pants, wearing socks, and getting in and out of the bathtub become easier and more effortlessly.",
-				sound: require("./../assets/sounds/en/14.mp3"),
 			},
 			{
 				id: 17,
@@ -389,7 +369,6 @@ export const equipmentTranslations = {
 					"Cycling is beneficial for individuals with hip and knee arthritis as it strengthens the lower limb muscles and enhances flexibility.\n\nFor those with more severe arthritis, choosing a bicycle with a higher seat can reduce the range of motion in the knee joint, thus minimizing knee joint wear and tear.\n\nRegular cycling strengthens the lower limbs, improves flexibility, and enhances cardiorespiratory function. Aerobic exercise can help individuals with weak cardiorespiratory functions, such as COVID-19 survivors, improve their heart and lung function. Aerobic exercise also aids in weight control and lowers the risk of developing hypertension, hyperlipidemia, and hyperglycemia, thereby reducing the risk of cardiovascular diseases. During exercise, it's important to maintain a level of exertion that feels comfortable but slightly challenging, allowing continuous conversation with others while exercising.",
 				otTip:
 					"By strengthening leg muscles and improving joint mobility, it helps with daily activities such as getting in and out of the bathtub, climbing stairs, and getting on and off buses.",
-				sound: require("./../assets/sounds/en/15.mp3"),
 			},
 			{
 				id: 18,
@@ -400,7 +379,7 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/19.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/19.jpg"),
-				detail:
+				details:
 					"Hold onto the handrails tightly, with both feet placed on the pedals.\n\nThen, swing both legs alternately, simulating the motion of walking. Be careful not to swing both legs in the same direction to avoid losing balance. The pace of the simulated walking motion should be steady and moderate, not too fast or too slow. Also, avoid swinging the legs with an excessively large range of movements.\n\nMaintain a good posture while exercising. Look straight ahead, lift your head up, and extend your spine. Keep your shoulders away from your ears and back.",
 
 				youtubeKey: "-GBtlnY3t-M",
@@ -411,7 +390,6 @@ export const equipmentTranslations = {
 					"Airwalker can be beneficial for patients with hip arthritis as it helps exercise the lower limbs, improving strength and flexibility. During walking, it is essential to keep the intensity and range within a level that does not exacerbate pain.\n\nExercising with an airwalker strengthens the lower limbs, and enhances cardiorespiratory function. Aerobic exercise can assist individuals with weak cardiorespiratory functions, such as COVID-19 survivors, in improving their heart and lung function. Aerobic exercise also aids in weight management and lowers the risk of hypertension, hyperlipidemia, and hyperglycemia, reducing the chances of cardiovascular diseases. During exercise, one should maintain an intensity that feels comfortable yet slightly challenging, allowing continuous conversation with others while exercising.",
 				otTip:
 					"By strengthening the lower limb and improving cardiovascular fitness, everyday activities such as climbing stairs and getting on and off buses can become easier.",
-				sound: require("./../assets/sounds/en/16.mp3"),
 			},
 			{
 				id: 19,
@@ -422,7 +400,7 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/20.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/20.jpg"),
-				detail:
+				details:
 					"First, grasp the handle of the wheel with both hands. Then, slowly and steadily rotate the wheel clockwise with both hands. Pay attention to keeping your body stable.\n\nWhen rotating, maintain a steady speed, neither too fast nor too slow., and then take a rest.\n\nMaintain good posture while exercising. Look straight ahead, lift your head up, and extend your spine. Keep your shoulders away from your ears, rotate them backward, and lift your chest.\n\nFor individuals with shoulder joint arthritis, you should consult physiotherapists for advice before using or continuing to use the wheel.",
 
 				youtubeKey: "GqokO6fXIEE",
@@ -433,8 +411,6 @@ export const equipmentTranslations = {
 					'Gentle joint movements can help individuals with "frozen shoulder" and shoulder arthritis in maintaining the range of motion in the shoulder joint and alleviate shoulder pain. When rotating the wheel, the rotational force and range should not be excessive, and it should be kept within a range that does not exacerbate the pain.',
 				otTip:
 					"Enhancing the flexibility of the shoulder joint can make upper limb movements, such as dressing, grooming, wiping windows, answering phone calls, and more, easier to perform.",
-
-				sound: require("./../assets/sounds/en/17.mp3"),
 			},
 			{
 				id: 20,
@@ -445,7 +421,7 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/21.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/21.jpg"),
-				detail:
+				details:
 					"Hold the handles, and stand with feet shoulder-width apart. One hand pull the handle downwards while the other hand extends. Alternate the movement between both hands, emphasizing the range of motion rather than speed. Use a moderate pace for this exercise. When performing the handle-pulling movement, remember to maintain stability in the torso.\n\nWhen performing the exercise, keep the rope or the handle straight down to avoid pulling it diagonally and also avoid using one hand only to prevent arm injuries. ",
 
 				youtubeKey: "tXMIqW8kUo4",
@@ -456,7 +432,6 @@ export const equipmentTranslations = {
 					'Gentle joint movements can help individuals with "frozen shoulder" and shoulder arthritis maintain shoulder joint range of motion and flexibility. When performing rope pulling exercises, the hands can be positioned in front of or to the side of the body, but avoid pulling from behind the body. The force and range of motion during rope pulling should not be excessive, and it should remain within a range that does not exacerbate pain. If one hand feels weaker or painful, you can use the strength of the other hand to assist in the movement. To achieve stretching benefits, you can hold the position at the highest point within your comfortable range for a few seconds before slowly releasing.',
 				otTip:
 					"Improving the flexibility of the upper limb joints can make daily activities like wiping tables, lifting objects, showering, and dressing easier.",
-				sound: require("./../assets/sounds/en/18.mp3"),
 			},
 			{
 				id: 21,
@@ -467,7 +442,7 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/22.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/22.jpg"),
-				detail:
+				details:
 					"Hold onto the handrails tightly with both hands and place both feet on the pedals. Then, coordinate the movement of both feet with the motion of both hands. During the exercise, avoid fully extending the knees. Maintain a steady and consistent pace while pedaling and avoid jerky movement.",
 
 				youtubeKey: "tjJg0NwP7KI",
@@ -478,8 +453,6 @@ export const equipmentTranslations = {
 					'Step exercises can assist individuals with hip and knee arthritis in building strength in their gluteal and quadriceps muscles. Additionally, it can aid older adults with balance issues in preventing falls. During step exercises, it\'s important to align the knees and toes in a straight line, pointing forward, and to avoid any inward rotation of the knee or standing with the feet in an "out-toeing" position.\n\nContinuous step exercises can also improve cardiorespiratory fitness. Aerobic exercise can help individuals with weak cardiorespiratory systems, such as those recovering from COVID-19, to enhance their heart and lung function. Aerobic exercise also helps control body weight and reduce the risk of hypertension, high cholesterol, and high blood sugar, ultimately lowering the risk of cardiovascular diseases. During exercise, one should aim for a level of intensity that feels slightly challenging but allows for continued conversation with others.',
 				otTip:
 					"By using this fitness equipment, users can enhance their lower limb functionality, and it proves beneficial for everyday movements such as climbing stairs and getting on or off buses.",
-
-				sound: require("./../assets/sounds/en/19.mp3"),
 			},
 			{
 				id: 22,
@@ -490,7 +463,7 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/23.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/23.jpg"),
-				detail:
+				details:
 					"First, grip the handrails and place your back against the horizontal massager. Then, move up and down slowly, lean onto the protrusions of the massager to massage the areas that feel tense and need relaxation.\n\nWhen moving, you can slow down the speed a bit, in order to locate the desired spot. Also, be mindful of applying moderate pressure during the massage, as excessive force is unnecessary.\n\nNext, hold your arm in a 90 degree position and place your back against the vertical massager. Again, move side to side and slowly, using the protrusions on the massager to massage the areas that feel tense and need relaxation.\n\nWhen moving, you can slow down the speed a bit, in order to locate the desired spot. Also, be mindful of applying moderate pressure during the massage, as excessive force is unnecessary.",
 				youtubeKey: "WT2PghR66sw",
 
@@ -500,7 +473,6 @@ export const equipmentTranslations = {
 					"Massage can help patients with low back pain and sciatica to relax their back muscles and relieve pain. During the massage, back-and-forth pressure, or targeted pressure can be applied to tense and sore areas. The massage pressure should be moderate, avoiding exacerbating pain in the lower back and limbs. If the pain increases or symptoms like leg numbness or weakness occur, stop using the massager and consult physiotherapists.",
 				otTip:
 					"Massage can alleviate lower back pain, making activities involving the lower back more comfortable, such as cooking, walking, and cleaning.",
-				sound: require("./../assets/sounds/en/21.mp3"),
 			},
 			{
 				id: 23,
@@ -511,7 +483,7 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/24.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/24.jpg"),
-				detail:
+				details:
 					"First, sit down and grip the handlebars with both hands, and slowly rotate the handlebars forward.\n\nWhile rotating the handlebars, remember to maintain a good posture. Look straight ahead, lift your head upwards, and extend your spine. Keep your shoulders away from your ears, roll your shoulders back, and lift your chest.\n\nRemember to use moderate force and maintain a steady rotation speed, avoiding sudden changes in speed.",
 
 				youtubeKey: "pQJYZYk-Zbc",
@@ -521,7 +493,6 @@ export const equipmentTranslations = {
 					"Practicing the rotation of the handlebars helps maintain the mobility of the upper limb joints. When rotating the handlebars, there's no need to use excessive speed or force; it should be within a range that does not worsen the level of pain.",
 				otTip:
 					"By exercising the upper limbs through rotating the handlebar, everyday activities like wiping tables, lifting objects, showering, and dressing can be performed with greater ease.",
-				sound: require("./../assets/sounds/en/22.mp3"),
 			},
 			{
 				id: 24,
@@ -532,7 +503,7 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/25.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/25.jpg"),
-				detail:
+				details:
 					"Sit and place both feet on the foot pedals. Pay attention to good posture. Look straight ahead, lift your head up, and extend your spine. Keep your shoulders away from your ears, roll your shoulders back, and lift your chest. \n\nStart alternating pedaling, allowing the foot pedals to slowly rotate forward. Be mindful of your body balance.\n\nIf you experience pain in the hip, knee, or ankle joints during the exercise, consult physiotherapists for advice before using or continuing to use the equipment.",
 
 				youtubeKey: "PWHqGwbYCrk",
@@ -543,7 +514,6 @@ export const equipmentTranslations = {
 					"Pedaling can help patients with hip and knee arthritis to improve the strength and flexibility of their lower limbs. During the training, the speed and force of pedaling should not be too vigorous and should be within a range that does not exacerbate the pain. If arthritis is severe, it is recommended to choose a higher or more backward seat position for the foot pedals to reduce wear and tear on the knee joints.",
 				otTip:
 					"Training with alternate foot stepping is beneficial for daily activities such as getting in and out of the bathtub, climbing stairs, and boarding or alighting from buses.",
-				sound: require("./../assets/sounds/en/23.mp3"),
 			},
 			{
 				id: 25,
@@ -554,7 +524,7 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/26.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/26.jpg"),
-				detail:
+				details:
 					"First, hold onto the handrails and place one foot on the horizontal bar while keeping your lower back straight. If you want to increase the stretch, try extending the body up, and bringing your abdomen closer to your thigh while exhaling. Maintain normal breathing throughout the stretch. \n\nThe stretch should create a stretched sensation but not pain.\n\nNext, hold onto the handrails and place your other foot on the horizontal bar. Keep your lower back straight. Lift your body upward, exhale, and slowly bring your abdomen closer to your thigh. Perform the movement slowly, avoiding fast motions. If the muscles are too tight, you can maintain the current position without bringing your abdomen closer to your thigh. Remember to breathe normally.\n\nYou should feel a tight sensation in the muscles of your thigh without experiencing pain.",
 
 				youtubeKey: "OlnhHezd6No",
@@ -565,7 +535,6 @@ export const equipmentTranslations = {
 					"The leg stretch can help patients with lower back pain and knee arthritis to increase the flexibility of the posterior thigh muscles, reducing pain in the lower back and knees. When using the leg stretch, ensure that one leg's knee is fully extended on the horizontal bar while maintaining a straight back. Slowly bend the hip, pressing the abdomen toward the thigh. You should feel a stretch sensation in the muscles at the back of the thigh. The sensation should not be painful.",
 				otTip:
 					"Increasing the flexibility of the lower back and posterior thigh muscles can make activities such as putting on pants, wearing socks, and getting in and out of the bathtub easier and more comfortable.",
-				sound: require("./../assets/sounds/en/24.mp3"),
 			},
 			{
 				id: 26,
@@ -576,7 +545,7 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/27.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/27.jpg"),
-				detail:
+				details:
 					"Position yourself on the chair with both feet on the footrest. \n\nMaintain a good posture while exercising, look straight ahead, keep your head up, and extend your spine. Keep your shoulders away from your ears, roll them backward, and lift your chest.\n\nNext, swing both feet alternately. Be cautious not to swing both feet at the same time to avoid losing balance. Maintain a steady and moderate speed; avoid swinging with an excessive range of motion.",
 				youtubeKey: "KAs-SoKxbxI",
 
@@ -586,7 +555,6 @@ export const equipmentTranslations = {
 					"Swinging both feet can help patients with knee arthritis to improve their lower limb strength and flexibility. During the training, the swinging amplitude and intensity should not be too vigorous and should be kept within a range that does not worsen the pain. If the arthritis is severe, it is recommended to choose a higher seat or sit further away from the footrest to reduce the strain on the knee joints.",
 				otTip:
 					"Increasing the mobility and flexibility of the knee and ankle joints makes daily activities like walking, climbing stairs, and getting on and off buses easier.",
-				sound: require("./../assets/sounds/en/25.mp3"),
 			},
 			{
 				id: 27,
@@ -597,7 +565,7 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/28.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/28.jpg"),
-				detail:
+				details:
 					"First, position yourself in front of the handlebars, and ensure that your stance is shoulder-width apart. Grip the handles with both hands and slowly begin to rotate the handlebars forward.\n\nWhile rotating the handlebars, remember to maintain a good posture. Look straight ahead, lift your head up, and extend your spine. Keep your shoulders away from your ears, roll your shoulders back, and lift your chest.\n\nRemember to use moderate force and maintain a steady and even rotation speed.",
 				youtubeKey: "KGI65x92uig",
 
@@ -607,7 +575,6 @@ export const equipmentTranslations = {
 					"Rotating the handlebars helps to maintain the mobility and flexibility of the upper limb joints. When doing this exercise, avoid excessive speed and force, keeping within a range that won't exacerbate any pain.\n\nContinuous upper limb activity helps to improve the mobility of the upper limb joints, and enhances cardiorespiratory function. Moderate aerobic exercise can help individuals with weak cardiorespiratory functions, such as COVID-19 survivors to improve their heart and lung function. Aerobic exercise can also help control body weight and reduce the risk of developing hypertension, hyperlipidemia, and hyperglycemia, thereby lowering the risk of cardiovascular diseases. During exercise, it's important to maintain a level of exertion that feels comfortable but slightly challenging, allowing for continuous conversation with others while exercising.",
 				otTip:
 					"By improving the mobility and flexibility of the upper limb, everyday activities such as wiping tables, lifting objects, showering, and dressing can be done more easily.",
-				sound: require("./../assets/sounds/en/26.mp3"),
 			},
 		],
 	},
@@ -617,8 +584,8 @@ export const equipmentTranslations = {
 				id: 0,
 				name: "太極揉腿器/太極推手器",
 				categories: ["multifunctional", "mobility", "muscle", "upper"],
-				gif: require("./../assets/images/gif/1a.gif"),
-				gif2: require("./../assets/images/gif/1b.gif"),
+				gif: "https://s3.gifyu.com/images/b2rUJ.gif",
+				gif2: "https://s3.gifyu.com/images/b2rUP.gif",
 				icon: require("./../assets/images/icon/1.jpg"),
 				pic: require("./../assets/images/equipment/1.jpg"),
 				horizontalPic: require("./../assets/images/horizontal/1.jpg"),
@@ -634,8 +601,6 @@ export const equipmentTranslations = {
 					"透過雙手轉動轉盤的練習，可以提升使用者上肢關節的靈活性，令一些日常生活中的動作，例如擦桌子、拿東西、洗澡和穿衣服等，更加輕鬆容易完成。 \n\n而下蹲的練習能夠強化下肢力量，對於一些需要從坐姿起身的動作也有所幫助，例如上廁所時起身會更加容易。 ",
 				careTip:
 					"觀察及提醒使用者轉動轉盤的時候頭向上頂，延伸脊柱。眼望前方，膊頭轉向後，挺起胸膛。 \n\n留意使用者的膝部有沒有超過腳趾。如果使用者膝關節感痛楚，就要避免半蹲的姿勢。 ",
-
-				sound: require("./../assets/sounds/zh/1.mp3"),
 			},
 			{
 				id: 1,
@@ -658,7 +623,6 @@ export const equipmentTranslations = {
 					"持續使用這個健身設施可以改善使用者上半身關節的活動能力，亦可以增強其心肺功能，對過床、洗澡等日常生活的活動都有所幫助。",
 				careTip:
 					"觀察及提醒使用者在開始運動前，緊記鎖定輪椅。\n\n提醒「雪肩」患者，需要調校阻力至最低。\n\n轉動手柄嘅時候記得保持良好的姿勢。頭向上頂，延伸脊柱。眼望前方，膊頭轉向後，挺起胸膛。\n\n觀察及提醒使用者應以能一邊運動，一邊談話為標準，不應勉強自己運動至喘氣，尤其是高血壓患者。",
-				sound: require("./../assets/sounds/zh/2.mp3"),
 			},
 			{
 				id: 2,
@@ -679,7 +643,6 @@ export const equipmentTranslations = {
 					"持續使用這部器材進行引體上升訓練，可以增強使用者的上身力量，使其過床以及推輪椅的時候更加容易，提升獨立能力。",
 				careTip:
 					"觀察及提醒使用者在開始運動前，記得鎖定輪椅。\n\n觀察及提醒使用者要留意引體上升的時候，身體應要保持穩定，不要擺動身體借力，以免受傷。\n\n觀察及提醒使用者運動時保持正常呼吸。",
-				sound: require("./../assets/sounds/zh/3.mp3"),
 			},
 			{
 				id: 3,
@@ -699,7 +662,6 @@ export const equipmentTranslations = {
 				otTip: "持續訓練可以增加肩膊以及手臂的肌肉力量，令過床、推輪椅或開門的時候更加容易，提升獨立能力。",
 				careTip:
 					"觀察及提醒使用者在開始運動前，記得鎖定輪椅。\n\n觀察及提醒使用者將手柄推向中間的時候頭向上頂，延伸脊柱。眼望前方，膊頭轉向後，挺起胸膛。\n\n這個動作做嘅時候容易縮膊，觀察及提醒使用者將膊頭遠離耳仔。\n\n觀察及提醒使用者保持正常呼吸。",
-				sound: require("./../assets/sounds/zh/4.mp3"),
 			},
 			{
 				id: 4,
@@ -721,8 +683,6 @@ export const equipmentTranslations = {
 				otTip: "練習腳踏斜坡可以令後腿柔韌度增強，使日常生活的活動，例如穿褲子或襪子的時候更加輕鬆。",
 				careTip:
 					"觀察及提醒使用者伸展時動作要緩慢，逐步伸展，動作太大或太快會有受傷的風險。\n\n觀察及提醒使用者運動時有拉伸感覺即可，不應感到有強烈痛楚。\n\n觀察及提醒使用者保持正常呼吸。",
-
-				sound: require("./../assets/sounds/zh/5a.mp3"),
 			},
 			{
 				id: 5,
@@ -743,7 +703,6 @@ export const equipmentTranslations = {
 				otTip: "擺放雙手在旁邊的板以及在板上的洞，能有助提高肩關節的活動能力，對長者進行穿衣服、洗澡等動作都有幫助。",
 				careTip:
 					"觀察及提醒使用者伸展時動作要緩慢，逐步伸展，動作太大或太快會有受傷的風險。\n\n觀察及提醒使用者運動時有拉伸感覺即可，不應感到有強烈痛楚。\n\n觀察及提醒使用者保持正常呼吸。",
-				sound: require("./../assets/sounds/zh/5b.mp3"),
 			},
 			{
 				id: 6,
@@ -763,7 +722,6 @@ export const equipmentTranslations = {
 				otTip: "利用緊握橫桿，上身向下壓的動作，可以伸展背部肌肉，對整體日常活動都有幫助，例如打掃、出門等。",
 				careTip:
 					"觀察及提醒使用者伸展時動作要緩慢，逐步伸展，動作太大或太快會有受傷的風險。\n\n觀察及提醒使用者運動時有拉伸感覺即可，不應感到有強烈痛楚。\n\n觀察及提醒使用者保持正常呼吸。",
-				sound: require("./../assets/sounds/zh/5c.mp3"),
 			},
 			{
 				id: 7,
@@ -784,7 +742,6 @@ export const equipmentTranslations = {
 				otTip: "手捉橫桿的站式掌上壓可以鍛煉到上肢肌肉，幫助例如買菜、拿重東西等日常活動。",
 				careTip:
 					"在進行站式掌上壓時，觀察及提醒使用者保持背部同髖關節伸直。\n\n做這個動作時容易縮膊，觀察及提醒使用者將膊頭遠離耳仔。",
-				sound: require("./../assets/sounds/zh/5d.mp3"),
 			},
 			{
 				id: 8,
@@ -807,7 +764,6 @@ export const equipmentTranslations = {
 				otTip: "這個健身設施能夠提高使用者軀幹穩定性及下肢功能，使出門活動，例如走路、爬樓梯等變得更加輕鬆。",
 				careTip:
 					"觀察及提醒使用者扭腰的時候頭向上頂，眼望前方，上身要保持挺直。\n\n觀察及提醒使用者動作要緩慢平穩，不可時快時慢，以免重心不穩跌倒或受傷。\n\n觀察及提醒使用者扭動時幅度不需要太大，扭動時覺得舒服便可。留意使用者能否保持平衡。\n\n觀察及提醒使用者雙手必須緊握扶手，運動時上身保持挺直，雙腳平放在踏板上面。\n\n如下背有嚴重的疼痛，應先諮詢物理治療師建議，才可決定如何使用，或是否需要停止使用。",
-				sound: require("./../assets/sounds/zh/7.mp3"),
 			},
 			{
 				id: 9,
@@ -830,8 +786,6 @@ export const equipmentTranslations = {
 					"持續使用這個健身設施可以訓練使用者全身肌肉及心肺功能，對於不同的生活活動，例如穿衣服、梳洗、進食、煮飯等，都會有幫助。",
 				careTip:
 					"觀察及提醒使用者運動時雙眼望向前方，保持抬頭挺胸。\n\n觀察及提醒使用者必須時刻緊握扶手，兩腳踏穩於踏板之上。\n\n觀察及提醒使用者運動時輕拉輕放，不可時快時慢。鍛煉時動作幅度不宜過大，保持穩定節奏。\n\n如有腰椎疼痛長者則要諮詢物理治療師建議，才可決定如何使用，或是否需要停止使用。",
-
-				sound: require("./../assets/sounds/zh/8.mp3"),
 			},
 			{
 				id: 10,
@@ -855,8 +809,6 @@ export const equipmentTranslations = {
 					"使用這個健身設施能夠提高使用者足踝的靈活性及小腿肌肉的柔軟度。從而提高下肢的活動能力， 並使其在進行穿褲子、襪子，以及出門走路等日常生活活動時變得更加容易。",
 				careTip:
 					"觀察及提醒使用者運動時應抬頭挺胸，保持良好姿勢，膝關節亦要伸直。\n\n觀察及提醒使用者保持正常呼吸。\n\n提醒使用者運動時有拉伸感覺即可，不應感到有強烈痛楚。",
-
-				sound: require("./../assets/sounds/zh/9.mp3"),
 			},
 			{
 				id: 11,
@@ -880,8 +832,6 @@ export const equipmentTranslations = {
 					"透過使用者這個健身設施，使用者能增強腿部功能、柔韌度以及身體平衡。從而令使用者在日常生活移動的時候，如上落樓梯及巴士更加容易。",
 				careTip:
 					"留意使用者的膝部有沒有超過腳趾。如果膝關節痛，可以嘗試調整膝關節屈曲的幅度，以及注意膝關節及腳掌是否在同一個平面上面，如果經過以上調整，仍有膝痛的問題，便要諮詢物理治療師。\n\n觀察及提醒使用者眼望前方，身體保持向上挺直，不要過份前傾或後傾，以免跌倒。",
-
-				sound: require("./../assets/sounds/zh/10a.mp3"),
 			},
 			{
 				id: 12,
@@ -905,8 +855,6 @@ export const equipmentTranslations = {
 					"透過使用這個健身設施，使用者能增強平衡力感知，以及下肢肌肉的力量。從而令使用者在日常生活移動的時候，如上落樓梯及巴士更加容易。",
 				careTip:
 					"觀察及提醒使用者保持背部平直，挺胸前望，並保持呼吸暢順。\n\n留意使用者身體有否向前傾或後仰，以免發生危險。並觀察及提醒使用者注意安全，如有需要可重新握住扶手。",
-
-				sound: require("./../assets/sounds/zh/10b.mp3"),
 			},
 			{
 				id: 13,
@@ -929,8 +877,6 @@ export const equipmentTranslations = {
 				otTip: "持續使用這個健身設施能夠，強化使用者背部以及脊柱附近的肌肉，提升其整體的日常活動能力，並改善行路姿勢。",
 				careTip:
 					"觀察及提醒使用者保持正常呼吸。\n\n觀察及提醒使用者保持眼望前方，頭向上頂，延伸脊柱。避免縮膊，膊頭遠離耳朵，膊頭轉向後，挺起胸膛。運動時應後腿離地，但不要將後腿提得太高，以免對背部做成壓力。",
-
-				sound: require("./../assets/sounds/zh/11.mp3"),
 			},
 			{
 				id: 14,
@@ -952,8 +898,6 @@ export const equipmentTranslations = {
 					"持續使用這個健身設施能夠增強使用者上肢肌肉的力量。從而使其在進行日常生活活動時，例如買菜、拿重東西等，都可以更加輕鬆。",
 				careTip:
 					"觀察及提醒使用者不要縮膊，儘量沉低肩膀。\n\n觀察及提醒使用者運動時全身保持直線。\n\n觀察及提醒使用者保持正常呼吸。",
-
-				sound: require("./../assets/sounds/zh/12.mp3"),
 			},
 			{
 				id: 15,
@@ -976,8 +920,6 @@ export const equipmentTranslations = {
 					"持續使用這個健身設施進行踏級訓練能夠強化使用者下肢肌肉的力量。從而使其在日常移動時，如走路、上樓梯等，會變得更加容易。",
 				careTip:
 					"觀察及提醒使用者運動時眼望前方，頭向上頂，延伸脊柱。避免縮膊，膊頭遠離耳朵，膊頭轉向後，挺起胸膛。\n\n如果使用者在運動時，髖關節及、膝關節及腳腕關節在屈曲時候感到痛楚，應先諮詢物理治療師的建議，才可決定如何使用或是否繼續使用。",
-
-				sound: require("./../assets/sounds/zh/13.mp3"),
 			},
 			{
 				id: 16,
@@ -1000,8 +942,6 @@ export const equipmentTranslations = {
 					"透過使用這個健身設施進行腿部拉伸，使用者可以提高其腿部柔韌度，並使其在進行日常生活活動時，如穿褲子、襪子、出入浴缸更加輕鬆。",
 				careTip:
 					"留意使用者是否能平衡身體，防止跌倒。\n\n觀察及提醒使用者每次只可以放一隻腳在椅子上。伸展時要動作要緩慢，逐步伸展，動作太大或太快會有受傷的風險。\n\n觀察及提醒使用者運動時保持下背挺直，運動時有拉伸感覺即可，不應感到有強烈痛楚。\n\n觀察及提醒使用者保持正常呼吸。",
-
-				sound: require("./../assets/sounds/zh/14.mp3"),
 			},
 			{
 				id: 17,
@@ -1025,8 +965,6 @@ export const equipmentTranslations = {
 					"透過使用這個健身設施進行踏單車訓練，使用者可以增強其腿部功能以及關節活動能力，對其出入浴缸、走樓梯、上落巴士等日常移動都有所幫助。",
 				careTip:
 					"上落單車時要留意使用者的安全。\n\n如果踩單車是以帶氧為目的，可以連續踩10分鐘，休息，然後再踩10分鐘，休息，休息然後再踩10分鐘，共30分鐘。\n\n如果使用者在運動時，髖關節、膝關節及腳腕關節在屈曲時候感到痛楚，應先諮詢物理治療師的建議，才可決定如何使用或是否繼續使用。\n\n留意使用者踏單車時的身體平衡。\n\n觀察使用者在踩單車時，軀幹有沒有保持中正位置，以及其穩定性。\n\n照顧者應留意使用者運動時是否眼望前方，頭向上頂，延伸脊柱。不要縮膊，膊頭遠離耳朵，膊頭轉向後，挺起胸膛。",
-
-				sound: require("./../assets/sounds/zh/15.mp3"),
 			},
 			{
 				id: 18,
@@ -1048,8 +986,6 @@ export const equipmentTranslations = {
 				otTip: "使用這個健身設施能夠提升使用者下肢及心肺功能。對其出入浴缸、走樓梯、上落巴士等日常移動都有所幫助。 ",
 				careTip:
 					"觀察及提醒使用者切勿雙腳同時擺動，速度需適中，擺動幅度不能過大，以免發生危險。\n\n留意使用者的軀幹穩定性，如果觀察到使用者的身體軀幹在搖擺，即表示速度有可能太快，提醒使用者調整速度。\n\n觀察及提醒使用者必須緊握扶手。",
-
-				sound: require("./../assets/sounds/zh/16.mp3"),
 			},
 			{
 				id: 19,
@@ -1072,8 +1008,6 @@ export const equipmentTranslations = {
 					"使用這個健身設施能夠增強使用者肩關節的柔韌性。從而使其進行上肢日常活動時（如穿衣服、梳洗、擦窗戶、聽電話）能夠更加輕鬆。",
 				careTip:
 					"這個動作做嘅時候容易縮膊，觀察及提醒使用者將膊頭遠離耳朵。\n\n觀察及提醒使用者轉動時速度要平穩，不要時快時慢。\n\n留意使用者的身體軀幹是否能保持穩定性。\n\n如果是嚴重肩膊關節炎患者，應先諮詢物理治療師意見才可決定如何使用，或決定是否需要停止使用。",
-
-				sound: require("./../assets/sounds/zh/17.mp3"),
 			},
 			{
 				id: 20,
@@ -1096,8 +1030,6 @@ export const equipmentTranslations = {
 					"使用這個健身設人施進行拉繩動作的訓練能夠增強使用者上肢關節的靈活度。從而使其進行日常活動時（如擦桌子、拿東西、洗澡、穿衣服等）能夠更加輕鬆。",
 				careTip:
 					"觀察及提醒使用者拉繩時切勿過快，亦不要兩手同時拉繩。\n\n留意使用者運動時是否保持繩索垂直，避免打斜拉繩索。\n\n觀察及提醒使用者不可單手拉繩，以免拉傷手臂。",
-
-				sound: require("./../assets/sounds/zh/18.mp3"),
 			},
 			{
 				id: 21,
@@ -1120,8 +1052,6 @@ export const equipmentTranslations = {
 				otTip: "透過使用這個健身設施，使用者能夠增強其下肢功能，並對走樓梯、上落巴士等日常移動都有所幫助。",
 				careTip:
 					"觀察及提醒使用者踩動踏板的速度要平均，不要時快時慢。\n\n觀察及提醒使用者運動時不要完全伸直兩邊膝關節，亦要留意不要過份屈曲膝關節。\n\n觀察及提醒使用者軀幹保持穩定性。",
-
-				sound: require("./../assets/sounds/zh/19.mp3"),
 			},
 			{
 				id: 22,
@@ -1145,8 +1075,6 @@ export const equipmentTranslations = {
 					"使用者可以透過這個健身設施進行腰背按摩，紓緩其腰背痛楚的問題。從而令使用者在進行涉及下腰肌肉的活動時（如煮飯、行路、清潔）會更輕鬆。",
 				careTip:
 					"如果使用者在按摩時，腰部或背部感到痛楚，應先諮詢物理治療師的建議，才可決定如何使用或是否繼續使用。\n\n觀察及提醒使用者按摩時需注意力度適中。",
-
-				sound: require("./../assets/sounds/zh/21.mp3"),
 			},
 			{
 				id: 23,
@@ -1169,8 +1097,6 @@ export const equipmentTranslations = {
 					"這個健身設施能夠鍛煉使用者上肢關節的靈活性。從而令使用者能更輕鬆地進行日常生活的活動（例如擦桌子、拿東西、洗澡、穿衣服等）。",
 				careTip:
 					"觀察及提醒使用者運動時頭向上頂，延伸脊柱。眼望前方，膊頭轉向後，挺起胸膛。\n\n如果使用者在運動時，髖關節、膝關節及腳腕關節在屈曲時候感到痛楚，應先諮詢物理治療師的建議，才可決定如何使用或是否繼續使用。",
-
-				sound: require("./../assets/sounds/zh/22.mp3"),
 			},
 			{
 				id: 24,
@@ -1194,8 +1120,6 @@ export const equipmentTranslations = {
 					"透過交替踩腳踏的訓練，使用者能夠提升其腿部肌肉群的力量、膝關節及足踝關節的活動能力。對其走路、走樓梯、上落巴士等日常移動都有所幫助。",
 				careTip:
 					"觀察及提醒使用者運動時頭向上頂，延伸脊柱。眼望前方，膊頭轉向後，挺起胸膛。\n\n如果使用者在運動時，髖關節、膝關節及腳腕關節在屈曲時候感到痛楚，應先諮詢物理治療師的建議，才可決定如何使用或是否繼續使用。",
-
-				sound: require("./../assets/sounds/zh/23.mp3"),
 			},
 			{
 				id: 25,
@@ -1218,8 +1142,6 @@ export const equipmentTranslations = {
 					"使用這個健身設施能夠伸展下腰及大腿後方肌肉及提升其柔韌度，使穿褲子、襪子、出入浴缸等日常生活活動更加輕鬆。",
 				careTip:
 					"留意使用者是否能平衡身體，防止跌倒。\n\n觀察及提醒使用者每次只可以放一隻腳在橫桿上。伸展時要動作要緩慢，逐步伸展，動作太大或太快會有受傷的風險。\n\n觀察及提醒使用者運動時保持下背挺直，運動時有拉伸感覺即可，不應感到有強烈痛楚。\n\n觀察及提醒使用者保持正常呼吸。",
-
-				sound: require("./../assets/sounds/zh/24.mp3"),
 			},
 			{
 				id: 26,
@@ -1242,8 +1164,6 @@ export const equipmentTranslations = {
 					"使用這個健身設施能增加使用者的膝關節以及腳踝關節柔靭性。對其走路、走樓梯、上落巴士等日常移動都有所幫助。",
 				careTip:
 					"觀察及提醒使用者切勿雙腳同時擺動，速度需適中，擺動幅度不能過大，以免發生危險。\n\n留意使用者的軀幹穩定性，如果觀察到使用者的身體軀幹在搖擺，即表示速度有可能太快，提醒使用者調整速度。",
-
-				sound: require("./../assets/sounds/zh/25.mp3"),
 			},
 			{
 				id: 27,
@@ -1263,8 +1183,69 @@ export const equipmentTranslations = {
 				otTip:
 					"使用這個健身設施能提高使用者上肢關節的靈活性，使其在進行日常生活的動作時（例如擦桌子、梳洗、洗澡、穿衣服等）也能更輕鬆地完成。",
 				careTip: "觀察及提醒使用者轉動轉盤的時候頭向上頂，延伸脊柱。眼望前方，膊頭轉向後，挺起胸膛。",
-				sound: require("./../assets/sounds/zh/26.mp3"),
 			},
 		],
 	},
+};
+
+export const enSoundFiles = {
+	0: require("@/assets/sounds/en/1.mp3"),
+	1: require("@/assets/sounds/en/2.mp3"),
+	2: require("@/assets/sounds/en/3.mp3"),
+	3: require("@/assets/sounds/en/4.mp3"),
+	4: require("@/assets/sounds/en/5a.mp3"),
+	5: require("@/assets/sounds/en/5b.mp3"),
+	6: require("@/assets/sounds/en/5c.mp3"),
+	7: require("@/assets/sounds/en/5d.mp3"),
+	8: require("@/assets/sounds/en/7.mp3"),
+	9: require("@/assets/sounds/en/8.mp3"),
+	10: require("@/assets/sounds/en/9.mp3"),
+	11: require("@/assets/sounds/en/10a.mp3"),
+	12: require("@/assets/sounds/en/10b.mp3"),
+	13: require("@/assets/sounds/en/11.mp3"),
+	14: require("@/assets/sounds/en/12.mp3"),
+	15: require("@/assets/sounds/en/13.mp3"),
+	16: require("@/assets/sounds/en/14.mp3"),
+	17: require("@/assets/sounds/en/15.mp3"),
+	18: require("@/assets/sounds/en/16.mp3"),
+	19: require("@/assets/sounds/en/17.mp3"),
+	20: require("@/assets/sounds/en/18.mp3"),
+	21: require("@/assets/sounds/en/19.mp3"),
+	22: require("@/assets/sounds/en/21.mp3"),
+	23: require("@/assets/sounds/en/22.mp3"),
+	24: require("@/assets/sounds/en/23.mp3"),
+	25: require("@/assets/sounds/en/24.mp3"),
+	26: require("@/assets/sounds/en/25.mp3"),
+	27: require("@/assets/sounds/en/26.mp3"),
+};
+
+export const zhSoundFiles = {
+	0: require("@/assets/sounds/zh/1.mp3"),
+	1: require("@/assets/sounds/zh/2.mp3"),
+	2: require("@/assets/sounds/zh/3.mp3"),
+	3: require("@/assets/sounds/zh/4.mp3"),
+	4: require("@/assets/sounds/zh/5a.mp3"),
+	5: require("@/assets/sounds/zh/5b.mp3"),
+	6: require("@/assets/sounds/zh/5c.mp3"),
+	7: require("@/assets/sounds/zh/5d.mp3"),
+	8: require("@/assets/sounds/zh/7.mp3"),
+	9: require("@/assets/sounds/zh/8.mp3"),
+	10: require("@/assets/sounds/zh/9.mp3"),
+	11: require("@/assets/sounds/zh/10a.mp3"),
+	12: require("@/assets/sounds/zh/10b.mp3"),
+	13: require("@/assets/sounds/zh/11.mp3"),
+	14: require("@/assets/sounds/zh/12.mp3"),
+	15: require("@/assets/sounds/zh/13.mp3"),
+	16: require("@/assets/sounds/zh/14.mp3"),
+	17: require("@/assets/sounds/zh/15.mp3"),
+	18: require("@/assets/sounds/zh/16.mp3"),
+	19: require("@/assets/sounds/zh/17.mp3"),
+	20: require("@/assets/sounds/zh/18.mp3"),
+	21: require("@/assets/sounds/zh/19.mp3"),
+	22: require("@/assets/sounds/zh/21.mp3"),
+	23: require("@/assets/sounds/zh/22.mp3"),
+	24: require("@/assets/sounds/zh/23.mp3"),
+	25: require("@/assets/sounds/zh/24.mp3"),
+	26: require("@/assets/sounds/zh/25.mp3"),
+	27: require("@/assets/sounds/zh/26.mp3"),
 };

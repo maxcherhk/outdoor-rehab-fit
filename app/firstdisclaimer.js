@@ -16,22 +16,22 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 const FirstDisclaimer = () => {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
 	const [loading, setLoading] = useState(false);
-	// useEffect(() => {
-	// 	const checkAgreement = async () => {
-	// 		try {
-	// 			const agreed = await AsyncStorage.getItem("userAgreed");
-	// 			if (agreed) {
-	// 				router.replace("/firstsafety");
-	// 			} else {
-	// 				setLoading(false);
-	// 			}
-	// 		} catch (error) {
-	// 			console.error("Error checking agreement status", error);
-	// 			setLoading(false);
-	// 		}
-	// 	};
-	// 	checkAgreement();
-	// }, []);
+	useEffect(() => {
+		const checkAgreement = async () => {
+			try {
+				const agreed = await AsyncStorage.getItem("userAgreed");
+				if (agreed) {
+					router.replace("/firstsafety");
+				} else {
+					setLoading(false);
+				}
+			} catch (error) {
+				console.error("Error checking agreement status", error);
+				setLoading(false);
+			}
+		};
+		checkAgreement();
+	}, []);
 
 	const handleAgree = async () => {
 		try {

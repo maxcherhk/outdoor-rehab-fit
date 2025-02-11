@@ -3,6 +3,7 @@ import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import { FontAwesome } from "@expo/vector-icons"; // Make sure to install this package
 import { LocaleContext } from "../../contexts/LocaleContext";
+import { RFValue } from "react-native-responsive-fontsize";
 
 const Setting = () => {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
@@ -62,7 +63,7 @@ const styles = StyleSheet.create({
 	buttonText: {
 		color: "white",
 		marginTop: 10,
-		fontSize: 28,
+		fontSize: RFValue(18),
 		fontWeight: "bold",
 	},
 });
