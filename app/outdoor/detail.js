@@ -1,7 +1,7 @@
 import React, { useEffect, useContext, useState } from "react";
-import { StyleSheet, View, Text, ScrollView, Modal, Image, TouchableOpacity } from "react-native";
+import { StyleSheet, View, Text, ScrollView, Modal, TouchableOpacity } from "react-native";
 import { useLocalSearchParams } from "expo-router";
-import { useImage } from "expo-image";
+import { Image } from "expo-image";
 import { Collapsible } from "@/components/Collapsible";
 import { ThemedText } from "@/components/ThemedText";
 import { useNavigation } from "expo-router";
