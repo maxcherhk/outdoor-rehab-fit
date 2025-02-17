@@ -91,6 +91,12 @@ const Favourite = () => {
 						</TouchableOpacity>
 					</TouchableOpacity>
 				)}
+				ListEmptyComponent={() => (
+					<View style={styles.emptyContainer}>
+						<Ionicons name="alert-circle-outline" size={50} color="gray" />
+						<Text style={styles.emptyText}>{i18n.t("noFavorite")}</Text>
+					</View>
+				)}
 			/>
 		</View>
 	);
@@ -172,6 +178,17 @@ const styles = StyleSheet.create({
 		width: 32,
 		height: 32,
 		marginRight: 8,
+	},
+	emptyContainer: {
+		flex: 1,
+		justifyContent: "center",
+		alignItems: "center",
+		paddingTop: 16,
+	},
+	emptyText: {
+		marginTop: 16,
+		fontSize: 18,
+		color: "gray",
 	},
 });
 
