@@ -1,7 +1,6 @@
 import React, { useEffect, useContext, useState } from "react";
-import { StyleSheet, View, Text, ScrollView, Modal, TouchableOpacity } from "react-native";
+import { StyleSheet, View, Text, ScrollView, Modal, TouchableOpacity, Image } from "react-native";
 import { useLocalSearchParams } from "expo-router";
-import { Image } from "expo-image";
 import { Collapsible } from "@/components/Collapsible";
 import { ThemedText } from "@/components/ThemedText";
 import { useNavigation } from "expo-router";
@@ -9,7 +8,7 @@ import { LocaleContext } from "../../contexts/LocaleContext";
 import YoutubePlayer from "react-native-youtube-iframe";
 import AudioPlayer from "@/components/AudioPlayer";
 import { Ionicons } from "@expo/vector-icons";
-import { enSoundFiles, zhSoundFiles } from "../../constants/Equipments";
+import { enSoundFiles, zhSoundFiles, gifFiles1, gifFiles2 } from "../../constants/Equipments";
 
 const Detail = () => {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
@@ -71,11 +70,11 @@ const Detail = () => {
 			<View style={styles.section}>
 				<ThemedText style={styles.text}>{i18n.t("outdoorPractice")}</ThemedText>
 				<View style={styles.gifContainer}>
-					<TouchableOpacity style={styles.gifButton} onPress={() => openModal(item.gif)}>
-						<Image source={item.gif} style={styles.gif} />
+					<TouchableOpacity style={styles.gifButton} onPress={() => openModal(gifFiles1[item.id])}>
+						<Image source={gifFiles1[item.id]} style={styles.gif} />
 					</TouchableOpacity>
-					<TouchableOpacity style={styles.gifButton} onPress={() => openModal(item.gif2)}>
-						<Image source={item.gif2} style={styles.gif} />
+					<TouchableOpacity style={styles.gifButton} onPress={() => openModal(gifFiles2[item.id])}>
+						<Image source={gifFiles2[item.id]} style={styles.gif} />
 					</TouchableOpacity>
 				</View>
 				<Collapsible title={i18n.t("useTips")}>
