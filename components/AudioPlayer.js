@@ -1,134 +1,81 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, Button, StyleSheet, TouchableOpacity } from "react-native";
-import Slider from "@react-native-community/slider";
+import { View, Button, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { Audio } from "expo-av";
-import { useFocusEffect } from "expo-router";
+import Slider from "@react-native-community/slider";
 import { MaterialIcons } from "@expo/vector-icons";
 
 const AudioPlayer = ({ audioFile }) => {
-	const [sound, setSound] = useState(null);
+	const [sound, setSound] = useState();
 	const [isPlaying, setIsPlaying] = useState(false);
-	const [duration, setDuration] = useState(0);
-	const [currentPosition, setCurrentPosition] = useState(0);
-	useEffect(() => {
-		const setupAudioMode = async () => {
-			await Audio.setAudioModeAsync({
-				allowsRecordingIOS: false,
-				staysActiveInBackground: true, // Keep audio alive in background
-				playsInSilentModeIOS: true,
-				shouldDuckAndroid: false, // Prevent audio interruptions
-				playThroughEarpieceAndroid: false, // Force external speaker
-				interruptionModeAndroid: Audio.INTERRUPTION_MODE_ANDROID_DO_NOT_MIX,
-				interruptionModeIOS: Audio.INTERRUPTION_MODE_IOS_DO_NOT_MIX,
-			});
-		};
+	const [status, setStatus] = useState({});
 
-		setupAudioMode();
-	}, []);
-
-	useEffect(() => {
-		const loadAudio = async () => {
-			if (sound) {
-				sound.unloadAsync();
-			}
-			const { sound } = await Audio.Sound.createAsync(audioFile);
-			setSound(sound);
-
-			sound.setOnPlaybackStatusUpdate((status) => {
-				if (status.isLoaded) {
-					setDuration(status.durationMillis || 0);
-					setCurrentPosition(status.positionMillis || 0);
-
-					if (status.didJustFinish) {
-						setIsPlaying(false);
-						sound.stopAsync();
-					}
-				}
-			});
-		};
-
-		loadAudio();
-
-		return () => {
-			if (sound) {
-				sound.unloadAsync();
-			}
-		};
-	}, [audioFile]);
-
-	useFocusEffect(
-		React.useCallback(() => {
-			return () => {
-				if (sound) {
-					sound.stopAsync();
-				}
-			};
-		}, [sound])
-	);
-
-	const playPauseHandler = async () => {
-		if (!sound) {
-			return;
-		}
-
-		if (isPlaying) {
-			await sound.pauseAsync();
-			setIsPlaying(false);
-		} else {
+	async function playSound() {
+		if (sound) {
 			await sound.playAsync();
 			setIsPlaying(true);
+		} else {
+			const { sound } = await Audio.Sound.createAsync(audioFile);
+			setSound(sound);
+			setIsPlaying(true);
+			await sound.playAsync();
+			sound.setOnPlaybackStatusUpdate((status) => setStatus(() => status));
 		}
-	};
+	}
 
-	const stopHandler = async () => {
+	async function pauseSound() {
+		if (sound) {
+			await sound.pauseAsync();
+			setIsPlaying(false);
+		}
+	}
+
+	async function stopSound() {
 		if (sound) {
 			await sound.stopAsync();
 			setIsPlaying(false);
-			setCurrentPosition(0);
 		}
-	};
+	}
 
-	const seekHandler = async (value) => {
+	const seekSound = async (value) => {
 		if (sound) {
-			const position = value * duration;
-			await sound.setPositionAsync(position);
-			setCurrentPosition(position);
+			await sound.setPositionAsync(value * 1000);
 		}
 	};
 
-	const formatTime = (milliseconds) => {
-		const totalSeconds = Math.floor(milliseconds / 1000);
-		const minutes = Math.floor(totalSeconds / 60);
-		const seconds = totalSeconds % 60;
+	useEffect(() => {
+		return sound
+			? () => {
+					sound.unloadAsync();
+			  }
+			: undefined;
+	}, [sound]);
+
+	const formatTime = (millis) => {
+		const minutes = Math.floor(millis / 60000);
+		const seconds = ((millis % 60000) / 1000).toFixed(0);
 		return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
 	};
 
 	return (
 		<View style={styles.container}>
-			<View style={styles.timeContainer}>
-				<Text>{formatTime(currentPosition)}</Text>
-				<Text>{formatTime(duration)}</Text>
+			<View style={styles.buttonContainer}>
+				<TouchableOpacity style={styles.button} onPress={isPlaying ? pauseSound : playSound}>
+					<MaterialIcons name={isPlaying ? "pause-circle-filled" : "play-circle-filled"} size={50} color="#1E90FF" />
+				</TouchableOpacity>
+				<TouchableOpacity style={styles.button} onPress={stopSound}>
+					<MaterialIcons name="stop-circle" size={50} color="#1E90FF" />
+				</TouchableOpacity>
 			</View>
-
 			<Slider
 				style={styles.slider}
 				minimumValue={0}
-				maximumValue={1}
-				value={duration ? currentPosition / duration : 0}
-				onValueChange={seekHandler}
-				minimumTrackTintColor="#1E90FF"
-				maximumTrackTintColor="#d3d3d3"
-				thumbTintColor="#1E90FF"
+				maximumValue={status.durationMillis ? status.durationMillis / 1000 : 0}
+				value={status.positionMillis ? status.positionMillis / 1000 : 0}
+				onSlidingComplete={seekSound}
 			/>
-
-			<View style={styles.controls}>
-				<TouchableOpacity onPress={playPauseHandler}>
-					<MaterialIcons name={isPlaying ? "pause-circle-filled" : "play-circle-filled"} size={50} color="#1E90FF" />
-				</TouchableOpacity>
-
-				<TouchableOpacity onPress={stopHandler}>
-					<MaterialIcons name="stop-circle" size={50} color="#1E90FF" />
-				</TouchableOpacity>
+			<View style={styles.timeContainer}>
+				<Text style={styles.timeText}>{status.positionMillis ? formatTime(status.positionMillis) : "0:00"}</Text>
+				<Text style={styles.timeText}>{status.durationMillis ? formatTime(status.durationMillis) : "0:00"}</Text>
 			</View>
 		</View>
 	);
@@ -136,25 +83,30 @@ const AudioPlayer = ({ audioFile }) => {
 
 const styles = StyleSheet.create({
 	container: {
-		alignItems: "center",
-		justifyContent: "center",
 		padding: 20,
 	},
-	timeContainer: {
+	buttonContainer: {
 		flexDirection: "row",
-		justifyContent: "space-between",
-		width: "100%",
-		marginBottom: 10,
+		justifyContent: "space-around",
+		marginBottom: 20,
+	},
+	button: {},
+	buttonText: {
+		color: "#fff",
+		fontSize: 16,
 	},
 	slider: {
 		width: "100%",
 		height: 40,
-		marginBottom: 20,
 	},
-	controls: {
+	timeContainer: {
 		flexDirection: "row",
-		justifyContent: "space-around",
-		width: "60%",
+		justifyContent: "space-between",
+		marginTop: 10,
+	},
+	timeText: {
+		fontSize: 16,
+		color: "#000",
 	},
 });
 
