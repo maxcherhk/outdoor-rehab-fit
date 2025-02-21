@@ -131,6 +131,12 @@ export const othersTranslations = {
 		agreeQuestionnaire:
 			"You have completed the disclaimer, physical activity readiness questionnaire, and safety precautions and risk management. Welcome and enjoy this app!",
 		noFavorite: "No items bookmarked",
+		weatherInfo: "Weather Information",
+		tempature: "Temperature",
+		uv: "UV Index",
+		morning: "Good Morning",
+		afternoon: "Good Afternoon",
+		evening: "Good Evening",
 	},
 	zh: {
 		intro:
@@ -156,6 +162,12 @@ export const othersTranslations = {
 		disagreeDisclaimer: "未閱讀此免責聲明不可使用本應用。",
 		agreeQuestionnaire: "您已完成免責聲明、體能活動適應力問卷、安全注意事項及風險管理，歡迎使用此應用程式！",
 		noFavorite: "沒有收藏項目",
+		weatherInfo: "天氣資訊",
+		tempature: "氣溫",
+		uv: "紫外線指數",
+		morning: "早安",
+		afternoon: "午安",
+		evening: "晚安",
 	},
 };
 

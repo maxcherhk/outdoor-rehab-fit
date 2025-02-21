@@ -3,10 +3,11 @@ import { StyleSheet, View, Text, TouchableOpacity, Image, Dimensions, ScrollView
 import { router, Link } from "expo-router";
 import { LocaleContext } from "../../contexts/LocaleContext";
 import { RFValue } from "react-native-responsive-fontsize";
+import WeatherComponent from "../../components/WeatherComponent";
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 const buttonSize = screenWidth * 0.4;
-const photoHeight = screenHeight > 800 ? screenHeight * 0.3 : screenHeight * 0.25;
+const photoHeight = screenHeight > 800 ? screenHeight * 0.35 : screenHeight * 0.25;
 export default function HomeScreen() {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
 	const buttons = [
@@ -20,9 +21,27 @@ export default function HomeScreen() {
 		{ color: "#F2CCC0", text: i18n.t("location"), icon: require("@/assets/icons/map.png"), route: "location" },
 		{ color: "#ECDD93", text: i18n.t("research"), icon: require("@/assets/icons/school.png"), route: "research" },
 	];
+
+	const getGreeting = () => {
+		const currentHour = new Date().getHours();
+		if (currentHour < 12) {
+			return i18n.t("morning");
+		} else if (currentHour < 18) {
+			return i18n.t("afternoon");
+		} else {
+			return i18n.t("evening");
+		}
+	};
+
 	return (
 		<ScrollView style={styles.container}>
-			<Image source={require("@/assets/images/background.png")} style={styles.photo} />
+			<View style={styles.imageContainer}>
+				<Image source={require("@/assets/images/hk.jpg")} style={styles.photo} />
+				<Text style={styles.greeting}>{getGreeting()},</Text>
+				<View style={styles.weatherComponentContainer}>
+					<WeatherComponent style={styles.weatherComponent} i18n={i18n} />
+				</View>
+			</View>
 			<View style={styles.buttonsContainer}>
 				{buttons.map((button, index) => (
 					<View key={index} style={styles.buttonWrapper}>
@@ -47,16 +66,39 @@ const styles = StyleSheet.create({
 		flex: 1,
 		backgroundColor: "#fff",
 	},
+	imageContainer: {
+		position: "relative",
+	},
 	photo: {
 		width: screenWidth,
 		height: photoHeight,
 		resizeMode: "cover",
+		filter: "brightness(0.8)",
+	},
+	greeting: {
+		position: "absolute",
+		top: screenHeight * 0.11,
+		left: screenWidth * 0.03,
+		fontSize: RFValue(24),
+		fontWeight: "bold",
+		color: "#fff",
+		padding: 10,
+		borderRadius: 5,
+	},
+	weatherComponentContainer: {
+		position: "absolute",
+		bottom: screenHeight * 0.04,
+		alignSelf: "center",
 	},
 	buttonsContainer: {
+		backgroundColor: "#fff",
+		borderTopLeftRadius: 20,
+		borderTopRightRadius: 20,
 		flexDirection: "row",
 		flexWrap: "wrap",
 		justifyContent: "space-between",
-		marginTop: 20,
+		marginTop: -20, // Added negative margin to overlap with the image
+		paddingTop: 20, // Added padding to control spacing
 		paddingHorizontal: 25, // Added padding to control spacing
 		paddingBottom: 20, // Added padding to control spacing
 	},
