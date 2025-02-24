@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
 	},
 	greeting: {
 		position: "absolute",
-		top: screenHeight * 0.11,
+		top: screenHeight * 0.05,
 		left: screenWidth * 0.03,
 		fontSize: RFValue(24),
 		fontWeight: "bold",

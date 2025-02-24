@@ -9,6 +9,7 @@ import YoutubePlayer from "react-native-youtube-iframe";
 import AudioPlayer from "@/components/AudioPlayer";
 import { Ionicons } from "@expo/vector-icons";
 import { enSoundFiles, zhSoundFiles, gifFiles1, gifFiles2 } from "../../constants/Equipments";
+import { RFValue } from "react-native-responsive-fontsize";
 
 const Detail = () => {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
@@ -39,7 +40,7 @@ const Detail = () => {
 	}
 
 	return (
-		<ScrollView>
+		<ScrollView contentContainerStyle={styles.container}>
 			<Modal visible={modalVisible} transparent={true} onRequestClose={closeModal}>
 				<View style={styles.modalContainer}>
 					<View style={styles.modalContent}>
@@ -96,6 +97,9 @@ const Detail = () => {
 };
 
 const styles = StyleSheet.create({
+	container: {
+		marginBottom: RFValue(16),
+	},
 	titleContainer: {
 		flexDirection: "row",
 		alignItems: "center",
@@ -107,7 +111,7 @@ const styles = StyleSheet.create({
 	},
 	section: {
 		padding: 16,
-		marginBottom: 16,
+		marginBottom: RFValue(20),
 		backgroundColor: "#fff",
 	},
 	image: {
@@ -119,6 +123,7 @@ const styles = StyleSheet.create({
 		fontSize: 24,
 		lineHeight: 32,
 		color: "#333",
+		marginBottom: RFValue(16),
 	},
 	gifContainer: {
 		flex: 1,

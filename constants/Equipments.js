@@ -165,6 +165,8 @@ export const equipmentTranslations = {
 				ptTip:
 					"Gently twisting the torso helps patients with lower back pain to gain mobility and flexibility in their lower back. When using a waist-twisting machine, patients with low back pain should not perform the movements too quickly or with excessive range; it should be kept within a range that does not exacerbate pain. If there are symptoms of numbness or weakness in the lower limbs, consult physiotherapists before using the machine.",
 				otTip: "Improvement in core stability and lower limb functionality will allow outdoor activities such as walking and climbing stairs easier.",
+				careTip:
+					"Observe and remind users to maintain appropriate postures while exercising. Remind them to lift their head up, eyes looking forward, and keep the upper body upright while twisting their waist.\n\nObserve and remind users to perform the movement slowly and steadily, avoiding abrupt changes in speed to prevent losing balance, falling, or getting injured.\n\nObserve and remind users that there is no need to make vigorous twisting movements; they should only twist to a moderate range of movement. Pay attention to whether the user can maintain balance.\n\nObserve and remind users to tightly grip the handrails with both hands, keep their upper body upright during the exercise, and place both feet flat on the pedals.\n\nIf the user experiences severe lower back pain, they should consult physiotherapists for advice before using or continuing to use the equipment.",
 			},
 			{
 				id: 9,
@@ -183,6 +185,8 @@ export const equipmentTranslations = {
 					"Continuous upper limb activity helps improve the flexibility of the upper limb joints and enhances cardiorespiratory function. Moderate aerobic exercise can help individuals with weaker cardiorespiratory functions, such as COVID-19 survivors, improve their heart and lung function. Aerobic exercise can also help control body weight and reduce the risk of developing hypertension, hyperlipidemia, and hyperglycemia, thereby lowering the risk of cardiovascular diseases. During exercise, it's important to maintain a level of exertion that feels comfortable but slightly challenging, allowing continuous conversation with others while exercising.",
 				otTip:
 					"This equipment can train the muscles of the entire body and is relevant to various daily activities, such as dressing, grooming, eating, cooking, etc. It helps improve overall functional strength, making daily tasks easier to perform.",
+				careTip:
+					"Observe and remind users to have good posture while exercising.  Have their eyes looking forward and maintain an upright posture with their heads lifted up.\n\nObserve and remind users to always grip the handrails tightly and keep both feet stable on the pedals.\n\nObserve and remind users to perform the exercise with a controlled push-pull motion, avoiding sudden speed changes. The range of movement during the exercise should not be excessive; maintaining a stable and steady rhythm is important.\n\nIf users have low back pain, it's essential to consult physiotherapists for advice before using or continuing to use the equipment.",
 			},
 			{
 				id: 10,
@@ -191,7 +195,7 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/11.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/11.jpg"),
-				youtubeKey: "bKl8JHH4ZHg",
+				youtubeKey: "qsboNbQoOPw",
 				details:
 					"First, grip the handrails tightly and place your feet on the lowest part of the inclined platform, ensuring that the heels make contact with the platform. Maintain this position, and avoid leaning backward.\n\nFor beginners, hold onto the handrails and use a lower incline platform. Maintain a good posture, look straight ahead, keep your head up, and extend your spine. Keep your shoulders away from your ears, roll them backward, and lift your chest. \n\nMake sure your knees are straight and your heels are firmly placed on the inclined platform. Hold this position for 30 seconds. You should feel calf muscles being stretched but not painful. \n\nRemember to breathe normally during the stretch.\n\nRest for 15 seconds, then you may repeat the stretch two more times.\n\nFor advanced users, hold onto the handrails and use a steeper incline on the platform.",
 				kinesiologyTip:
@@ -199,6 +203,8 @@ export const equipmentTranslations = {
 				ptTip:
 					'Stepping on the inclined platform can help patients with "plantar fasciitis" and "knee arthritis" increase the flexibility of their calf muscles, thereby reducing pain in the foot and knee joints. When using the inclined platform, the toes should point straight ahead, and it\'s essential to avoid standing with the feet in an "out-toeing" position.',
 				otTip: "By improving ankle flexibility, daily tasks like putting on pants, wearing socks, and walking outdoors become easier.",
+				careTip:
+					"Observe and remind users to maintain a good posture, heads up, and chest lifted while exercising. Also, ensure that the knee joints are fully extended.\n\nObserve and remind users to maintain normal breathing during the exercise.\n\nRemind users that they should feel a stretched sensation during the exercise, they should not experience intense pain.",
 			},
 			{
 				id: 11,
@@ -207,13 +213,15 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/12.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/12.jpg"),
-				youtubeKey: "qsboNbQoOPw",
+				youtubeKey: "QAXrJJhFSDo",
 				details:
 					"First, we start by placing our feet at a distance behind the armrests. Then, step one foot forward with the knee slightly bent. It's essential to ensure that the knee of the forward foot does not extend beyond the position of the toes, while the back foot remains straight. Maintain a good posture, look straight ahead, keep your head up, and extend your spine. Keep your shoulders away from your ears, roll them back, and lift your chest. Avoid leaning forward or backward. Maintain your body's center of gravity above your trunk and back foot.\n\nWe can hold this position for 10 seconds. Then, step the front foot back to return to the original position.\n\nNow, let's try the same movement with the other foot. Step one foot forward with the knee slightly bent, making sure not to extend the knee beyond the position of the toes, while keeping the back foot straight. Look straight ahead, maintain an upright posture, and avoid leaning forward or backward. Keep your body's center of gravity above your trunk and back foot.\n\nWe can hold this position for 10 seconds. Then, step the front foot back to return to the original position.\n\nFor beginners, you can hold onto the armrests with both hands for balance.\n\nFor advanced users, you can follow the same steps as beginners but without holding onto the armrests. Instead, place your hands on your hips.",
 				kinesiologyTip: "Partial-lunge helps to strengthen the leg muscles, increase leg flexibility, and improve balance.",
 				ptTip:
 					'Partial-lunge can help patients with "plantar fasciitis" and "knee arthritis" increase the flexibility of the calf muscles, thereby reducing pain in the foot and knee joints. It can also strengthen the quadriceps in the front of the leg and help seniors with poor balance to prevent falls.\n\nWhen performing the partial-lunge, the front leg should be slightly bent, and the back leg should be straight. Pay attention to keep both the front and back foot pointing straight ahead, avoiding any out-toeing. Also, ensure that the front knee points straight ahead to avoid inward rotation.',
 				otTip: "Strengthening lower limbs muscle allow seniors’ ability to climb stairs and get on and off buses.",
+				careTip:
+					"Pay attention to whether the user's knees go beyond their toes. If there is knee pain, they can try adjusting the angle of bending of the knee joint and pay attention to whether the knee and foot are on the same plane. If they still experience knee pain despite all the adjustments, it's important to consult a physiotherapist.\n\nObserve and remind the user to look straight ahead, keep their body upright, and avoid excessive leaning forward or backward to prevent falling while exercising.",
 			},
 			{
 				id: 12,
@@ -222,13 +230,15 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/13.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/13.jpg"),
-				youtubeKey: "QAXrJJhFSDo",
+				youtubeKey: "jOlNmoX7zdY",
 				details:
 					"First, stand with your feet shoulder-width apart, holding onto the handrails. Shift your weight to one foot and lift the other foot off the ground to stand on one leg. If you can maintain balance, slowly release your hands from the handrails, place them on your hips, and stand on one leg for 10 seconds.\n\nFor beginners, hold onto the handrails with both hands.\n\nFor advanced users, you can place your hands on your hips.",
 				kinesiologyTip: "This equipment helps to enhance the user's perception of balance and increase the strength of the lower limb muscles.",
 				ptTip:
 					'Single-leg stance training can strengthen lower limb muscles and improve balance, which helps seniors prevent falls. When training balance, it is essential to prioritize safety and only attempt what is manageable. If balance ability is low, users do not need to release both hands during practice. Instead, they can start by using one hand for support or practice a "loose handgrip touching" technique. When balance improves, gradually release both hands to increase the difficulty level.',
 				otTip: "This equipment can enhance lower limb functioning, making it easier for seniors to climb stairs and get on and off buses.",
+				careTip:
+					"Observe and remind the user to keep their back straight, chest lifted, and maintain normal breathing while exercising.\n\nPay attention to whether the user's body is leaning forward or backward to prevent any potential risks. Also, observe and remind the user to prioritize safety, and if necessary, they can hold onto the handrails for support.",
 			},
 			{
 				id: 13,
@@ -237,7 +247,7 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/14.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/14.jpg"),
-				youtubeKey: "jOlNmoX7zdY",
+				youtubeKey: "OvPAz-bcFYw",
 
 				details:
 					"First, hold onto the handrail with the right hand and extend the left arm towards the sky. Then, bring the right foot backward with the toes pointing towards the ground. Look straight ahead, keep your head up, and extend your spine. Keep your shoulders away from your ears, roll them backward, and lift your chest. Make sure to keep the back foot off the ground during the exercise. Avoid lifting the back foot too high to avoid putting excessive pressure on the spine. Remember to breathe normally.\n\nYou may hold this position for 10 seconds, then rest for 10 seconds.\n\nNow, let's switch and hold onto the handrail with the left hand and extend the right arm towards the sky. Look straight ahead, keep your head up, and extend your spine. Keep your shoulders away from your ears, roll them back, and lift your chest. Make sure to keep the back foot off the ground during the exercise. Avoid lifting the back foot too high to avoid putting excessive pressure on the spine. Remember to breathe normally.\n\nYou may hold this position for 10 seconds, then rest for 10 seconds.\n\nFor beginners, repeat the above movements three times.\n\nFor advanced users, repeat the above movements six times.",
@@ -245,6 +255,8 @@ export const equipmentTranslations = {
 				ptTip:
 					"The alternating movements of the arms and legs can help patients with lower back pain and sciatica to increase the stability of the spine and alleviate pain in the back and lower limbs. When performing this exercise, it is essential to avoid excessive range of motion while lifting the arms and legs and to slow down the movements. Focus on maintaining stability in the trunk and avoid arching back.\n\nDuring the practice, there should be no increase in pain in the lower back and lower limbs. If there is an increase in pain or symptoms such as numbness or weakness in the lower limbs, the exercise should be stopped immediately, and a physiotherapist should be consulted for further evaluation and guidance.",
 				otTip: "Persistent training can strengthen the back muscles and muscles along the spine, improving the overall daily functional abilities and improving walking posture.",
+				careTip:
+					"Observe and remind the user to maintain normal breathing.\n\nObserve and remind the users to have good posture while exercising. Remind them to look straight ahead, keep their heads up, and extend their spine. Keep the shoulders away from the ears, roll them back, and lift the chest. During the exercise, ensure that the back leg is off the ground, but avoid lifting it too high to avoid putting pressure on the back.",
 			},
 			{
 				id: 14,
@@ -253,7 +265,7 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/15.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/15.jpg"),
-				youtubeKey: "OvPAz-bcFYw",
+				youtubeKey: "-8_mF1hvVAY",
 
 				details:
 					"First, hold onto the handrails and stand with the feet shoulder-width apart.\n\nWhen performing the push-up, start by bending both arms and leaning the upper body forward. Maintain this position for 3 seconds, then push back to the original position until the arms are fully extended. When performing push-ups, keep the shoulders lowered, maintain normal breathing, and ensure a straight alignment, avoiding hunching or arching the back.\n\nFor beginners, stand a bit closer to the signboard to beg.",
@@ -262,6 +274,8 @@ export const equipmentTranslations = {
 					"This equipment assists users to support their body weight to perform a standing push-up exercise. The exercise helps to strengthen the upper limb muscles.",
 				ptTip: "/",
 				otTip: "By strengthening the upper limb muscles, everyday activities such as carrying groceries or lifting heavy objects can become much easier.",
+				careTip:
+					"Observe and remind the user not to shrug their shoulders and keep their shoulders lowered.\n\nObserve and remind the user not to arch their back during the exercise.\n\nObserve and remind the user to maintain normal breathing throughout the exercise.",
 			},
 			{
 				id: 15,
@@ -270,8 +284,7 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/16.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/16.jpg"),
-				youtubeKey: "-8_mF1hvVAY",
-
+				youtubeKey: "ysB6wMZKtrs",
 				details:
 					"First, hold onto the handrails and stand with the feet shoulder-width apart.\n\nWhen performing the push-up, start by bending both arms and leaning the upper body forward. Maintain this position for 3 seconds, then push back to the original position until the arms are fully extended. When performing push-ups, keep the shoulders lowered, maintain normal breathing, and ensure a straight alignment, avoiding hunching or arching the back.\n\nFor beginners, stand a bit closer to the signboard to beg.",
 
@@ -279,6 +292,8 @@ export const equipmentTranslations = {
 				ptTip:
 					'Stepping exercises can help patients with hip and knee arthritis to strengthen their gluteus maximus and quadriceps muscles, as well as assist seniors with poor balance in preventing falls. During step exercises, ensure that the knees align with the toes in a straight line, pointing forward, avoiding knee internal rotation, and "out-toeing" stance.\n\nPersistent step exercises also improve cardiovascular function. Moderate aerobic exercise benefits individuals with weak cardiorespiratory function, such as COVID-19 survivors, by enhancing their heart and lung capacity. Aerobic exercises also aid in weight management and reduce the risk of hypertension, hyperlipidemia, and hyperglycemia, lowering the risk of cardiovascular diseases. During exercise, maintain a level of exertion that feels comfortable but slightly challenging, allowing for continuous conversation with others while exercising.',
 				otTip: "By strengthening the leg muscles, everyday activities such as walking and climbing stairs can become easier.",
+				careTip:
+					"Observe and remind the user to maintain good posture while exercising. Remind them to look straight ahead, lift their head up, and extend their spine. Keep the shoulders away from the ears, roll them back, and lift up the chest.\n\nIf the user experiences pain in the hip, knee, or ankle joints while exercising, they should first consult physiotherapists for advice before using or continuing to use the equipment.",
 			},
 			{
 				id: 16,
@@ -287,7 +302,7 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/17.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/17.jpg"),
-				youtubeKey: "ysB6wMZKtrs",
+				youtubeKey: "JShuB-GlTzk",
 
 				details:
 					"First, sit on the seat with one hand holding onto the armrest and the other hand on your hip. Place one foot on the stool, keeping your lower back straight.\n\nIf you want to increase the stretch at the back of your leg, try to extend your body upwards and exhale slowly while bringing your abdomen closer to your thigh, remember to maintain normal breathing.\n\nYou should feel a gentle stretch in the muscles at the back of your leg, but it should not be painful.\n\nFor advanced users, sit on the seat and place your right foot on the stool. Keep your lower back straight and extend your body upwards. Then, exhale and cross your hands over your thighs, extending them towards your knee, stop when you feel a gentle stretch in the back of your leg. Remember to maintain normal breathing during the stretch.\n\nYou will feel a gentle stretch in the muscles at the back of your thigh, but it should not be painful.",
@@ -297,6 +312,8 @@ export const equipmentTranslations = {
 					"This exercise helps to increase the flexibility of the muscles at the back of the thigh, providing relief for individuals with lower back pain and knee arthritis. When performing this exercise, ensure that the knee of the foot placed on the stool is fully extended and the toes are pointed upwards. Keep your back straight and slowly hinge from the hips, pressing the abdomen towards the thigh. You should feel a stretch sensation at the back of the thigh, but it should not be painful.",
 				otTip:
 					"By increasing the flexibility of the legs, activities such as putting on pants, wearing socks, and getting in and out of the bathtub become easier and more effortlessly.",
+				careTip:
+					"Pay attention to whether the user can maintain balance to prevent falls.\n\nObserve and remind users to place only one foot on the stool at a time. The stretch should be slow and gradual, avoiding excessive or jerky movements that may risk injury.\n\nObserve and remind users to maintain good posture while exercising. Keep their lower back straight during the exercise. They should feel a stretched sensation during the movement, but it should not cause intense pain.\n\nLastly, remind the user to maintain normal breathing throughout the exercise.",
 			},
 			{
 				id: 17,
@@ -305,7 +322,7 @@ export const equipmentTranslations = {
 				icon: require("./../assets/images/icon/18.jpg"),
 				pic: "",
 				horizontalPic: require("./../assets/images/horizontal/18.jpg"),
-				youtubeKey: "JShuB-GlTzk",
+				youtubeKey: "-GBtlnY3t-M",
 
 				details:
 					"Start by sitting on a seat, then tightly grip the handlebars with both hands and place both feet on the pedals. Maintain a good posture while exercising. Look straight ahead, and extend your spine. Keep your shoulders away from your ears, rotate them back, and lift your chest. \n\nNow, you can start pedaling like riding a bicycle. Be careful when getting on and off the bicycle. If you feel any pain in the hip, knee, or ankle joints during flexion, consult physiotherapists for advice before continuing to use the equipment.\n\nFor beginners, repeat the above exercise 20 times.\n\nFor advanced users, repeat the above exercise 20 times.",
@@ -316,6 +333,8 @@ export const equipmentTranslations = {
 					"Cycling is beneficial for individuals with hip and knee arthritis as it strengthens the lower limb muscles and enhances flexibility.\n\nFor those with more severe arthritis, choosing a bicycle with a higher seat can reduce the range of motion in the knee joint, thus minimizing knee joint wear and tear.\n\nRegular cycling strengthens the lower limbs, improves flexibility, and enhances cardiorespiratory function. Aerobic exercise can help individuals with weak cardiorespiratory functions, such as COVID-19 survivors, improve their heart and lung function. Aerobic exercise also aids in weight control and lowers the risk of developing hypertension, hyperlipidemia, and hyperglycemia, thereby reducing the risk of cardiovascular diseases. During exercise, it's important to maintain a level of exertion that feels comfortable but slightly challenging, allowing continuous conversation with others while exercising.",
 				otTip:
 					"By strengthening leg muscles and improving joint mobility, it helps with daily activities such as getting in and out of the bathtub, climbing stairs, and getting on and off buses.",
+				careTip:
+					"Be cautious of the user's safety when getting on and off the bicycle.\n\nIf cycling is for aerobic purposes, they can cycle continuously for 10 minutes, take a rest, then cycle for another 10 minutes, rest, and cycle again for 10 minutes, totaling 30 minutes.\n\nIf the user feels any pain in the hip, knee, or ankle joints, they should consult physiotherapists for advice before using or continuing to use the bicycle.\n\nEnsure the user maintains body balance while cycling.\n\nObserve if the user maintains proper posture and stability while cycling, keeping the torso upright and stable while cycling.\n\nCaregivers should pay attention to whether the users maintain good posture while exercising. Users should have their heads up, spine extended, shoulders away from ears and chest lifted up. ",
 			},
 			{
 				id: 18,
@@ -327,12 +346,14 @@ export const equipmentTranslations = {
 				details:
 					"Hold onto the handrails tightly, with both feet placed on the pedals.\n\nThen, swing both legs alternately, simulating the motion of walking. Be careful not to swing both legs in the same direction to avoid losing balance. The pace of the simulated walking motion should be steady and moderate, not too fast or too slow. Also, avoid swinging the legs with an excessively large range of movements.\n\nMaintain a good posture while exercising. Look straight ahead, lift your head up, and extend your spine. Keep your shoulders away from your ears and back.",
 
-				youtubeKey: "-GBtlnY3t-M",
+				youtubeKey: "GqokO6fXIEE",
 
 				kinesiologyTip: "By simulating the motion of walking with alternate swings of the legs, users can exercise lower limbs and improve cardiorespiratory function.",
 				ptTip:
 					"Airwalker can be beneficial for patients with hip arthritis as it helps exercise the lower limbs, improving strength and flexibility. During walking, it is essential to keep the intensity and range within a level that does not exacerbate pain.\n\nExercising with an airwalker strengthens the lower limbs, and enhances cardiorespiratory function. Aerobic exercise can assist individuals with weak cardiorespiratory functions, such as COVID-19 survivors, in improving their heart and lung function. Aerobic exercise also aids in weight management and lowers the risk of hypertension, hyperlipidemia, and hyperglycemia, reducing the chances of cardiovascular diseases. During exercise, one should maintain an intensity that feels comfortable yet slightly challenging, allowing continuous conversation with others while exercising.",
 				otTip: "By strengthening the lower limb and improving cardiovascular fitness, everyday activities such as climbing stairs and getting on and off buses can become easier.",
+				careTip:
+					"Observe and remind the user not to swing both legs in the same direction. The speed should be moderate, and the swinging amplitude should not be too large to avoid injury risks.\n\nPay attention to the stability of the user's trunk. If you notice any swaying or instability in the user's body, it may indicate that the speed is too fast. Remind the user to adjust their pace accordingly.\n\nObserve and remind the user to firmly hold onto the handrails.",
 			},
 			{
 				id: 19,
@@ -344,13 +365,15 @@ export const equipmentTranslations = {
 				details:
 					"First, grasp the handle of the wheel with both hands. Then, slowly and steadily rotate the wheel clockwise with both hands. Pay attention to keeping your body stable.\n\nWhen rotating, maintain a steady speed, neither too fast nor too slow., and then take a rest.\n\nMaintain good posture while exercising. Look straight ahead, lift your head up, and extend your spine. Keep your shoulders away from your ears, rotate them backward, and lift your chest.\n\nFor individuals with shoulder joint arthritis, you should consult physiotherapists for advice before using or continuing to use the wheel.",
 
-				youtubeKey: "GqokO6fXIEE",
+				youtubeKey: "tXMIqW8kUo4",
 
 				kinesiologyTip: "By rotating the wheels with both hands, you can enhance the flexibility and mobility of the upper limb joints and muscles.",
 				ptTip:
 					'Gentle joint movements can help individuals with "frozen shoulder" and shoulder arthritis in maintaining the range of motion in the shoulder joint and alleviate shoulder pain. When rotating the wheel, the rotational force and range should not be excessive, and it should be kept within a range that does not exacerbate the pain.',
 				otTip:
 					"Enhancing the flexibility of the shoulder joint can make upper limb movements, such as dressing, grooming, wiping windows, answering phone calls, and more, easier to perform.",
+				careTip:
+					"When performing the exercise, it is easy for the shoulders to shrug up. Observe and remind the user to keep the shoulders away from the ears.\n\nWatch and remind the user to maintain a steady speed while rotating, avoiding sudden changes in pace.\n\nPay attention to whether the user's body trunk can maintain stability.\n\nFor individuals with severe shoulder joint arthritis, it is recommended to consult physiotherapists for advice before using or continuing to use the wheel.",
 			},
 			{
 				id: 20,
@@ -362,12 +385,14 @@ export const equipmentTranslations = {
 				details:
 					"Hold the handles, and stand with feet shoulder-width apart. One hand pull the handle downwards while the other hand extends. Alternate the movement between both hands, emphasizing the range of motion rather than speed. Use a moderate pace for this exercise. When performing the handle-pulling movement, remember to maintain stability in the torso.\n\nWhen performing the exercise, keep the rope or the handle straight down to avoid pulling it diagonally and also avoid using one hand only to prevent arm injuries. ",
 
-				youtubeKey: "tXMIqW8kUo4",
+				youtubeKey: "tjJg0NwP7KI",
 
 				kinesiologyTip: "By performing rope pulling exercises, users can enhance the flexibility of the upper limb joints.",
 				ptTip:
 					'Gentle joint movements can help individuals with "frozen shoulder" and shoulder arthritis maintain shoulder joint range of motion and flexibility. When performing rope pulling exercises, the hands can be positioned in front of or to the side of the body, but avoid pulling from behind the body. The force and range of motion during rope pulling should not be excessive, and it should remain within a range that does not exacerbate pain. If one hand feels weaker or painful, you can use the strength of the other hand to assist in the movement. To achieve stretching benefits, you can hold the position at the highest point within your comfortable range for a few seconds before slowly releasing.',
 				otTip: "Improving the flexibility of the upper limb joints can make daily activities like wiping tables, lifting objects, showering, and dressing easier.",
+				careTip:
+					"Observe and remind the user not to pull the rope too quickly and avoid pulling with both hands simultaneously.\n\nPay attention to whether the user keeps the rope vertical during the exercise to avoid pulling it at an angle.\n\nObserve and remind the user not to use one hand only to pull the rope to prevent arm injuries.",
 			},
 			{
 				id: 21,
@@ -379,7 +404,7 @@ export const equipmentTranslations = {
 				details:
 					"Hold onto the handrails tightly with both hands and place both feet on the pedals. Then, coordinate the movement of both feet with the motion of both hands. During the exercise, avoid fully extending the knees. Maintain a steady and consistent pace while pedaling and avoid jerky movement.",
 
-				youtubeKey: "tjJg0NwP7KI",
+				youtubeKey: "i4pranw342w",
 
 				kinesiologyTip:
 					"This equipment can help strengthen the lower limbs and improve body balance. Continuous training can also improve the functionality of the respiratory system.",
@@ -387,6 +412,8 @@ export const equipmentTranslations = {
 					'Step exercises can assist individuals with hip and knee arthritis in building strength in their gluteal and quadriceps muscles. Additionally, it can aid older adults with balance issues in preventing falls. During step exercises, it\'s important to align the knees and toes in a straight line, pointing forward, and to avoid any inward rotation of the knee or standing with the feet in an "out-toeing" position.\n\nContinuous step exercises can also improve cardiorespiratory fitness. Aerobic exercise can help individuals with weak cardiorespiratory systems, such as those recovering from COVID-19, to enhance their heart and lung function. Aerobic exercise also helps control body weight and reduce the risk of hypertension, high cholesterol, and high blood sugar, ultimately lowering the risk of cardiovascular diseases. During exercise, one should aim for a level of intensity that feels slightly challenging but allows for continued conversation with others.',
 				otTip:
 					"By using this fitness equipment, users can enhance their lower limb functionality, and it proves beneficial for everyday movements such as climbing stairs and getting on or off buses.",
+				careTip:
+					"Observe and remind the user to maintain a steady and consistent pedaling speed, avoiding sudden changes in pace.\n\nObserve and remind the user not to fully extend or excessively bend both knees during the exercise.\n\nObserve and remind the user to keep their trunk stable and maintain proper posture throughout the activity.\n\n",
 			},
 			{
 				id: 22,
@@ -403,6 +430,8 @@ export const equipmentTranslations = {
 				ptTip:
 					"Massage can help patients with low back pain and sciatica to relax their back muscles and relieve pain. During the massage, back-and-forth pressure, or targeted pressure can be applied to tense and sore areas. The massage pressure should be moderate, avoiding exacerbating pain in the lower back and limbs. If the pain increases or symptoms like leg numbness or weakness occur, stop using the massager and consult physiotherapists.",
 				otTip: "Massage can alleviate lower back pain, making activities involving the lower back more comfortable, such as cooking, walking, and cleaning.",
+				careTip:
+					"If the user experiences any pain or discomfort in the waist or back during the massage, consult physiotherapists for advice before using or continuing to use the massager.\n\nObservation and reminders should be given to the user to ensure that the massage is done with moderate pressure.",
 			},
 			{
 				id: 23,
@@ -420,6 +449,8 @@ export const equipmentTranslations = {
 					"Practicing the rotation of the handlebars helps maintain the mobility of the upper limb joints. When rotating the handlebars, there's no need to use excessive speed or force; it should be within a range that does not worsen the level of pain.",
 				otTip:
 					"By exercising the upper limbs through rotating the handlebar, everyday activities like wiping tables, lifting objects, showering, and dressing can be performed with greater ease.",
+				careTip:
+					"Observe and remind the user to keep their heads up and extend the spine while rotating the handlebar. Keep the eyes looking forward, shoulders rolled back, and chest lifted.\n\nIf the user experiences pain in the hip, knee, or ankle joints during exercise, it is recommended to consult physiotherapists for advice before using or continuing to use the equipment.",
 			},
 			{
 				id: 24,
@@ -432,13 +463,14 @@ export const equipmentTranslations = {
 					"Sit and place both feet on the foot pedals. Pay attention to good posture. Look straight ahead, lift your head up, and extend your spine. Keep your shoulders away from your ears, roll your shoulders back, and lift your chest. \n\nStart alternating pedaling, allowing the foot pedals to slowly rotate forward. Be mindful of your body balance.\n\nIf you experience pain in the hip, knee, or ankle joints during the exercise, consult physiotherapists for advice before using or continuing to use the equipment.",
 
 				youtubeKey: "PWHqGwbYCrk",
-
 				kinesiologyTip:
 					"Lower Limb Exercise: Legs lifting movements from the pedaling exercise can improve the strength of your leg muscles and the mobility of your knee and ankle joints.",
 				ptTip:
 					"Pedaling can help patients with hip and knee arthritis to improve the strength and flexibility of their lower limbs. During the training, the speed and force of pedaling should not be too vigorous and should be within a range that does not exacerbate the pain. If arthritis is severe, it is recommended to choose a higher or more backward seat position for the foot pedals to reduce wear and tear on the knee joints.",
 				otTip:
 					"Training with alternate foot stepping is beneficial for daily activities such as getting in and out of the bathtub, climbing stairs, and boarding or alighting from buses.",
+				careTip:
+					"Observe and remind the user to keep their heads up and extend the spine while rotating the handlebar. Keep the eyes looking forward, shoulders rolled back, and chest lifted.\n\nIf the user experiences pain in the hip, knee, or ankle joints during exercise, it is recommended to consult physiotherapists for advice before using or continuing to use the equipment.",
 			},
 			{
 				id: 25,
@@ -451,13 +483,14 @@ export const equipmentTranslations = {
 					"First, hold onto the handrails and place one foot on the horizontal bar while keeping your lower back straight. If you want to increase the stretch, try extending the body up, and bringing your abdomen closer to your thigh while exhaling. Maintain normal breathing throughout the stretch. \n\nThe stretch should create a stretched sensation but not pain.\n\nNext, hold onto the handrails and place your other foot on the horizontal bar. Keep your lower back straight. Lift your body upward, exhale, and slowly bring your abdomen closer to your thigh. Perform the movement slowly, avoiding fast motions. If the muscles are too tight, you can maintain the current position without bringing your abdomen closer to your thigh. Remember to breathe normally.\n\nYou should feel a tight sensation in the muscles of your thigh without experiencing pain.",
 
 				youtubeKey: "OlnhHezd6No",
-
 				kinesiologyTip:
 					"Placing one foot on the horizontal bar allows the user to stretch the muscles in the lower back and the back of the thigh, thereby increasing flexibility in these areas.",
 				ptTip:
 					"The leg stretch can help patients with lower back pain and knee arthritis to increase the flexibility of the posterior thigh muscles, reducing pain in the lower back and knees. When using the leg stretch, ensure that one leg's knee is fully extended on the horizontal bar while maintaining a straight back. Slowly bend the hip, pressing the abdomen toward the thigh. You should feel a stretch sensation in the muscles at the back of the thigh. The sensation should not be painful.",
 				otTip:
 					"Increasing the flexibility of the lower back and posterior thigh muscles can make activities such as putting on pants, wearing socks, and getting in and out of the bathtub easier and more comfortable.",
+				careTip:
+					"Pay attention to whether the user can maintain balance to prevent falls.\n\nObserve and remind users to place only one foot on the horizontal bar at a time. During the stretch, it should be slow and gradual, avoiding excessive or rapid movements that may risk injury.\n\nObserve and remind users to keep their lower back straight during the exercise. They should feel a stretching sensation during the movement, but it should not cause intense pain.\n\nLastly, remind the user to maintain normal breathing throughout the exercise.",
 			},
 			{
 				id: 26,
@@ -474,6 +507,8 @@ export const equipmentTranslations = {
 				ptTip:
 					"Swinging both feet can help patients with knee arthritis to improve their lower limb strength and flexibility. During the training, the swinging amplitude and intensity should not be too vigorous and should be kept within a range that does not worsen the pain. If the arthritis is severe, it is recommended to choose a higher seat or sit further away from the footrest to reduce the strain on the knee joints.",
 				otTip: "Increasing the mobility and flexibility of the knee and ankle joints makes daily activities like walking, climbing stairs, and getting on and off buses easier.",
+				careTip:
+					"Observe and remind users not to swing both feet simultaneously, maintain a moderate speed, and avoid excessive swinging to prevent accidents.\n\nPay attention to the user's trunk stability. If you notice the user's body swaying, it may indicate that the speed is too fast. Advise the user to adjust the speed.",
 			},
 			{
 				id: 27,
@@ -491,6 +526,8 @@ export const equipmentTranslations = {
 					"Rotating the handlebars helps to maintain the mobility and flexibility of the upper limb joints. When doing this exercise, avoid excessive speed and force, keeping within a range that won't exacerbate any pain.\n\nContinuous upper limb activity helps to improve the mobility of the upper limb joints, and enhances cardiorespiratory function. Moderate aerobic exercise can help individuals with weak cardiorespiratory functions, such as COVID-19 survivors to improve their heart and lung function. Aerobic exercise can also help control body weight and reduce the risk of developing hypertension, hyperlipidemia, and hyperglycemia, thereby lowering the risk of cardiovascular diseases. During exercise, it's important to maintain a level of exertion that feels comfortable but slightly challenging, allowing for continuous conversation with others while exercising.",
 				otTip:
 					"By improving the mobility and flexibility of the upper limb, everyday activities such as wiping tables, lifting objects, showering, and dressing can be done more easily.",
+				careTip:
+					"Observe and remind the user to have good posture during exercise. Keep their head up and extend the spine while rotating the handlebars. Keep the eyes looking forward, shoulders rolled back, and chest lifted.",
 			},
 		],
 	},

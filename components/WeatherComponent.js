@@ -13,24 +13,12 @@ const WeatherComponent = ({ i18n }) => {
 			.then((data) => {
 				const temperatureData = data.temperature.data.find((entry) => entry.place === "京士柏");
 				const uvData = data.uvindex.data.find((entry) => entry.place === "京士柏");
-
-				const temperature = temperatureData ? temperatureData.value : null;
-				let activitySuggestion = "";
-
-				if (temperature !== null) {
-					if (temperature >= 27) {
-						activitySuggestion = "天氣炎熱，建議選擇室內運動或避免長時間戶外運動。";
-					} else if (temperature >= 15) {
-						activitySuggestion = "天氣適中，適合戶外運動，但請注意適當補水。";
-					} else {
-						activitySuggestion = "天氣較冷，建議穿著保暖衣物並進行適量運動。";
-					}
-				}
+				const humidityData = data.humidity.data.find((entry) => entry.place === "香港天文台");
 
 				setWeather({
 					temperature: temperatureData ? `${temperatureData.value}°${temperatureData.unit}` : "N/A",
 					uvIndex: uvData ? `${uvData.value} (${uvData.desc})` : "N/A",
-					suggestion: activitySuggestion,
+					humidity: humidityData ? `${humidityData.value}%` : "N/A",
 				});
 			})
 			.catch((error) => console.error("Error fetching weather data:", error))
@@ -57,9 +45,15 @@ const WeatherComponent = ({ i18n }) => {
 						{i18n.t("uv")}: {weather.uvIndex}
 					</Text>
 				</View>
+				<View style={styles.infoContainer}>
+					<MaterialCommunityIcons name="water-percent" size={24} color="black" />
+					<Text style={styles.text}>
+						{i18n.t("humidity")}: {weather.humidity}
+					</Text>
+				</View>
 			</View>
 			<View style={styles.container}>
-				<Text style={styles.suggestion}>{weather.suggestion}</Text>
+				<Text style={styles.suggestion}>{i18n.t("uvWarn")}</Text>
 			</View>
 		</View>
 	);
@@ -74,6 +68,7 @@ const styles = StyleSheet.create({
 		padding: RFValue(12),
 		borderRadius: 10,
 		backgroundColor: "rgba(255, 255, 255, 0.8)",
+		justifyContent: "center",
 	},
 	title: {
 		fontSize: RFValue(12),
@@ -83,18 +78,16 @@ const styles = StyleSheet.create({
 	infoContainer: {
 		flexDirection: "row",
 		alignItems: "center",
-		marginBottom: 5,
 	},
 	text: {
 		fontSize: RFValue(12),
 		marginLeft: 5,
 	},
 	suggestion: {
-		fontSize: RFValue(12),
+		fontSize: RFValue(9),
 		color: "#ff6600",
 		fontWeight: "bold",
 		textAlign: "center",
-		marginTop: 10,
 		width: 150,
 	},
 });

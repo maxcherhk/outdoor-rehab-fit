@@ -128,8 +128,7 @@ export const othersTranslations = {
 		agreeSafety: "I understand",
 		disagreeSafety: "I don't understand",
 		disagreeDisclaimer: "You can use this app only if you read the disclaimer.",
-		agreeQuestionnaire:
-			"You have completed the disclaimer, physical activity readiness questionnaire, and safety precautions and risk management. Welcome and enjoy this app!",
+		agreeQuestionnaire: "You have completed the disclaimer, physical activity readiness questionnaire, and safety precautions and risk management. Welcome and enjoy this app!",
 		noFavorite: "No items bookmarked",
 		weatherInfo: "Weather Information",
 		tempature: "Temperature",
@@ -137,6 +136,8 @@ export const othersTranslations = {
 		morning: "Good Morning",
 		afternoon: "Good Afternoon",
 		evening: "Good Evening",
+		uvWarn: "When the UV Index is high (6 or above), everyone should try to avoid staying outdoors for a long time or take sun protection measures",
+		humidity: "Humidity",
 	},
 	zh: {
 		intro:
@@ -168,6 +169,8 @@ export const othersTranslations = {
 		morning: "早安",
 		afternoon: "午安",
 		evening: "晚安",
+		uvWarn: "當紫外線指數高（6或以上）時，大家應盡量避免長時間在戶外活動或採取防曬措施",
+		humidity: "濕度",
 	},
 };
 

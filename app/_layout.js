@@ -36,16 +36,13 @@ export default function RootLayout() {
 				<Stack>
 					<Stack.Screen name="index" options={{ headerShown: false, headerTitle: "Home" }} />
 					<Stack.Screen name="(tabs)" options={{ headerShown: false, headerTitle: "Home" }} />
-					<Stack.Screen
-						name="outdoor"
-						options={{ headerShown: false, headerBackTitle: "Back", title: "Outdoor Equipment" }}
-					/>
+					<Stack.Screen name="outdoor" options={{ headerShown: false, headerBackTitle: "Back", title: "Outdoor Equipment" }} />
 					<Stack.Screen name="setting" options={{ headerShown: false }} />
 					<Stack.Screen name="risk" options={{ headerShown: false }} />
 					<Stack.Screen name="firstdisclaimer" options={{ headerShown: false }} />
 					<Stack.Screen name="firstsafety" options={{ headerShown: false }} />
-					<Stack.Screen name="location" options={{ title: "Location" }} />
-					<Stack.Screen name="research" options={{ title: "Research" }} />
+					<Stack.Screen name="location" options={{ headerShown: false }} />
+					<Stack.Screen name="research" options={{ headerShown: false }} />
 					<Stack.Screen name="firstquestionnaire" options={{ title: "PAR-Q" }} />
 					<Stack.Screen name="+not-found" />
 				</Stack>
