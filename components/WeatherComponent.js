@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { View, Text, ActivityIndicator, StyleSheet } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { RFValue } from "react-native-responsive-fontsize";
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
 
 const WeatherComponent = ({ i18n }) => {
 	const [weather, setWeather] = useState(null);
@@ -61,19 +62,25 @@ const WeatherComponent = ({ i18n }) => {
 
 const styles = StyleSheet.create({
 	outerContainer: {
+		flex: 1,
 		flexDirection: "row",
+		shadowColor: "#000",
+		shadowOffset: { width: 0, height: 4 },
+		shadowOpacity: 0.3,
+		shadowRadius: 4,
+		elevation: 5,
 	},
 	container: {
-		marginHorizontal: 10,
 		padding: RFValue(12),
 		borderRadius: 10,
+		marginHorizontal: wp("1%"),
 		backgroundColor: "rgba(255, 255, 255, 0.8)",
 		justifyContent: "center",
 	},
 	title: {
 		fontSize: RFValue(12),
 		fontWeight: "bold",
-		marginBottom: 10,
+		marginBottom: RFValue(5),
 	},
 	infoContainer: {
 		flexDirection: "row",
@@ -81,14 +88,14 @@ const styles = StyleSheet.create({
 	},
 	text: {
 		fontSize: RFValue(12),
-		marginLeft: 5,
+		marginLeft: wp("1%"),
 	},
 	suggestion: {
-		fontSize: RFValue(9),
+		fontSize: RFValue(10),
 		color: "#ff6600",
 		fontWeight: "bold",
 		textAlign: "center",
-		width: 150,
+		width: wp("40%"),
 	},
 });
 

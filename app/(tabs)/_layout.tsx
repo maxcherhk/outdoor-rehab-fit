@@ -9,26 +9,24 @@ import { HapticTab } from "@/components/HapticTab";
 import { IconSymbol } from "@/components/ui/IconSymbol";
 import TabBarBackground from "@/components/ui/TabBarBackground";
 import { Colors } from "@/constants/Colors";
-import { useColorScheme } from "@/hooks/useColorScheme";
 
 import { LocaleContext } from "../../contexts/LocaleContext";
 
 import { router } from "expo-router";
 
 export default function TabLayout() {
-	const colorScheme = useColorScheme();
-	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
+	const { i18n } = useContext(LocaleContext);
 
 	const renderBackButton = () => (
 		<TouchableOpacity onPress={() => router.back()}>
-			<Ionicons name="chevron-back" size={24} color={colorScheme === "dark" ? "#fff" : "#000"} />
+			<Ionicons name="chevron-back" size={24} color={"#000"} />
 		</TouchableOpacity>
 	);
 
 	return (
 		<Tabs
 			screenOptions={{
-				tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
+				tabBarActiveTintColor: Colors["light"].tint,
 				headerShown: false,
 				tabBarButton: HapticTab,
 				tabBarBackground: TabBarBackground,

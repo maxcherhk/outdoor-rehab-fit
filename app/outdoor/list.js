@@ -11,7 +11,7 @@ import { RFValue } from "react-native-responsive-fontsize";
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 const EquipmentList = () => {
-	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
+	const { i18n } = useContext(LocaleContext);
 	const equipmentData = i18n.t("equipmentList", { returnObjects: true });
 	const buttons = [
 		{ icon: require("@/assets/icons/outdoor/list.png"), text: i18n.t("all") },
@@ -88,7 +88,7 @@ const EquipmentList = () => {
 				<CustomBackButton />
 				<Text style={styles.headerText}>{category}</Text>
 			</View> */}
-			<SearchBar value={searchQuery} onChangeText={setSearchQuery} placeholder="Search equipment" />
+			<SearchBar value={searchQuery} onChangeText={setSearchQuery} placeholder={i18n.t("searching")} />
 			<FlatList
 				data={filteredEquipmentList}
 				keyExtractor={(item) => item.id.toString()}

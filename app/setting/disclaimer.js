@@ -1,11 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
 import { StyleSheet, View, ScrollView, Text, TouchableOpacity, SafeAreaView, ActivityIndicator } from "react-native";
 import { LocaleContext } from "../../contexts/LocaleContext";
-import { router } from "expo-router";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const Disclaimer = () => {
-	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
+	const { i18n } = useContext(LocaleContext);
 
 	return (
 		<SafeAreaView style={styles.container}>
@@ -13,19 +11,6 @@ const Disclaimer = () => {
 			<ScrollView style={styles.scrollView}>
 				<Text style={styles.text}>{i18n.t("disclaimer")}</Text>
 			</ScrollView>
-			<View style={styles.buttonContainer}>
-				{/* <TouchableOpacity style={styles.button} onPress={handleAgree}>
-					<Text style={styles.buttonText}>{i18n.t("agree")}</Text>
-				</TouchableOpacity>
-				<TouchableOpacity
-					style={styles.button}
-					onPress={() => {
-						router.back();
-					}}
-				>
-					<Text style={styles.buttonText}>{i18n.t("disagree")}</Text>
-				</TouchableOpacity> */}
-			</View>
 		</SafeAreaView>
 	);
 };

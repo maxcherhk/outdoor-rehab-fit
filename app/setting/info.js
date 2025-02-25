@@ -1,11 +1,9 @@
 import React, { useContext } from "react";
 import { StyleSheet, ScrollView, Text, View } from "react-native";
-import { I18n } from "i18n-js";
-import { othersTranslations } from "../../constants/Languages";
 import { LocaleContext } from "../../contexts/LocaleContext";
 
 export default function Info() {
-	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
+	const { i18n } = useContext(LocaleContext);
 	return (
 		<ScrollView contentContainerStyle={styles.container}>
 			<View style={styles.articleContainer}>

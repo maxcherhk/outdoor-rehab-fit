@@ -16,7 +16,7 @@ const Setting = () => {
 			<TouchableOpacity
 				style={styles.button}
 				onPress={() => {
-					router.navigate(`/setting/about`);
+					router.push(`/setting/about`);
 				}}
 			>
 				<FontAwesome name="info-circle" size={42} color="white" />
@@ -25,7 +25,7 @@ const Setting = () => {
 			<TouchableOpacity
 				style={styles.button}
 				onPress={() => {
-					router.navigate(`/setting/info`);
+					router.push(`/setting/info`);
 				}}
 			>
 				<FontAwesome name="users" size={42} color="white" />
@@ -34,7 +34,7 @@ const Setting = () => {
 			<TouchableOpacity
 				style={styles.button}
 				onPress={() => {
-					router.navigate(`/setting/disclaimer`);
+					router.push(`/setting/disclaimer`);
 				}}
 			>
 				<FontAwesome name="exclamation-triangle" size={42} color="white" />

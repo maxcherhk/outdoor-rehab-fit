@@ -9,7 +9,6 @@ const deviceLanguage = getLocales()[0].languageCode;
 const i18n = new I18n(translations);
 // if not en/zh, then zh
 i18n.locale = deviceLanguage === "en" ? "en" : "zh";
-console.log(deviceLanguage);
 
 export const LocaleContext = createContext();
 

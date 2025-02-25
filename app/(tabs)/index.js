@@ -1,15 +1,16 @@
 import React, { useContext } from "react";
 import { StyleSheet, View, Text, TouchableOpacity, Image, Dimensions, ScrollView } from "react-native";
-import { router, Link } from "expo-router";
+import { router } from "expo-router";
 import { LocaleContext } from "../../contexts/LocaleContext";
 import { RFValue } from "react-native-responsive-fontsize";
 import WeatherComponent from "../../components/WeatherComponent";
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 const buttonSize = screenWidth * 0.4;
-const photoHeight = screenHeight > 800 ? screenHeight * 0.35 : screenHeight * 0.25;
+const photoHeight = screenHeight > 800 ? screenHeight * 0.35 : screenHeight * 0.35;
 export default function HomeScreen() {
-	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
+	const { i18n } = useContext(LocaleContext);
 	const buttons = [
 		{
 			color: "#F0E4C2",
@@ -34,7 +35,7 @@ export default function HomeScreen() {
 	};
 
 	return (
-		<ScrollView style={styles.container}>
+		<ScrollView contentContainerStyle={styles.contentContainer}>
 			<View style={styles.imageContainer}>
 				<Image source={require("@/assets/images/hk.jpg")} style={styles.photo} />
 				<Text style={styles.greeting}>{getGreeting()},</Text>
@@ -62,32 +63,36 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
-	container: {
-		flex: 1,
+	contentContainer: {
+		flexGrow: 1,
 		backgroundColor: "#fff",
 	},
 	imageContainer: {
 		position: "relative",
 	},
 	photo: {
-		width: screenWidth,
-		height: photoHeight,
+		width: wp("100%"),
+		height: hp("35%"),
 		resizeMode: "cover",
 		filter: "brightness(0.8)",
 	},
 	greeting: {
 		position: "absolute",
-		top: screenHeight * 0.05,
-		left: screenWidth * 0.03,
+		top: hp("6%"),
+		left: wp("5%"),
 		fontSize: RFValue(24),
 		fontWeight: "bold",
 		color: "#fff",
-		padding: 10,
 		borderRadius: 5,
+		shadowColor: "#000",
+		shadowOffset: { width: 0, height: 4 },
+		shadowOpacity: 0.3,
+		shadowRadius: 4,
+		elevation: 10,
 	},
 	weatherComponentContainer: {
 		position: "absolute",
-		bottom: screenHeight * 0.04,
+		bottom: hp("4%"),
 		alignSelf: "center",
 	},
 	buttonsContainer: {
@@ -97,23 +102,23 @@ const styles = StyleSheet.create({
 		flexDirection: "row",
 		flexWrap: "wrap",
 		justifyContent: "space-between",
-		marginTop: -20, // Added negative margin to overlap with the image
-		paddingTop: 20, // Added padding to control spacing
-		paddingHorizontal: 25, // Added padding to control spacing
-		paddingBottom: 20, // Added padding to control spacing
+		marginTop: hp("-3%"), // Added negative margin to overlap with the image
+		paddingTop: hp("2%"), // Added padding to control spacing
+		paddingHorizontal: wp("7%"), // Added padding to control spacing
+		paddingBottom: hp("5%"), // Added padding to control spacing
+		marginBottom: hp("10%"), // Added margin to control spacing
 	},
 	buttonWrapper: {
 		width: "45%",
 		alignItems: "center",
-		marginVertical: 10, // Reduced horizontal margin
+		marginVertical: hp("1%"), // Reduced horizontal margin
 	},
 	button: {
-		width: buttonSize,
-		height: buttonSize,
-		borderRadius: buttonSize / 2,
+		width: wp("40%"),
+		height: wp("40%"),
+		borderRadius: wp("20%"),
 		justifyContent: "center",
 		alignItems: "center",
-		marginHorizontal: 5, // Reduced horizontal margin
 		shadowColor: "#000",
 		shadowOffset: { width: 0, height: 4 },
 		shadowOpacity: 0.3,
@@ -124,12 +129,12 @@ const styles = StyleSheet.create({
 		color: "#000",
 		fontSize: RFValue(14),
 		textAlign: "center",
-		marginTop: 15,
+		marginTop: hp("1%"),
 		fontWeight: "bold",
 	},
 	icon: {
-		width: buttonSize * 0.4,
-		height: buttonSize * 0.4,
+		width: wp("15%"),
+		height: wp("15%"),
 		resizeMode: "contain",
 	},
 });
