@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import { StyleSheet, View, ScrollView, Text, TouchableOpacity, SafeAreaView, Alert } from "react-native";
 import { LocaleContext } from "../../contexts/LocaleContext";
-import { router } from "expo-router";
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
+import { RFValue } from "react-native-responsive-fontsize";
 
 const Safety = () => {
-	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
+	const { i18n } = useContext(LocaleContext);
 	return (
 		<SafeAreaView style={styles.container}>
 			<Text style={styles.title}>{i18n.t("sprm")}</Text>
@@ -48,26 +49,26 @@ const styles = StyleSheet.create({
 		paddingBottom: 20,
 	},
 	text: {
-		fontSize: 24,
+		fontSize: RFValue(18),
 		lineHeight: 32,
 		color: "#333",
+		textAlign: "center",
 	},
 	buttonContainer: {
 		flexDirection: "column",
 		justifyContent: "space-between",
-		padding: 16,
+		padding: wp("2%"),
 	},
 	button: {
 		backgroundColor: "#007BFF",
-		paddingVertical: 22,
-		paddingHorizontal: 32,
+		paddingVertical: hp("2%"),
 		borderRadius: 8,
-		marginVertical: 8,
+		marginVertical: hp("1%"),
 		alignItems: "center",
 	},
 	buttonText: {
 		color: "#fff",
-		fontSize: 22,
+		fontSize: RFValue(18),
 		fontWeight: "bold",
 	},
 });

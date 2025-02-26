@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { View, Text, Image, StyleSheet, FlatList, TouchableOpacity, Dimensions } from "react-native";
+import { View, Text, Image, StyleSheet, FlatList, TouchableOpacity } from "react-native";
 import SearchBar from "../../components/SearchBar";
 import { useLocalSearchParams } from "expo-router";
 import Ionicons from "@expo/vector-icons/Ionicons";
@@ -8,8 +8,7 @@ import { useNavigation } from "expo-router";
 import { LocaleContext } from "../../contexts/LocaleContext";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { RFValue } from "react-native-responsive-fontsize";
-
-const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
 const EquipmentList = () => {
 	const { i18n } = useContext(LocaleContext);
 	const equipmentData = i18n.t("equipmentList", { returnObjects: true });
@@ -84,13 +83,10 @@ const EquipmentList = () => {
 
 	return (
 		<View style={styles.container}>
-			{/* <View style={styles.header}>
-				<CustomBackButton />
-				<Text style={styles.headerText}>{category}</Text>
-			</View> */}
 			<SearchBar value={searchQuery} onChangeText={setSearchQuery} placeholder={i18n.t("searching")} />
 			<FlatList
 				data={filteredEquipmentList}
+				contentContainerStyle={{ alignItems: "center" }}
 				keyExtractor={(item) => item.id.toString()}
 				renderItem={({ item }) => (
 					<TouchableOpacity
@@ -105,7 +101,7 @@ const EquipmentList = () => {
 						<TouchableOpacity style={styles.bookmark} onPress={() => toggleBookmark(item.id)}>
 							<Ionicons
 								name={bookmarked[item.id] ? "heart" : "heart-outline"}
-								size={38}
+								size={RFValue(30)}
 								color={bookmarked[item.id] ? "red" : "gray"}
 							/>
 						</TouchableOpacity>
@@ -120,7 +116,6 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		backgroundColor: "#fff",
-		paddingHorizontal: 16,
 	},
 	header: {
 		flexDirection: "row",
@@ -128,12 +123,6 @@ const styles = StyleSheet.create({
 		justifyContent: "flex-start",
 		paddingVertical: 10,
 		position: "relative",
-	},
-	headerText: {
-		flex: 1,
-		textAlign: "center",
-		fontSize: 18,
-		fontWeight: "bold",
 	},
 	card: {
 		flexDirection: "row",
@@ -144,7 +133,7 @@ const styles = StyleSheet.create({
 		shadowRadius: 10,
 		elevation: 5,
 		marginBottom: 16,
-		height: screenHeight * 0.2,
+		height: hp("20%"),
 		// Shadow for iOS
 		shadowColor: "#000",
 		shadowOffset: {
@@ -155,18 +144,18 @@ const styles = StyleSheet.create({
 		shadowRadius: 3.84,
 		// Elevation for Android
 		elevation: 5,
-		width: "99%",
+		width: wp("90%"),
 	},
 	image: {
-		width: "35%",
-		height: "100%",
+		width: wp("35%"),
+		height: hp("20%"),
 		borderTopLeftRadius: 8,
 		borderBottomLeftRadius: 8,
 	},
 	info: {
-		paddingTop: 16,
-		width: "65%",
-		paddingLeft: 16,
+		paddingTop: hp("2%"),
+		width: wp("55%"),
+		paddingLeft: wp("5%"),
 	},
 	name: {
 		fontSize: RFValue(18),
@@ -174,23 +163,23 @@ const styles = StyleSheet.create({
 		flexShrink: 1,
 	},
 	type: {
-		fontSize: 14,
+		fontSize: RFValue(14),
 		color: "#666",
 	},
 	bookmark: {
 		position: "absolute",
-		bottom: 16,
-		right: 16,
+		bottom: hp("2%"),
+		right: wp("5%"),
 	},
 	iconRow: {
 		position: "absolute",
-		left: "40%",
-		bottom: 20,
+		left: wp("39%"),
+		bottom: hp("2%"),
 		flexDirection: "row",
 	},
 	categoryIcon: {
-		width: screenWidth * 0.06,
-		height: screenWidth * 0.06,
+		width: RFValue(20),
+		height: RFValue(20),
 		marginRight: 8,
 	},
 });

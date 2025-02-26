@@ -4,8 +4,8 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { StyleSheet, View, Text, TouchableOpacity, Image, Dimensions, ScrollView } from "react-native";
 import CustomBackButton from "../../components/CustomBackButton";
 import { LocaleContext } from "../../contexts/LocaleContext";
-
-const { width: screenWidth } = Dimensions.get("window");
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
+import { RFValue } from "react-native-responsive-fontsize";
 
 export default function Outdoor() {
 	const { i18n } = useContext(LocaleContext);
@@ -66,15 +66,15 @@ const styles = StyleSheet.create({
 		paddingHorizontal: 25,
 	},
 	buttonWrapper: {
-		width: "45%", // Adjust width to fit two buttons per row
+		width: wp("40%"), // Adjust width to fit two buttons per row
 		alignItems: "center",
 		marginVertical: 10,
 	},
 	button: {
-		width: 110,
-		height: 110,
+		width: wp("30%"),
+		height: wp("30%"),
 		borderRadius: 100,
-		borderWidth: 10,
+		borderWidth: wp("2%"),
 		borderColor: "#EB9481",
 		backgroundColor: "#FFF",
 		justifyContent: "center",
@@ -86,13 +86,13 @@ const styles = StyleSheet.create({
 		elevation: 5,
 	},
 	icon: {
-		width: 50,
-		height: 50,
+		width: wp("13%"),
+		height: wp("13%"),
 		resizeMode: "contain",
 	},
 	buttonText: {
 		color: "#000",
-		fontSize: 20,
+		fontSize: RFValue(16),
 		textAlign: "center",
 		marginTop: 5,
 		fontWeight: "bold",

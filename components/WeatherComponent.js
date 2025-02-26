@@ -35,19 +35,19 @@ const WeatherComponent = ({ i18n }) => {
 			<View style={styles.container}>
 				<Text style={styles.title}>{i18n.t("weatherInfo")}</Text>
 				<View style={styles.infoContainer}>
-					<MaterialCommunityIcons name="thermometer" size={24} color="black" />
+					<MaterialCommunityIcons name="thermometer" size={RFValue(18)} color="black" />
 					<Text style={styles.text}>
 						{i18n.t("tempature")}: {weather.temperature}
 					</Text>
 				</View>
 				<View style={styles.infoContainer}>
-					<MaterialCommunityIcons name="weather-sunny" size={24} color="black" />
+					<MaterialCommunityIcons name="weather-sunny" size={RFValue(18)} color="black" />
 					<Text style={styles.text}>
 						{i18n.t("uv")}: {weather.uvIndex}
 					</Text>
 				</View>
 				<View style={styles.infoContainer}>
-					<MaterialCommunityIcons name="water-percent" size={24} color="black" />
+					<MaterialCommunityIcons name="water-percent" size={RFValue(18)} color="black" />
 					<Text style={styles.text}>
 						{i18n.t("humidity")}: {weather.humidity}
 					</Text>

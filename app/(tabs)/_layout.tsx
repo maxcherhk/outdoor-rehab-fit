@@ -1,7 +1,6 @@
 import { Tabs } from "expo-router";
 import React, { useContext } from "react";
-import { Platform, Image, View, TouchableOpacity } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+import { Platform } from "react-native";
 
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 
@@ -12,17 +11,8 @@ import { Colors } from "@/constants/Colors";
 
 import { LocaleContext } from "../../contexts/LocaleContext";
 
-import { router } from "expo-router";
-
 export default function TabLayout() {
 	const { i18n } = useContext(LocaleContext);
-
-	const renderBackButton = () => (
-		<TouchableOpacity onPress={() => router.back()}>
-			<Ionicons name="chevron-back" size={24} color={"#000"} />
-		</TouchableOpacity>
-	);
-
 	return (
 		<Tabs
 			screenOptions={{

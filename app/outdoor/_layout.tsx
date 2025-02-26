@@ -1,20 +1,7 @@
 import React, { useContext } from "react";
-import { Ionicons } from "@expo/vector-icons";
-import { useColorScheme } from "@/hooks/useColorScheme";
-import { Stack, router } from "expo-router";
-import { TouchableOpacity, Text } from "react-native";
-import CustomBackButton from "../../components/CustomBackButton";
-
-import { LocaleContext } from "../../contexts/LocaleContext";
+import { Stack } from "expo-router";
 
 export default function OutdoorLayout() {
-	const colorScheme = useColorScheme();
-	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
-	const renderBackButton = () => (
-		<TouchableOpacity onPress={() => router.back()}>
-			<Ionicons name="chevron-back" size={32} color={colorScheme === "dark" ? "#fff" : "#000"} />
-		</TouchableOpacity>
-	);
 	return (
 		<Stack
 			screenOptions={{

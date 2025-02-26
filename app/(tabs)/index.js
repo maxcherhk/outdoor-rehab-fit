@@ -1,14 +1,10 @@
 import React, { useContext } from "react";
-import { StyleSheet, View, Text, TouchableOpacity, Image, Dimensions, ScrollView } from "react-native";
+import { StyleSheet, View, Text, TouchableOpacity, Image, ScrollView } from "react-native";
 import { router } from "expo-router";
 import { LocaleContext } from "../../contexts/LocaleContext";
 import { RFValue } from "react-native-responsive-fontsize";
 import WeatherComponent from "../../components/WeatherComponent";
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
-
-const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
-const buttonSize = screenWidth * 0.4;
-const photoHeight = screenHeight > 800 ? screenHeight * 0.35 : screenHeight * 0.35;
 export default function HomeScreen() {
 	const { i18n } = useContext(LocaleContext);
 	const buttons = [

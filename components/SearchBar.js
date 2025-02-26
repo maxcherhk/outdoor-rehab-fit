@@ -2,6 +2,8 @@
 import React from "react";
 import { View, TextInput, StyleSheet } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
+import { RFValue } from "react-native-responsive-fontsize";
 
 const SearchBar = ({ value, onChangeText, placeholder }) => {
 	return (
@@ -21,24 +23,23 @@ const SearchBar = ({ value, onChangeText, placeholder }) => {
 const styles = StyleSheet.create({
 	container: {
 		alignSelf: "center",
-		width: "100%",
-		height: 70,
+		width: wp("90%"),
+		height: hp("8%"),
 		flexDirection: "row",
 		alignItems: "center",
 		borderRadius: 10,
-		paddingHorizontal: 10,
-		paddingVertical: 5,
-		marginBottom: 15,
+		paddingHorizontal: wp("5%"),
+		marginVertical: hp("1%"),
 		backgroundColor: "#FFF",
 		borderColor: "#EB9481",
 		borderWidth: 1.5,
 	},
 	icon: {
-		marginRight: 10,
+		marginRight: wp("2%"),
 	},
 	input: {
 		flex: 1,
-		fontSize: 22,
+		fontSize: RFValue(16),
 		color: "black",
 	},
 });
