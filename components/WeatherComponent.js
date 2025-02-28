@@ -12,9 +12,9 @@ const WeatherComponent = ({ i18n }) => {
 		fetch("https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=rhrread&lang=tc")
 			.then((response) => response.json())
 			.then((data) => {
-				const temperatureData = data.temperature.data.find((entry) => entry.place === "京士柏");
-				const uvData = data.uvindex.data.find((entry) => entry.place === "京士柏");
-				const humidityData = data.humidity.data.find((entry) => entry.place === "香港天文台");
+				const temperatureData = data.temperature?.data?.find((entry) => entry.place === "京士柏");
+				const uvData = Array.isArray(data.uvindex?.data) ? data.uvindex.data.find((entry) => entry.place === "京士柏") : null;
+				const humidityData = data.humidity?.data?.find((entry) => entry.place === "香港天文台");
 
 				setWeather({
 					temperature: temperatureData ? `${temperatureData.value}°${temperatureData.unit}` : "N/A",

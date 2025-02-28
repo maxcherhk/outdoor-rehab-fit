@@ -1,6 +1,6 @@
-import React, { useContext, useEffect, useState } from "react";
-import { StyleSheet, View, ScrollView, Text, TouchableOpacity, SafeAreaView, ActivityIndicator } from "react-native";
-import { LocaleContext } from "../../contexts/LocaleContext";
+import React, { useContext } from "react";
+import { StyleSheet, ScrollView, Text, SafeAreaView } from "react-native";
+import { LocaleContext } from "../../../contexts/LocaleContext";
 
 const Disclaimer = () => {
 	const { i18n } = useContext(LocaleContext);

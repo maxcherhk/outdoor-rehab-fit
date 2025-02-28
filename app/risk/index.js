@@ -1,8 +1,10 @@
 import React, { useContext, useEffect } from "react";
 import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
-import { router, useNavigation } from "expo-router";
-import { FontAwesome, AntDesign } from "@expo/vector-icons"; // Make sure to install this package
+import { router } from "expo-router";
+import { AntDesign } from "@expo/vector-icons"; // Make sure to install this package
 import { LocaleContext } from "../../contexts/LocaleContext";
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
+import { RFValue } from "react-native-responsive-fontsize";
 
 const Index = () => {
 	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
@@ -39,13 +41,13 @@ const styles = StyleSheet.create({
 		borderRadius: 10,
 		padding: 20,
 		margin: 10,
-		width: "80%",
-		height: "30%",
+		width: wp("80%"),
+		height: hp("25%"),
 	},
 	buttonText: {
 		color: "white",
 		marginTop: 10,
-		fontSize: 22,
+		fontSize: RFValue(16),
 		fontWeight: "bold",
 		textAlign: "center",
 	},

@@ -10,9 +10,10 @@ import AudioPlayer from "@/components/AudioPlayer";
 import { Ionicons } from "@expo/vector-icons";
 import { enSoundFiles, zhSoundFiles, gifFiles1, gifFiles2 } from "../../constants/Equipments";
 import { RFValue } from "react-native-responsive-fontsize";
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
 
 const Detail = () => {
-	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
+	const { i18n, locale } = useContext(LocaleContext);
 	const item = useLocalSearchParams();
 	const navigation = useNavigation();
 
@@ -90,7 +91,7 @@ const Detail = () => {
 			</View>
 			<View style={styles.section}>
 				<ThemedText style={styles.text}>{i18n.t("reminderAndTips")}</ThemedText>
-				<YoutubePlayer height={270} play={false} videoId={item.youtubeKey} />
+				<YoutubePlayer height={hp("35%")} play={false} videoId={item.youtubeKey} />
 			</View>
 		</ScrollView>
 	);
@@ -110,17 +111,17 @@ const styles = StyleSheet.create({
 		marginBottom: 8,
 	},
 	section: {
-		padding: 16,
+		padding: wp("5%"),
 		marginBottom: RFValue(20),
 		backgroundColor: "#fff",
 	},
 	image: {
 		width: "100%",
-		height: 200,
+		height: hp("35%"),
 		resizeMode: "contain",
 	},
 	text: {
-		fontSize: 24,
+		fontSize: RFValue(16),
 		lineHeight: 32,
 		color: "#333",
 		marginBottom: RFValue(16),
@@ -135,7 +136,7 @@ const styles = StyleSheet.create({
 	},
 	gif: {
 		width: "100%", // Adjust the width as needed
-		height: 300, // Adjust the height as needed
+		height: hp("40%"), // Adjust the height as needed
 		resizeMode: "cover",
 	},
 	modalContainer: {

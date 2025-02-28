@@ -1,7 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import { router } from "expo-router";
 import { StyleSheet, View, Animated, TouchableOpacity, Text, ImageBackground, PixelRatio, Image } from "react-native";
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
 import * as Updates from "expo-updates";
+import { RFValue } from "react-native-responsive-fontsize";
+import { getLocales } from "expo-localization";
+
+const deviceLanguage = getLocales()[0].languageCode;
 
 export default function HomeScreen() {
 	const fadeAnim = useRef(new Animated.Value(0)).current; // Initial opacity value: 0
@@ -35,7 +40,7 @@ export default function HomeScreen() {
 					]}
 				/>
 				<TouchableOpacity style={styles.button} onPress={() => router.push("/firstdisclaimer")}>
-					<Text style={styles.buttonText}>Start</Text>
+					<Text style={styles.buttonText}>Start 開始</Text>
 				</TouchableOpacity>
 				<Text style={styles.appVersionText}>App version 1.0.0</Text>
 			</View>
@@ -55,16 +60,15 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 	},
 	logo: {
-		width: 342,
-		height: 98,
+		width: wp("80%"),
 		resizeMode: "contain",
-		marginTop: 100,
+		marginTop: hp("10%"),
 	},
 	button: {
 		marginTop: "auto",
-		marginBottom: 10,
-		paddingVertical: 20,
-		paddingHorizontal: 120,
+		marginBottom: hp("2%"),
+		paddingVertical: hp("2%"),
+		paddingHorizontal: wp("35%"),
 		backgroundColor: "#840B1C",
 		borderRadius: 50,
 		shadowColor: "#000",
@@ -75,10 +79,10 @@ const styles = StyleSheet.create({
 	},
 	buttonText: {
 		color: "white",
-		fontSize: 16,
+		fontSize: RFValue(14),
 		alignSelf: "center",
 	},
 	appVersionText: {
-		marginBottom: 70,
+		marginBottom: hp("10%"),
 	},
 });

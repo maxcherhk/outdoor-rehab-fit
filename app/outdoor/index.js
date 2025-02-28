@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
 	button: {
 		width: wp("30%"),
 		height: wp("30%"),
-		borderRadius: 100,
+		borderRadius: wp("15%"),
 		borderWidth: wp("2%"),
 		borderColor: "#EB9481",
 		backgroundColor: "#FFF",

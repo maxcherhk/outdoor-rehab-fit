@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { StyleSheet, View } from "react-native";
 import { WebView } from "react-native-webview";
-import Constants from "expo-constants";
+import { LocaleContext } from "../../contexts/LocaleContext";
 
 const Location = () => {
-	return <WebView style={styles.container} source={{ uri: "https://www.lcsd.gov.hk/clpss/en/webApp/Facility/District.do?ftid=161" }} />;
+	const { i18n } = useContext(LocaleContext);
+	const url = i18n.t("url");
+	return <WebView style={styles.container} source={{ uri: url }} />;
 };
 
 const styles = StyleSheet.create({

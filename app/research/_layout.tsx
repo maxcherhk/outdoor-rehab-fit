@@ -1,17 +1,15 @@
 import React, { useContext } from "react";
 import { Ionicons } from "@expo/vector-icons";
-import { useColorScheme } from "@/hooks/useColorScheme";
 import { Stack, router } from "expo-router";
 import { LocaleContext } from "../../contexts/LocaleContext";
-import { TouchableOpacity, Text } from "react-native";
+import { TouchableOpacity } from "react-native";
 
 export default function ResearchLayout() {
-	const colorScheme = useColorScheme();
 	const { i18n } = useContext(LocaleContext);
 
 	const renderBackButton = () => (
-		<TouchableOpacity onPress={() => router.back()}>
-			<Ionicons name="chevron-back" size={24} color={colorScheme === "dark" ? "#fff" : "#000"} />
+		<TouchableOpacity onPress={() => router.navigate("/(tabs)")}>
+			<Ionicons name="chevron-back" size={24} color={"#000"} />
 		</TouchableOpacity>
 	);
 
@@ -24,7 +22,7 @@ export default function ResearchLayout() {
 			<Stack.Screen
 				name="index"
 				options={{
-					headerShown: true,
+					headerShown: false,
 					title: i18n.t("research"),
 					headerLeft: renderBackButton,
 				}}

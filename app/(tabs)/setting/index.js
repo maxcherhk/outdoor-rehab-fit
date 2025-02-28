@@ -2,15 +2,16 @@ import React, { useContext } from "react";
 import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import { FontAwesome } from "@expo/vector-icons"; // Make sure to install this package
-import { LocaleContext } from "../../contexts/LocaleContext";
+import { LocaleContext } from "../../../contexts/LocaleContext";
 import { RFValue } from "react-native-responsive-fontsize";
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
 
 const Setting = () => {
-	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
+	const { i18n, changeLanguage } = useContext(LocaleContext);
 	return (
 		<View style={styles.container}>
 			<TouchableOpacity style={styles.button} onPress={changeLanguage}>
-				<FontAwesome name="language" size={42} color="white" />
+				<FontAwesome name="language" size={RFValue(30)} color="white" />
 				<Text style={styles.buttonText}>{i18n.t("changeLanguage")}</Text>
 			</TouchableOpacity>
 			<TouchableOpacity
@@ -19,7 +20,7 @@ const Setting = () => {
 					router.push(`/setting/about`);
 				}}
 			>
-				<FontAwesome name="info-circle" size={42} color="white" />
+				<FontAwesome name="info-circle" size={RFValue(30)} color="white" />
 				<Text style={styles.buttonText}>{i18n.t("aboutApp")}</Text>
 			</TouchableOpacity>
 			<TouchableOpacity
@@ -28,7 +29,7 @@ const Setting = () => {
 					router.push(`/setting/info`);
 				}}
 			>
-				<FontAwesome name="users" size={42} color="white" />
+				<FontAwesome name="users" size={RFValue(30)} color="white" />
 				<Text style={styles.buttonText}>{i18n.t("aboutTeam")}</Text>
 			</TouchableOpacity>
 			<TouchableOpacity
@@ -37,7 +38,7 @@ const Setting = () => {
 					router.push(`/setting/disclaimer`);
 				}}
 			>
-				<FontAwesome name="exclamation-triangle" size={42} color="white" />
+				<FontAwesome name="exclamation-triangle" size={RFValue(30)} color="white" />
 				<Text style={styles.buttonText}>{i18n.t("settingDisclaimer")}</Text>
 			</TouchableOpacity>
 		</View>
@@ -48,6 +49,7 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		alignItems: "center",
+		justifyContent: "center",
 	},
 	button: {
 		flexDirection: "column",
@@ -57,12 +59,12 @@ const styles = StyleSheet.create({
 		borderRadius: 10,
 		padding: 20,
 		margin: 10,
-		width: "80%",
-		height: "19%",
+		width: wp("80%"),
+		height: hp("15%"),
 	},
 	buttonText: {
 		color: "white",
-		marginTop: 10,
+		marginTop: hp("1%"),
 		fontSize: RFValue(18),
 		fontWeight: "bold",
 	},

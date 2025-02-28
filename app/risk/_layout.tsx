@@ -3,15 +3,16 @@ import { Ionicons } from "@expo/vector-icons";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { Stack, router } from "expo-router";
 import { LocaleContext } from "../../contexts/LocaleContext";
-import { TouchableOpacity, Text } from "react-native";
+import { TouchableOpacity } from "react-native";
+import { RFValue } from "react-native-responsive-fontsize";
 
 export default function RiskLayout() {
 	const colorScheme = useColorScheme();
-	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
+	const { i18n } = useContext(LocaleContext);
 
 	const renderBackButton = () => (
 		<TouchableOpacity onPress={() => router.back()}>
-			<Ionicons name="chevron-back" size={24} color={colorScheme === "dark" ? "#fff" : "#000"} />
+			<Ionicons name="chevron-back" size={RFValue(18)} color={colorScheme === "dark" ? "#fff" : "#000"} />
 		</TouchableOpacity>
 	);
 

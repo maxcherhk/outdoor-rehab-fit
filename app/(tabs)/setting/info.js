@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
-import { StyleSheet, View, ScrollView, Text } from "react-native";
-import { LocaleContext } from "../../contexts/LocaleContext";
+import { StyleSheet, ScrollView, Text, View } from "react-native";
+import { LocaleContext } from "../../../contexts/LocaleContext";
 
-export default function About() {
+export default function Info() {
 	const { i18n } = useContext(LocaleContext);
 	return (
 		<ScrollView contentContainerStyle={styles.container}>
 			<View style={styles.articleContainer}>
-				<Text style={styles.articleText}>{i18n.t("team")}</Text>
+				<Text style={styles.articleText}>{i18n.t("intro")}</Text>
 			</View>
 		</ScrollView>
 	);
