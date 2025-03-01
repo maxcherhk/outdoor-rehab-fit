@@ -66,7 +66,7 @@ const Detail = () => {
 					<ThemedText style={styles.text}>{item.otTip}</ThemedText>
 				</Collapsible>
 				<Collapsible title={i18n.t("tip4")}>
-					<ThemedText style={styles.text}>{item.kinesiologyTip}</ThemedText>
+					<ThemedText style={styles.text}>{item.careTip}</ThemedText>
 				</Collapsible>
 			</View>
 			<View style={styles.section}>
@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
 	},
 	section: {
 		padding: wp("5%"),
-		marginBottom: RFValue(20),
+		marginBottom: hp("2%"),
 		backgroundColor: "#fff",
 	},
 	image: {
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
 	},
 	text: {
 		fontSize: RFValue(16),
-		lineHeight: 32,
+		lineHeight: RFValue(24),
 		color: "#333",
 		marginBottom: RFValue(16),
 	},
@@ -147,8 +147,8 @@ const styles = StyleSheet.create({
 	},
 	modalContent: {
 		marginTop: 80,
-		width: "90%",
-		height: "90%",
+		width: wp("90%"),
+		height: hp("70%"),
 		flexDirection: "column",
 		justifyContent: "center",
 		alignItems: "center",
@@ -160,8 +160,8 @@ const styles = StyleSheet.create({
 	},
 	modalCloseButton: {
 		position: "absolute",
-		top: 0,
-		right: 10,
+		top: hp("0%"),
+		right: wp("0%"),
 		padding: 10,
 		backgroundColor: "white",
 		borderRadius: 5,

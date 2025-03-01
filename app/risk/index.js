@@ -7,7 +7,7 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-nat
 import { RFValue } from "react-native-responsive-fontsize";
 
 const Index = () => {
-	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
+	const { i18n } = useContext(LocaleContext);
 	return (
 		<View style={styles.container}>
 			<TouchableOpacity style={styles.button} onPress={() => router.navigate(`/risk/questionnaire`)}>
