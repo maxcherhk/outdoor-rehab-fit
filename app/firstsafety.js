@@ -5,7 +5,7 @@ import { router } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const FirstSafety = () => {
-	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
+	const { i18n } = useContext(LocaleContext);
 
 	useEffect(() => {
 		const checkSafetyResponse = async () => {

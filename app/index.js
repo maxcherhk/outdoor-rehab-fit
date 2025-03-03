@@ -1,14 +1,20 @@
 import React, { useEffect, useRef } from "react";
 import { router } from "expo-router";
-import { StyleSheet, View, Animated, TouchableOpacity, Text, ImageBackground, PixelRatio, Image } from "react-native";
+import { StyleSheet, View, Animated, TouchableOpacity, Text, ImageBackground, Button } from "react-native";
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
 import * as Updates from "expo-updates";
 import { RFValue } from "react-native-responsive-fontsize";
-import { getLocales } from "expo-localization";
-
-const deviceLanguage = getLocales()[0].languageCode;
 
 export default function HomeScreen() {
+	const { currentlyRunning, isUpdateAvailable, isUpdatePending } = Updates.useUpdates();
+
+	useEffect(() => {
+		if (isUpdatePending) {
+			// Update has successfully downloaded; apply it now
+			Updates.reloadAsync();
+		}
+	}, [isUpdatePending]);
+
 	const fadeAnim = useRef(new Animated.Value(0)).current; // Initial opacity value: 0
 	const scaleAnim = useRef(new Animated.Value(0.5)).current; // Initial scale value: 0.5
 	useEffect(() => {
@@ -79,6 +85,7 @@ const styles = StyleSheet.create({
 	},
 	buttonText: {
 		color: "white",
+		width: "100%",
 		fontSize: RFValue(14),
 		alignSelf: "center",
 	},

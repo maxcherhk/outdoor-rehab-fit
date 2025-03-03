@@ -1,27 +1,18 @@
 import React, { useContext, useEffect, useState } from "react";
-import {
-	StyleSheet,
-	View,
-	ScrollView,
-	Text,
-	TouchableOpacity,
-	SafeAreaView,
-	ActivityIndicator,
-	Alert,
-} from "react-native";
+import { StyleSheet, View, ScrollView, Text, TouchableOpacity, SafeAreaView, ActivityIndicator, Alert } from "react-native";
 import { LocaleContext } from "../contexts/LocaleContext";
 import { router } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const FirstDisclaimer = () => {
-	const { i18n, locale, changeLanguage } = useContext(LocaleContext);
+	const { i18n } = useContext(LocaleContext);
 	const [loading, setLoading] = useState(false);
 	useEffect(() => {
 		const checkAgreement = async () => {
 			try {
 				const agreed = await AsyncStorage.getItem("userAgreed");
 				if (agreed) {
-					router.replace("/firstsafety");
+					router.replace("/(tabs)");
 				} else {
 					setLoading(false);
 				}
